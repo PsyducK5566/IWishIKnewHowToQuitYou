@@ -1,6 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2024 六角學院軟體工程師體驗營 切版任務一</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/03/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F-%E5%88%87%E7%89%88%E4%BB%BB%E5%8B%99%E4%B8%80/</url>
+    <content><![CDATA[<div class="Container">
+        <ul class="Cards-list">
+            <li>
+                <img src="https://i.imgur.com/k370tkx.png" alt="pic 1 StarTripTicketBookingPlatform">
+                <h2>星際旅行訂票平台</h2>
+                <p>悠遊宇宙的夢想，從這裡開始實現</p>
+                <ul Class="Card-list-Tags">
+                    <li>網頁設計</li>
+                    <li>響應式設計</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </li>
+            <li>
+                <img src="https://i.imgur.com/csaKN9q.png" alt="pic 2 FinancialManagementAPP">
+                <h2>理財APP</h2>
+                <p>連動帳戶與行動支付，讓AI提供您最好的理財建議</p>
+                <ul class="Card-list-Tags">
+                    <li>APP設計</li>
+                    <li>iOS</li>
+                    <li>React</li>
+                </ul>
+            </li>
+            <li>
+                <img src="https://i.imgur.com/8XhudJj.png" alt="pic 3 MedicalCosmeticClinicWebSite">
+                <h2>醫美診所官網</h2>
+                <P>永保青春的秘密，從粹究開始</P>
+                <ul class="Card-list-Tags">
+                    <li>網頁設計</li>
+                    <li>響應式設計</li>
+                    <li>WordPress</li>
+                </ul>
+            </li>
+            <li>
+                <img src="https://i.imgur.com/zWhfUTx.png" alt="pic 4 BreakfastStorePOSUIDesign">
+                <h2>美美美早餐店 POS機 UI Design</h2>
+                <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
+                <ul class="Card-list-Tags">
+                    <li>UI 設計</li>
+                    <li>前端開發</li>
+                    <li>Wix</li>
+                </ul>               
+            </li>           
+        </ul>
+    </div>    
+
+<style>
+*{
+    padding:0;
+    margin:0;
+}
+/* https://fonts.google.com/selection/embed */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* https://www.colorhexa.com/ */
+:root{
+    --very-dark-gray:#3B3B3B;
+    --dark-gray:#919191;
+    --very-light-gray:#f1f1f1;
+    --white:#ffffff;
+}
+
+/**加img reset讓圖片適應縮放。在body樣式設置為預設樣式。使用“box-sizing”語法**/
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{    
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+body{
+    font-family:"Noto Sans TC",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.Container{
+    width: 1296px;
+    margin: 0  auto;
+    padding: 0 12px;
+    background-color: var(--white);    
+}
+.Cards-list{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    margin: 0 auto ;
+    margin-top: 10px;
+    gap:80px 10px;
+    list-style: none;
+}
+.Cards-list li{
+    max-width: 48%;
+}
+
+.Cards-list h2{
+    color: var(--very-dark-gray);
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+}
+
+.Cards-list p{
+    color:var(--dark-gray);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.Cards-list-Tags{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.Card-list-Tags li{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--very-light-gray);
+    color: var(--very-dark-gray);
+    line-height: 24px;
+    padding:4px 12px;
+    margin-right: 16px;
+    border-radius: 16px;
+}
+
+/*RWD 設置*/
+@media (max-width:992px){
+    .Cards-list{
+        flex-direction: column;
+        align-items:center;
+        margin: 10px 10px 0px 10px;
+        gap: 60px;
+    }
+    .Cards-list li{
+        max-width: 90%;
+    }
+    .Card-list-Tags li{
+        margin-right: 12px;
+    }   
+}
+@media(max-width:375px){
+    .Cards-list{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+        gap: 48px;
+    }
+    .Cards-list li{
+        padding:0px 0px 12px 12px;        
+    }
+    .Cards-list h2{
+        font-size: 20px;
+    }
+    .Card-list-Tags li{
+        margin-right: 8px;
+    }   
+}
+
+</style>
+
+<br>
+<br>
+
+<h6 id="圖片取自六角學院-©-HexSchool-2024"><a href="#圖片取自六角學院-©-HexSchool-2024" class="headerlink" title="圖片取自六角學院 © HexSchool 2024"></a>圖片取自六角學院 © HexSchool 2024</h6>]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2024 六角學院軟體工程師體驗營心得</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/02/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h2 id="當初為什麼報名體驗營"><a href="#當初為什麼報名體驗營" class="headerlink" title="當初為什麼報名體驗營?"></a>當初為什麼報名體驗營?</h2><p>內心有個聲音叫我去釐清真正的渴望和需求，理解身為一個成熟人類的社會責任，以便能更好地安排未來幾十年的職場活動，以及生活各層面的內容。</p>
+<h2 id="最大的收獲是"><a href="#最大的收獲是" class="headerlink" title="最大的收獲是?"></a>最大的收獲是?</h2><p>使用Hexo初步完成個人客製化樣式部落格。<br>另外對於排版與整體設計亦有了一個初步的認識。相信在接下來的學習過程裡，我會變得更能掌握這領域的知識；並期許自己能夠靈活運用、舉一反三。</p>
+<h2 id="最喜歡體驗營的哪些活動"><a href="#最喜歡體驗營的哪些活動" class="headerlink" title="最喜歡體驗營的哪些活動?"></a>最喜歡體驗營的哪些活動?</h2><p>第12小組每周四舉辦的線上讀書會。謝謝組員們，特別感謝 Arirel Yao、Jiahe、Mars 。</p>
+<h2 id="哪些自己可以做得很好的地方？"><a href="#哪些自己可以做得很好的地方？" class="headerlink" title="哪些自己可以做得很好的地方？"></a>哪些自己可以做得很好的地方？</h2><p>時間管理尚待加強。</p>
+<h2 id="對課程的建議或鼓勵"><a href="#對課程的建議或鼓勵" class="headerlink" title="對課程的建議或鼓勵?"></a>對課程的建議或鼓勵?</h2><p>感謝六角學院推出優質活動，讓我在學習的過程中結識到不同背景相同目標的夥伴們。<br>最後要非常感謝所有批改程式碼、願意給予建議的「Mentor」。</p>
+<p>“所以，這次只到6&#x2F;9……”<br>“能再寫一次，足矣”<br>“因為今天”</p>
+<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/28e51e98a75f8d69c10f0781671678c9.jpg?alt=media&token=bd902812-5393-48ba-9d8e-534d825d2e72" alt="再看一次">
+
+
+<h6 id="圖片取自-©火鳳燎原-陳某-All-Rights-Reserved"><a href="#圖片取自-©火鳳燎原-陳某-All-Rights-Reserved" class="headerlink" title="圖片取自 ©火鳳燎原 陳某 All Rights Reserved."></a>圖片取自 ©火鳳燎原 陳某 All Rights Reserved.</h6>]]></content>
+      <tags>
+        <tag>Essay</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我比不好還更好</title>
     <url>/IWishIKnewHowToQuitYou/2024/05/30/%E6%88%91%E6%AF%94%E4%B8%8D%E5%A5%BD%E9%82%84%E6%9B%B4%E5%A5%BD/</url>
     <content><![CDATA[<p>又過完一個<br>沒有別人的一年<br>很寂寞吧<br>有些痂被撕開<br>裡面流出膿血</p>
@@ -211,23 +408,6 @@
 ]]></content>
       <tags>
         <tag>Quotes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2024 六角學院軟體工程師體驗營心得</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/02/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h2 id="當初為什麼報名體驗營"><a href="#當初為什麼報名體驗營" class="headerlink" title="當初為什麼報名體驗營?"></a>當初為什麼報名體驗營?</h2><p>內心有個聲音叫我去釐清真正的渴望和需求，理解身為一個成熟人類的社會責任，以便能更好地安排未來幾十年的職場活動，以及生活各層面的內容。</p>
-<h2 id="最大的收獲是"><a href="#最大的收獲是" class="headerlink" title="最大的收獲是?"></a>最大的收獲是?</h2><p>使用Hexo初步完成個人客製化樣式部落格。<br>另外對於排版與整體設計亦有了一個初步的認識。相信在接下來的學習過程裡，我會變得更能掌握這領域的知識；並期許自己能夠靈活運用、舉一反三。</p>
-<h2 id="最喜歡體驗營的哪些活動"><a href="#最喜歡體驗營的哪些活動" class="headerlink" title="最喜歡體驗營的哪些活動?"></a>最喜歡體驗營的哪些活動?</h2><p>第12小組每周四舉辦的線上讀書會。謝謝組員們，特別感謝 Arirel Yao、Jiahe、Mars 。</p>
-<h2 id="哪些自己可以做得很好的地方？"><a href="#哪些自己可以做得很好的地方？" class="headerlink" title="哪些自己可以做得很好的地方？"></a>哪些自己可以做得很好的地方？</h2><p>時間管理尚待加強。</p>
-<h2 id="對課程的建議或鼓勵"><a href="#對課程的建議或鼓勵" class="headerlink" title="對課程的建議或鼓勵?"></a>對課程的建議或鼓勵?</h2><p>感謝六角學院推出優質活動，讓我在學習的過程中結識到不同背景相同目標的夥伴們。<br>最後要非常感謝所有批改程式碼、願意給予建議的「Mentor」。</p>
-<p>“所以，這次只到6&#x2F;9……”<br>“能再寫一次，足矣”<br>“因為今天”</p>
-<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/28e51e98a75f8d69c10f0781671678c9.jpg?alt=media&token=bd902812-5393-48ba-9d8e-534d825d2e72" alt="再看一次">
-
-
-<h6 id="圖片取自-©火鳳燎原-陳某-All-Rights-Reserved"><a href="#圖片取自-©火鳳燎原-陳某-All-Rights-Reserved" class="headerlink" title="圖片取自 ©火鳳燎原 陳某 All Rights Reserved."></a>圖片取自 ©火鳳燎原 陳某 All Rights Reserved.</h6>]]></content>
-      <tags>
-        <tag>Essay</tag>
       </tags>
   </entry>
   <entry>
