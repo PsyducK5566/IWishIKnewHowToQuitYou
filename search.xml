@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2024 六角學院軟體工程師體驗營心得</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/02/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h2 id="當初為什麼報名體驗營"><a href="#當初為什麼報名體驗營" class="headerlink" title="當初為什麼報名體驗營?"></a>當初為什麼報名體驗營?</h2><p>內心有個聲音叫我去釐清真正的渴望和需求，理解身為一個成熟人類的社會責任，以便能更好地安排未來幾十年的職場活動，以及生活各層面的內容。</p>
-<h2 id="最大的收獲是"><a href="#最大的收獲是" class="headerlink" title="最大的收獲是?"></a>最大的收獲是?</h2><p>使用Hexo初步完成個人客製化樣式部落格。<br>另外對於排版與整體設計亦有了一個初步的認識。相信在接下來的學習過程裡，我會變得更能掌握這領域的知識；並期許自己能夠靈活運用、舉一反三。</p>
-<h2 id="最喜歡體驗營的哪些活動"><a href="#最喜歡體驗營的哪些活動" class="headerlink" title="最喜歡體驗營的哪些活動?"></a>最喜歡體驗營的哪些活動?</h2><p>12小組每周四舉辦的線上讀書會。謝謝組員們，特別感謝 Arirel Yao、Jiahe、Mars 。</p>
-<h2 id="對課程的建議或鼓勵"><a href="#對課程的建議或鼓勵" class="headerlink" title="對課程的建議或鼓勵?"></a>對課程的建議或鼓勵?</h2><p>感謝六角學院推出優質活動，讓我在學習的過程中結識到不同背景相同目標的夥伴們。<br>最後要非常感謝所有批改程式碼、願意給予建議的「Mentor」。</p>
-<p>“所以，這次只到6&#x2F;9……”<br>“能再寫一次，足矣”<br>“因為今天”</p>
-<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/28e51e98a75f8d69c10f0781671678c9.jpg?alt=media&token=bd902812-5393-48ba-9d8e-534d825d2e72" alt="再看一次">
-
-<h6 id="圖片取自-©火鳳燎原-陳某-All-Rights-Reserved"><a href="#圖片取自-©火鳳燎原-陳某-All-Rights-Reserved" class="headerlink" title="圖片取自 ©火鳳燎原 陳某 All Rights Reserved."></a>圖片取自 ©火鳳燎原 陳某 All Rights Reserved.</h6>]]></content>
-      <tags>
-        <tag>Essay</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/IWishIKnewHowToQuitYou/2024/05/29/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>我比不好還更好</title>
     <url>/IWishIKnewHowToQuitYou/2024/05/30/%E6%88%91%E6%AF%94%E4%B8%8D%E5%A5%BD%E9%82%84%E6%9B%B4%E5%A5%BD/</url>
     <content><![CDATA[<p>又過完一個<br>沒有別人的一年<br>很寂寞吧<br>有些痂被撕開<br>裡面流出膿血</p>
@@ -244,6 +211,64 @@
 ]]></content>
       <tags>
         <tag>Quotes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2024 六角學院軟體工程師體驗營心得</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/02/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h2 id="當初為什麼報名體驗營"><a href="#當初為什麼報名體驗營" class="headerlink" title="當初為什麼報名體驗營?"></a>當初為什麼報名體驗營?</h2><p>內心有個聲音叫我去釐清真正的渴望和需求，理解身為一個成熟人類的社會責任，以便能更好地安排未來幾十年的職場活動，以及生活各層面的內容。</p>
+<h2 id="最大的收獲是"><a href="#最大的收獲是" class="headerlink" title="最大的收獲是?"></a>最大的收獲是?</h2><p>使用Hexo初步完成個人客製化樣式部落格。<br>另外對於排版與整體設計亦有了一個初步的認識。相信在接下來的學習過程裡，我會變得更能掌握這領域的知識；並期許自己能夠靈活運用、舉一反三。</p>
+<h2 id="最喜歡體驗營的哪些活動"><a href="#最喜歡體驗營的哪些活動" class="headerlink" title="最喜歡體驗營的哪些活動?"></a>最喜歡體驗營的哪些活動?</h2><p>第12小組每周四舉辦的線上讀書會。謝謝組員們，特別感謝 Arirel Yao、Jiahe、Mars 。</p>
+<h2 id="哪些自己可以做得很好的地方？"><a href="#哪些自己可以做得很好的地方？" class="headerlink" title="哪些自己可以做得很好的地方？"></a>哪些自己可以做得很好的地方？</h2><p>時間管理尚待加強。</p>
+<h2 id="對課程的建議或鼓勵"><a href="#對課程的建議或鼓勵" class="headerlink" title="對課程的建議或鼓勵?"></a>對課程的建議或鼓勵?</h2><p>感謝六角學院推出優質活動，讓我在學習的過程中結識到不同背景相同目標的夥伴們。<br>最後要非常感謝所有批改程式碼、願意給予建議的「Mentor」。</p>
+<p>“所以，這次只到6&#x2F;9……”<br>“能再寫一次，足矣”<br>“因為今天”</p>
+<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/28e51e98a75f8d69c10f0781671678c9.jpg?alt=media&token=bd902812-5393-48ba-9d8e-534d825d2e72" alt="再看一次">
+
+
+<h6 id="圖片取自-©火鳳燎原-陳某-All-Rights-Reserved"><a href="#圖片取自-©火鳳燎原-陳某-All-Rights-Reserved" class="headerlink" title="圖片取自 ©火鳳燎原 陳某 All Rights Reserved."></a>圖片取自 ©火鳳燎原 陳某 All Rights Reserved.</h6>]]></content>
+      <tags>
+        <tag>Essay</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拆隊專家？ D級交易？？ 劍指總冠軍！！！</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/03/%E6%8B%86%E9%9A%8A%E5%B0%88%E5%AE%B6%EF%BC%9F%20D%E7%B4%9A%E4%BA%A4%E6%98%93%EF%BC%9F%20%E5%8A%8D%E6%8C%87%E7%B8%BD%E5%86%A0%E8%BB%8D%EF%BC%81%20/</url>
+    <content><![CDATA[<div class="pic">
+   <img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Blog%20Materials%2Ff28607ef-7733-46ed-83a0-9869556a81b1.jpg?alt=media&token=423a7b48-eb9c-4d6e-bc0e-500a2b540315" alt="FaceThePast-KI">
+</div>
+
+<p>當昔日狀元離開Cleveland Cavaliers後，<br>Irving 就一直備受外界的質疑。<br>顛峰之年加盟Boston Celtics卻遭遇青壯奪權刷分、新人搶位排擠的鳥事…<br>轉隊來到Brooklyn Nets 與 Kevin Durant &amp; James Harden 組建三巨頭，<br>無奈被傷病及關鍵戰役對手惡意犯規擊敗。<br>場外的言論和行為，<br>更是險些摧毀他的職業生涯 … …</p>
+<p>但是來到陌生的Dallas後一切都變了。<br>Mavericks不僅給予了Irving足夠的尊重，<br>並且無論是球隊老板球隊球員乃至當家球星都堅定著支持Irving…<br>而最終Irving也用一座西區冠軍<br>回應球團信任與籃球純粹的喜愛。</p>
+<h5 id="初似墬入無底深淵，"><a href="#初似墬入無底深淵，" class="headerlink" title="初似墬入無底深淵，"></a>初似墬入無底深淵，</h5><p>未想；</p>
+<h5 id="終竟踏出萬里征途。"><a href="#終竟踏出萬里征途。" class="headerlink" title="終竟踏出萬里征途。"></a>終竟踏出萬里征途。</h5><h5 id="那些沒能打倒你的事，"><a href="#那些沒能打倒你的事，" class="headerlink" title="那些沒能打倒你的事，"></a>那些沒能打倒你的事，</h5><p>最終；</p>
+<h5 id="會變成你克服一初的無畏信念。"><a href="#會變成你克服一初的無畏信念。" class="headerlink" title="會變成你克服一初的無畏信念。"></a>會變成你克服一初的無畏信念。</h5><p>媒體球評球迷普遍都是說31歲的“詹皇”帶著24歲的Irving獲得生涯首冠。<br>那麼今年為何不能期待，<br>32歲的Irving將輔佐25歲的歐洲新王登上王座?</p>
+<p>十年河東十年河西，<br>這回憑什麼不能是他呢?</p>
+<Style>
+ .pic {
+   position: relative; /*偽元素的基準*/
+}
+.pic::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: calc(100% - 20px); /*減去左右的斜線框一半的值×2的算式*/
+   height: calc(100% - 20px); /*減去上下的斜線框一半的值×2的算式*/
+   border-image-source: repeating-linear-gradient(
+      45deg, /*旋轉45度*/
+      #ffffff  0px, #ffffff  2px, /*套用顏色的線條*/
+      rgba(0 0 0 / 0) 2px, rgba(0 0 0 / 0) 7px /*邊界（留白)的部分*/
+   );
+   border-image-slice: 20; /*指定border 4邊的使用範圍*/
+   border-width: 20px; /*框線的寬度*/
+   border-image-repeat: round; /*如磁磚狀重複顯示*/
+   border-style: solid; /*以實心線呈現*/
+}   
+
+</Style>]]></content>
+      <tags>
+        <tag>Essay</tag>
       </tags>
   </entry>
 </search>
