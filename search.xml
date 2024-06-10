@@ -58,7 +58,7 @@
 
 /* https://www.colorhexa.com/ */
 :root{
-    --very-dark-gray:#3B3B3B;
+    --very-very-dark-gray:#3B3B3B;
     --dark-gray:#919191;
     --very-light-gray:#f1f1f1;
     --white:#ffffff;
@@ -104,7 +104,7 @@ body{
 }
 
 .Cards-list h2{
-    color: var(--very-dark-gray);
+    color: var(--very-very-dark-gray);
     font-size: 28px;
     line-height: 33.6px;
     font-weight: 700;
@@ -130,7 +130,7 @@ body{
     display: inline-block;
     text-align: center;
     background-color: var(--very-light-gray);
-    color: var(--very-dark-gray);
+    color: var(--very-very-dark-gray);
     line-height: 24px;
     padding:4px 12px;
     margin-right: 16px;
@@ -507,6 +507,18 @@ body{
 </Style>]]></content>
       <tags>
         <tag>Essay</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>詩人節</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/10/%E8%A9%A9%E4%BA%BA%E7%AF%80/</url>
+    <content><![CDATA[<p>沒有詩寫過多</p>
+<p>只有粽慾過度</p>
+<p>蛋都立好了</p>
+<p>棉被還捨不得收</p>
+<h6 id="詩文｜李豪《詩人節》"><a href="#詩文｜李豪《詩人節》" class="headerlink" title="詩文｜李豪《詩人節》"></a>詩文｜李豪《詩人節》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
       </tags>
   </entry>
   <entry>
