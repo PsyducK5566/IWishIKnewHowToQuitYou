@@ -219,10 +219,189 @@ body{
       </tags>
   </entry>
   <entry>
+    <title>SQL小節作業：家具店的菜雞銷售奇遇記</title>
+    <url>/IWishIKnewHowToQuitYou/2024/10/28/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98/</url>
+    <content><![CDATA[<p>謹以本篇記錄小美運用入門SQL語法，維運『築夢家居』的事績。</p>
+<h2 id="資料載入"><a href="#資料載入" class="headerlink" title="資料載入"></a>資料載入</h2><p>首先，我們使用這段程式碼創建一個名為products的資料表，並插入一些商品數據。<br><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products (</span><br><span class="line">   name <span class="type">VARCHAR</span>(<span class="number">100</span>),         <span class="comment">-- 商品名稱</span></span><br><span class="line">   price <span class="type">INTEGER</span>,            <span class="comment">-- 原價</span></span><br><span class="line">   discount_price <span class="type">INTEGER</span>,    <span class="comment">-- 優惠價</span></span><br><span class="line">   stock <span class="type">INTEGER</span>,            <span class="comment">-- 庫存數量</span></span><br><span class="line">   category <span class="type">VARCHAR</span>(<span class="number">50</span>),      <span class="comment">-- 商品分類</span></span><br><span class="line">   status <span class="type">VARCHAR</span>(<span class="number">20</span>)         <span class="comment">-- 商品狀態</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [1]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F1.png?alt=media&token=af1d0c30-9165-45c0-950e-891d3d0c4d82" alt="create table"></p>
+<blockquote>
+<p><strong>CREATE TABLE products：</strong> 這行表示我們正在創建一個名為products的資料表。<br><strong>name VARCHAR(100)：</strong> 這欄位儲存商品名稱，最多可包含100個字元。<br><strong>price INTEGER：</strong> 這欄位儲存商品的原價，以整數形式表示。<br><strong>discount_price INTEGER：</strong> 這欄位儲存商品的優惠價，也是整數。<br><strong>stock INTEGER：</strong> 這欄位表示庫存數量，使用整數。<br><strong>category VARCHAR(50)：</strong> 這欄位表示商品的分類，最多可包含50個字元。<br><strong>status VARCHAR(20)：</strong> 這欄位表示商品的狀態，例如“active”或“inactive”，最多可包含20個字元。</p>
+</blockquote>
+<p>接著使用下列程式碼輸入資料。</p>
+<p><font color=#0000FF>  In [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> products (name, price, discount_price, stock, category, status) <span class="keyword">VALUES</span></span><br><span class="line">   (<span class="string">&#x27;北歐風雙人沙發&#x27;</span>, <span class="number">39900</span>, <span class="number">35900</span>, <span class="number">3</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;貓抓皮L型沙發&#x27;</span>, <span class="number">58900</span>, <span class="number">52900</span>, <span class="number">1</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;典雅三人座沙發&#x27;</span>, <span class="number">42800</span>, <span class="number">42800</span>, <span class="number">5</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;工業風電視櫃&#x27;</span>, <span class="number">5900</span>, <span class="number">4900</span>, <span class="number">12</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;簡約書櫃&#x27;</span>, <span class="number">3500</span>, <span class="number">3500</span>, <span class="number">8</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;玄關鞋櫃&#x27;</span>, <span class="number">2900</span>, <span class="number">2900</span>, <span class="number">15</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;日式雙人床架&#x27;</span>, <span class="number">12000</span>, <span class="number">11200</span>, <span class="number">6</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;掀床五尺雙人床&#x27;</span>, <span class="number">19900</span>, <span class="number">18900</span>, <span class="number">2</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;兒童床架&#x27;</span>, <span class="number">8900</span>, <span class="number">8900</span>, <span class="number">0</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;電腦辦公椅&#x27;</span>, <span class="number">4500</span>, <span class="number">3900</span>, <span class="number">20</span>, <span class="string">&#x27;椅子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;餐椅四入組&#x27;</span>, <span class="number">6000</span>, <span class="number">5200</span>, <span class="number">8</span>, <span class="string">&#x27;椅子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;北歐風餐桌&#x27;</span>, <span class="number">15800</span>, <span class="number">14800</span>, <span class="number">4</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;實木咖啡桌&#x27;</span>, <span class="number">3200</span>, <span class="number">2900</span>, <span class="number">10</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;電競書桌&#x27;</span>, <span class="number">8900</span>, <span class="number">8900</span>, <span class="number">0</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [2]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F2.png?alt=media&token=e945cdf0-d7f2-468e-91a5-3245f543c8d7" alt="create table data"></p>
+<blockquote>
+<p><strong>INSERT INTO products (…) VALUES (…)：</strong>這段語句用於向products表中插入多行數據。<br>每一行代表一個商品的數據，包括名稱、原價、優惠價、庫存、分類和狀態。</p>
+</blockquote>
+<p>現在我們就可以使用以下SQL查詢，來查看資料庫中products表的所有資料。<br><font color=#0000FF>  In [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [3]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F3.png?alt=media&token=70b9c983-c836-4e3a-957b-ccad1ff77e23" alt="product databate"></p>
+<h2 id="基礎比較運算："><a href="#基礎比較運算：" class="headerlink" title="基礎比較運算："></a>基礎比較運算：</h2><h3 id="情境-1：單品查詢"><a href="#情境-1：單品查詢" class="headerlink" title="情境 1：單品查詢"></a>情境 1：單品查詢</h3><h4 id="客人：「這張北歐風雙人沙發多少錢？」"><a href="#客人：「這張北歐風雙人沙發多少錢？」" class="headerlink" title="客人：「這張北歐風雙人沙發多少錢？」"></a>客人：「這張北歐風雙人沙發多少錢？」</h4><p><font color=#0000FF> In [4]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;北歐風雙人沙發&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [4]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq1.png?alt=media&token=0f69dea2-10ec-493b-ac18-3cef62264953" alt="where name"></p>
+<blockquote>
+<p>這段查詢的作用是從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品名稱必須是“北歐風雙人沙發”。</p>
+</blockquote>
+<h2 id="情境-2：價格比較"><a href="#情境-2：價格比較" class="headerlink" title="情境 2：價格比較"></a>情境 2：價格比較</h2><h3 id="客人：「請列出-5000-元以下的櫃子有哪些？」"><a href="#客人：「請列出-5000-元以下的櫃子有哪些？」" class="headerlink" title="客人：「請列出 5000 元以下的櫃子有哪些？」"></a>客人：「請列出 5000 元以下的櫃子有哪些？」</h3><p><font color=#0000FF> In [5]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;櫃子&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&lt;</span> <span class="number">5000</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [5]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq2.png?alt=media&token=7a8f69c1-79cc-4744-8c3e-94de0721fe0f" alt="where and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“櫃子”且原價低於5000。</p>
+</blockquote>
+<h2 id="情境-3：庫存確認"><a href="#情境-3：庫存確認" class="headerlink" title="情境 3：庫存確認"></a>情境 3：庫存確認</h2><h3 id="客人：「日式雙人床架還有貨嗎？」"><a href="#客人：「日式雙人床架還有貨嗎？」" class="headerlink" title="客人：「日式雙人床架還有貨嗎？」"></a>客人：「日式雙人床架還有貨嗎？」</h3><p><font color=#0000FF> In [6]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;日式雙人床架&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [6]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq3.png?alt=media&token=a1074bad-6f29-4b10-ab0c-672169bc51bd" alt="where"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇“日式雙人床架”的庫存數量。如圖所示，剩下6個。</p>
+</blockquote>
+<h2 id="邏輯運算-AND："><a href="#邏輯運算-AND：" class="headerlink" title="邏輯運算 AND："></a>邏輯運算 AND：</h2><h3 id="情境-4：預算內的商品"><a href="#情境-4：預算內的商品" class="headerlink" title="情境 4：預算內的商品"></a>情境 4：預算內的商品</h3><h4 id="客人：「想找-4-萬以下，而且有現貨的沙發」"><a href="#客人：「想找-4-萬以下，而且有現貨的沙發」" class="headerlink" title="客人：「想找 4 萬以下，而且有現貨的沙發」"></a>客人：「想找 4 萬以下，而且有現貨的沙發」</h4><p><font color=#0000FF> In [7]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;沙發&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&lt;</span> <span class="number">40000</span> <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [7]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq4.png?alt=media&token=ecb72dfb-4872-4197-af8c-6428663c4444" alt="where and and "></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“沙發”、原價低於40,000以及庫存數量大於0。</p>
+</blockquote>
+<h3 id="情境-5：特價且有貨"><a href="#情境-5：特價且有貨" class="headerlink" title="情境 5：特價且有貨"></a>情境 5：特價且有貨</h3><h4 id="客人：「沙發有哪些特價且現貨的品項？」"><a href="#客人：「沙發有哪些特價且現貨的品項？」" class="headerlink" title="客人：「沙發有哪些特價且現貨的品項？」"></a>客人：「沙發有哪些特價且現貨的品項？」</h4><p><font color=#0000FF> In [8]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;沙發&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&gt;</span> discount_price <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [8]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq5.png?alt=media&token=4cd4560b-a2bd-437e-90f9-c31ee94b4bc5" alt="where and and "></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“沙發”、原價大於優惠價（表示特價）以及庫存數量大於0。</p>
+</blockquote>
+<h2 id="邏輯運算-OR："><a href="#邏輯運算-OR：" class="headerlink" title="邏輯運算 OR："></a>邏輯運算 OR：</h2><h3 id="情境-6：多分類查詢"><a href="#情境-6：多分類查詢" class="headerlink" title="情境 6：多分類查詢"></a>情境 6：多分類查詢</h3><h4 id="客人：「我要找櫃子或桌子」"><a href="#客人：「我要找櫃子或桌子」" class="headerlink" title="客人：「我要找櫃子或桌子」"></a>客人：「我要找櫃子或桌子」</h4><p><font color=#0000FF> In [9]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;櫃子&#x27;</span> <span class="keyword">OR</span> category <span class="operator">=</span> <span class="string">&#x27;桌子&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [9]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq6.png?alt=media&token=844a66fa-1da7-4b52-a0a7-d15544827154" alt="where or"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“櫃子”或“桌子”。這樣就能找到所有符合這些分類的商品。</p>
+</blockquote>
+<h3 id="情境-7：指定商品"><a href="#情境-7：指定商品" class="headerlink" title="情境 7：指定商品"></a>情境 7：指定商品</h3><h4 id="客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」"><a href="#客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」" class="headerlink" title="客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」"></a>客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」</h4><p><font color=#0000FF> In [10]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;北歐風雙人沙發&#x27;</span>, <span class="string">&#x27;貓抓皮L型沙發&#x27;</span>) <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [10]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq7.png?alt=media&token=27062c29-0cab-48df-ab02-3679642e3000" alt="where namee in and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱和庫存數量，條件是商品名稱是“北歐風雙人沙發”或“貓抓皮L型沙發”，並且庫存數量大於0。這樣就能從兩個商品中，選出還有庫存的商品。</p>
+</blockquote>
+<h2 id="IN-運算："><a href="#IN-運算：" class="headerlink" title="IN 運算："></a>IN 運算：</h2><h3 id="情境-8：多分類查詢"><a href="#情境-8：多分類查詢" class="headerlink" title="情境 8：多分類查詢"></a>情境 8：多分類查詢</h3><h4 id="客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」"><a href="#客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」" class="headerlink" title="客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」"></a>客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」</h4><p><font color=#0000FF> In [11]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;桌子&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [11]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq8.png?alt=media&token=8e7c483e-c531-408f-9dcb-50d95086c21b" alt="where in"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品分類為“沙發”、“櫃子”或“桌子”。這樣就能找到所有屬於這三種類別的產品。</p>
+</blockquote>
+<h2 id="情境-9：特定商品"><a href="#情境-9：特定商品" class="headerlink" title="情境 9：特定商品"></a>情境 9：特定商品</h2><h3 id="客人：「電腦辦公椅和餐椅四入組的價格是多少？」"><a href="#客人：「電腦辦公椅和餐椅四入組的價格是多少？」" class="headerlink" title="客人：「電腦辦公椅和餐椅四入組的價格是多少？」"></a>客人：「電腦辦公椅和餐椅四入組的價格是多少？」</h3><p><font color=#0000FF> In [12]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;電腦辦公椅&#x27;</span>, <span class="string">&#x27;餐椅四入組&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [12]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq9.png?alt=media&token=4a409e6d-0a66-431e-b0df-0b7bb3a4c9a0" alt="where name in"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價和優惠價，條件是商品名稱是“電腦辦公椅”或“餐椅四入組”</p>
+</blockquote>
+<h2 id="BETWEEN："><a href="#BETWEEN：" class="headerlink" title="BETWEEN："></a>BETWEEN：</h2><h3 id="情境-10：價格區間"><a href="#情境-10：價格區間" class="headerlink" title="情境 10：價格區間"></a>情境 10：價格區間</h3><h4 id="客人：「想找-10000-到-20000-之間的商品有哪些？」"><a href="#客人：「想找-10000-到-20000-之間的商品有哪些？」" class="headerlink" title="客人：「想找 10000 到 20000 之間的商品有哪些？」"></a>客人：「想找 10000 到 20000 之間的商品有哪些？」</h4><p><font color=#0000FF>  In [13]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> price <span class="keyword">BETWEEN</span> <span class="number">10000</span> <span class="keyword">AND</span> <span class="number">20000</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [13]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq10.png?alt=media&token=8e417fca-c3f1-415f-9b60-28a61cd8b8df" alt="where between and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，條件是商品的價格在10,000到20,000之間。</p>
+</blockquote>
+<h3 id="情境-11：庫存區間"><a href="#情境-11：庫存區間" class="headerlink" title="情境 11：庫存區間"></a>情境 11：庫存區間</h3><h4 id="主管：「請列出庫存在-5-到-15-之間的商品」"><a href="#主管：「請列出庫存在-5-到-15-之間的商品」" class="headerlink" title="主管：「請列出庫存在 5 到 15 之間的商品」"></a>主管：「請列出庫存在 5 到 15 之間的商品」</h4><p><font color=#0000FF>  In [14]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> stock <span class="keyword">BETWEEN</span> <span class="number">5</span> <span class="keyword">AND</span> <span class="number">15</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [14]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq11.png?alt=media&token=ea97af73-0475-4491-9470-e45fe1ce0eeb" alt="where between and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品的庫存數量在5到15之間。</p>
+</blockquote>
+<h2 id="NOT-IN："><a href="#NOT-IN：" class="headerlink" title="NOT IN："></a>NOT IN：</h2><h3 id="情境-12：排除商品"><a href="#情境-12：排除商品" class="headerlink" title="情境 12：排除商品"></a>情境 12：排除商品</h3><h4 id="主管：「列出除了沙發和床架以外的商品」"><a href="#主管：「列出除了沙發和床架以外的商品」" class="headerlink" title="主管：「列出除了沙發和床架以外的商品」"></a>主管：「列出除了沙發和床架以外的商品」</h4><p><font color=#0000FF>  In [15]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;床架&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [15]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq12.png?alt=media&token=76b87bab-1983-4fe1-9899-9bca9e822d7b" alt="where not in"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品的分類不屬於“沙發”或“床架”。</p>
+</blockquote>
+<h2 id="更新和刪除："><a href="#更新和刪除：" class="headerlink" title="更新和刪除："></a>更新和刪除：</h2><h3 id="情境-13：調整價格"><a href="#情境-13：調整價格" class="headerlink" title="情境 13：調整價格"></a>情境 13：調整價格</h3><h4 id="主管：「北歐風雙人沙發要調降-2000-元」"><a href="#主管：「北歐風雙人沙發要調降-2000-元」" class="headerlink" title="主管：「北歐風雙人沙發要調降 2000 元」"></a>主管：「北歐風雙人沙發要調降 2000 元」</h4><p><font color=#0000FF>  In [16]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> price <span class="operator">=</span> price <span class="operator">-</span> <span class="number">2000</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;北歐風雙人沙發&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [16]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13.png?alt=media&token=7190057c-28f6-44d3-b685-8c38a86e63b7" alt="update set price where name"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13-table.png?alt=media&token=0d709478-d812-4b95-ae96-4fa4abc074f5" alt="updated table"></p>
+<blockquote>
+<p>這段查詢會更新products表中“北歐風雙人沙發”的價格，將其現有價格減去2,000元。<br>更新後查詢「北歐風雙人沙發」price 應如上圖所示。</p>
+</blockquote>
+<h2 id="情境-14：更新庫存"><a href="#情境-14：更新庫存" class="headerlink" title="情境 14：更新庫存"></a>情境 14：更新庫存</h2><h3 id="主管：「電腦辦公椅進了-5-張」"><a href="#主管：「電腦辦公椅進了-5-張」" class="headerlink" title="主管：「電腦辦公椅進了 5 張」"></a>主管：「電腦辦公椅進了 5 張」</h3><p><font color=#FF0000> In [17]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> stock <span class="operator">=</span> stock <span class="operator">+</span> <span class="number">5</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;電腦辦公椅&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [17]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13.png?alt=media&token=7190057c-28f6-44d3-b685-8c38a86e63b7" alt="update set stock where name"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq14-table.png?alt=media&token=a259eff6-6bc7-46a5-8a34-c39b946b0b92" alt="update table"></p>
+<blockquote>
+<p>這段查詢會更新products表中“電腦辦公椅”的庫存數量，將其現有庫存增加5張。<br>更新後查詢「電腦辦公椅」stock 應如上圖所示。</p>
+</blockquote>
+<h3 id="情境-15：清除資料"><a href="#情境-15：清除資料" class="headerlink" title="情境 15：清除資料"></a>情境 15：清除資料</h3><h4 id="主管：「要清掉兒童床架和電競書桌的資料」"><a href="#主管：「要清掉兒童床架和電競書桌的資料」" class="headerlink" title="主管：「要清掉兒童床架和電競書桌的資料」"></a>主管：「要清掉兒童床架和電競書桌的資料」</h4><p><font color=#FF0000>In [18]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;兒童床架&#x27;</span>, <span class="string">&#x27;電競書桌&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [18]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq15.png?alt=media&token=8f71e060-3dfb-4f92-b060-f7fdfa9755b3" alt="delete"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq15-table.png?alt=media&token=89285b10-ebb6-43c2-a416-fc85c9e759bd" alt="delete"></p>
+<blockquote>
+<p>這段查詢會從products表中刪除商品名稱為“兒童床架”和“電競書桌”的所有資料。<br>更新後的資料庫應如上圖所示。</p>
+</blockquote>
+<h2 id="回顧：-本次練習常用語法"><a href="#回顧：-本次練習常用語法" class="headerlink" title="回顧： 本次練習常用語法"></a>回顧： 本次練習常用語法</h2><p><font color=#FF6600>SELECT</font> column_name<br><font color=#FF6600>FROM</font> table_name</p>
+<blockquote>
+<blockquote>
+<p>SELECT與FROM 敘述是從指定的資料表中選擇欄位的查詢語法，查詢結果依據其存在資料表中的順序所呈現。</p>
+</blockquote>
+</blockquote>
+<p><font color=#FF6600>WHERE</font> condirion</p>
+<blockquote>
+<blockquote>
+<p>WHERE 敘述能以「條件」作為篩選觀測值的依據。</p>
+</blockquote>
+</blockquote>
+<p>如果沒有問題的話，那我們就可以前往下一章節囉。</p>
+]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>五件討厭的事</title>
     <url>/IWishIKnewHowToQuitYou/2024/06/04/%E4%BA%94%E4%BB%B6%E8%A8%8E%E5%8E%AD%E7%9A%84%E4%BA%8B/</url>
     <content><![CDATA[<p>討厭說謊<br>但實話總讓人傷心<br>不掉眼淚就是堅強的話<br>為何我站不起來<br>⠀<br>討厭自己那麼努力<br>差點能成為一個擅長等待的人<br>然而火燒太快<br>雨總是來不及下<br>⠀<br>討厭你那麼愛錢<br>卻一點也不願意愛我<br>我如此富裕<br>感情餘額總是赤字<br>⠀<br>討厭心酸的感覺<br>明明大家都說酸鹼可以中和<br>為什麼鹼性的眼淚<br>沒讓我復原<br>⠀<br>討厭大部分美好的話語後面<br>都會被加上「但是」<br>比如：我愛妳但是<br>而不是：但是我愛妳 </p>
 <h6 id="詩文｜靡靡-Tiny《五件討厭的事》"><a href="#詩文｜靡靡-Tiny《五件討厭的事》" class="headerlink" title="詩文｜靡靡 Tiny《五件討厭的事》"></a>詩文｜靡靡 Tiny《五件討厭的事》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你一定是在設計系畢業</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/16/%E4%BD%A0%E4%B8%80%E5%AE%9A%E6%98%AF%E5%9C%A8%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%95%A2%E6%A5%AD/</url>
+    <content><![CDATA[<p>你一定是在設計系畢業</p>
+<p>才能如此從容不迫地</p>
+<p>設計相遇</p>
+<p>設計對眼</p>
+<p>設計漏拍的心跳</p>
+<p>設計呼吸的躲藏</p>
+<p>以及世界的停頓</p>
+<h6 id="詩文｜劉倩妏〈你一定是在設計系畢業〉"><a href="#詩文｜劉倩妏〈你一定是在設計系畢業〉" class="headerlink" title="詩文｜劉倩妏〈你一定是在設計系畢業〉"></a>詩文｜劉倩妏〈你一定是在設計系畢業〉</h6>]]></content>
       <tags>
         <tag>Poetry</tag>
       </tags>
@@ -246,21 +425,6 @@ body{
 ]]></content>
       <tags>
         <tag>Quotes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你一定是在設計系畢業</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/16/%E4%BD%A0%E4%B8%80%E5%AE%9A%E6%98%AF%E5%9C%A8%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%95%A2%E6%A5%AD/</url>
-    <content><![CDATA[<p>你一定是在設計系畢業</p>
-<p>才能如此從容不迫地</p>
-<p>設計相遇</p>
-<p>設計對眼</p>
-<p>設計漏拍的心跳</p>
-<p>設計呼吸的躲藏</p>
-<p>以及世界的停頓</p>
-<h6 id="詩文｜劉倩妏〈你一定是在設計系畢業〉"><a href="#詩文｜劉倩妏〈你一定是在設計系畢業〉" class="headerlink" title="詩文｜劉倩妏〈你一定是在設計系畢業〉"></a>詩文｜劉倩妏〈你一定是在設計系畢業〉</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
       </tags>
   </entry>
   <entry>
@@ -552,6 +716,18 @@ body{
       </tags>
   </entry>
   <entry>
+    <title>水星逆行</title>
+    <url>/IWishIKnewHowToQuitYou/2024/10/28/%E6%B0%B4%E6%98%9F%E9%80%86%E8%A1%8C/</url>
+    <content><![CDATA[<p>很難過的時候<br>就把所有的燈關掉<br>看一部電影<br>在最快樂的橋段裡睡去<br>當作沒有看見<br>那個不園滿的結局</p>
+<p>花一點時間<br>關心天氣<br>當那個提醒大家的人<br>接下來幾天都不太會下雨<br>快點把悲傷拿出來<br>好好曬乾</p>
+<p>這樣悶熱的夏天<br>特別適合傷心的人<br>哭不出來的眼淚<br>都變成汗水<br>讓他流一個晚上<br>感冒會比較容易好起來</p>
+<p>趕快休息<br>明天記得起床吃早餐<br>你可以從現在開始期待<br>飲料杯的笑話<br>比你糟透的人生還爛</p>
+<h6 id="詩文｜吳旻育《大人症候群》"><a href="#詩文｜吳旻育《大人症候群》" class="headerlink" title="詩文｜吳旻育《大人症候群》"></a>詩文｜吳旻育《大人症候群》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>拆隊專家？ D級交易？？</title>
     <url>/IWishIKnewHowToQuitYou/2024/06/03/%E6%8B%86%E9%9A%8A%E5%B0%88%E5%AE%B6%EF%BC%9FD%E7%B4%9A%E4%BA%A4%E6%98%93%EF%BC%9F/</url>
     <content><![CDATA[<div class="pic">
@@ -591,18 +767,6 @@ body{
 </Style>]]></content>
       <tags>
         <tag>Essay</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>水星逆行</title>
-    <url>/IWishIKnewHowToQuitYou/2024/10/28/%E6%B0%B4%E6%98%9F%E9%80%86%E8%A1%8C/</url>
-    <content><![CDATA[<p>很難過的時候<br>就把所有的燈關掉<br>看一部電影<br>在最快樂的橋段裡睡去<br>當作沒有看見<br>那個不園滿的結局</p>
-<p>花一點時間<br>關心天氣<br>當那個提醒大家的人<br>接下來幾天都不太會下雨<br>快點把悲傷拿出來<br>好好曬乾</p>
-<p>這樣悶熱的夏天<br>特別適合傷心的人<br>哭不出來的眼淚<br>都變成汗水<br>讓他流一個晚上<br>感冒會比較容易好起來</p>
-<p>趕快休息<br>明天記得起床吃早餐<br>你可以從現在開始期待<br>飲料杯的笑話<br>比你糟透的人生還爛</p>
-<h6 id="詩文｜吳旻育《大人症候群》"><a href="#詩文｜吳旻育《大人症候群》" class="headerlink" title="詩文｜吳旻育《大人症候群》"></a>詩文｜吳旻育《大人症候群》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
       </tags>
   </entry>
   <entry>
