@@ -1,10 +1,13 @@
 ---
-title: SQL小節作業：家具店的菜雞銷售奇遇記
+title: SQL小節練習：家具店的菜雞銷售奇遇記
 date: 2024-10-28 03:10:09
 tags: Practice
 description: 集合運算
 ---
 謹以本篇記錄小美同學運用入門SQL語法，維運『築夢家居』的事績。
+
+[課堂簡報連結](https://gamma.app/docs/SQL--23heyix4r93u5u0?mode=doc)
+[線上資料庫操作網站 PG-SQL:Temporary Postgres Database.]( post-sql.com)
 
 ## 資料載入
 首先，我們使用這段程式碼創建一個名為products的資料表，並插入一些商品數據。
@@ -277,7 +280,7 @@ WHERE name = '北歐風雙人沙發';
 ## 情境 14：更新庫存
 ### 主管：「電腦辦公椅進了 5 張」
 
-<font color=#FF0000> In [17]: </font>
+<font color=#0000FF> In [17]: </font>
 
 ```sql
 UPDATE products 
@@ -295,7 +298,7 @@ WHERE name = '電腦辦公椅';
 
 ### 情境 15：清除資料
 #### 主管：「要清掉兒童床架和電競書桌的資料」
-<font color=#FF0000>In [18]: </font>
+<font color=#0000FF>In [18]: </font>
 
 ```sql
 DELETE FROM products 
@@ -315,7 +318,7 @@ WHERE name IN ('兒童床架', '電競書桌');
 <font color=#FF6600>FROM</font> table_name
 >>SELECT與FROM 敘述是從指定的資料表中選擇欄位的查詢語法，查詢結果依據其存在資料表中的順序所呈現。
 
-<font color=#FF6600>WHERE</font> condirion
+<font color=#FF6600>WHERE</font> condition
 >>WHERE 敘述能以「條件」作為篩選觀測值的依據。
 
 如果沒有問題的話，那我們就可以前往下一章節囉。d(d＇∀＇)
