@@ -7,6 +7,36 @@ description: Lady YinMin's Regards is a legendary item in CodeWars.
 The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool.
 ---
 
+### [「 Training JS #9: loop statement --while and do..while - 基礎迴圈 」](https://www.codewars.com/kata/57216d4bcdd71175d6000560)
+要完成這個函數 padIt，我們需要在函數內部撰寫一個循環，該循環會運行 n 次。每次循環，我們會在字符串 str 的左右兩邊交替添加一個 *
+
+```js
+function padIt(str, n) {
+  while (n > 0) {  // 當 n 大於 0 時，繼續循環
+    if (n % 2 === 1) {  // 如果 n 是奇數，則在左邊添加 *
+      str = '*' + str;
+    } else {  // 如果 n 是偶數，則在右邊添加 *
+      str = str + '*';
+    }
+    n--;  // 每次循環後，將 n 減 1
+  }
+  return str;  // 返回最終的填充字符串
+}
+
+// 範例使用
+console.log(padIt("hello", 1)); // 輸出: "*hello"
+console.log(padIt("world", 2)); // 輸出: "*world*"
+console.log(padIt("!", 5));     // 輸出: "**!*"
+```
+>**循環條件：**
+>>使用 <code>while (n > 0)</code> 來確保循環會執行 n 次，每次執行後將 n 減 1。
+
+>**交替填充：**
+>>使用 <code>if (n % 2 === 1)</code> 來檢查 n 是否為奇數，如果是，則在字符串 str 的左邊添加一個 *。
+>>否則，則在字符串 <code>str</code> 的右邊添加一個 *。
+>**減少計數器：**
+>>在每次循環結束時，將 n 減 1，以便最終能夠正確地結束循環。
+
 ----
 
 ### [「 Break camelCase - 打斷駝峰命名 」](https://www.codewars.com/kata/5208f99aee097e6552000148)
@@ -58,7 +88,6 @@ function incrementer(nums) {
 console.log(incrementer([1, 2, 3])); // 輸出: [2, 4, 6]
 console.log(incrementer([4, 6, 9, 1, 3])); // 輸出: [5, 8, 2, 5, 8]
 console.log(incrementer([])); // 輸出: []
-
 ```
 >**檢查空陣列：**首先檢查輸入陣列是否為空，如果是，則返回一個空陣列。
 >**遍歷和計算：**使用 <code>map</code> 函數遍歷每個數字。
