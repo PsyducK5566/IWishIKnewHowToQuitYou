@@ -7,6 +7,48 @@ description: Lady YinMin's Regards is a legendary item in CodeWars.
 The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool.
 ---
 
+### [「 Squares sequence - 平方序列 」](https://www.codewars.com/kata/5546180ca783b6d2d5000062)
+描述撰寫的完整 JavaScript 函式，實現從給定數字 x 開始，依次計算前一個數字的平方，並返回長度為 n 的陣列。如果 n <= 0，則返回空陣列：
+
+```js
+function squares(x, n) {
+    // 如果 n 是負數或等於 0，返回空陣列
+    if (n <= 0) {
+        return [];
+    }
+
+    // 初始化結果陣列，並將第一個元素設為 x
+    let result = [x];
+
+    // 從第二個位置開始，計算平方並加入陣列
+    for (let i = 1; i < n; i++) {
+        result.push(result[i - 1] ** 2); // 將前一個數字平方後加入陣列
+    }
+
+    return result; // 返回結果陣列
+}
+
+//test:
+console.log(squares(2, 5)); // [2, 4, 16, 256, 65536]
+console.log(squares(3, 3)); // [3, 9, 81]
+console.log(squares(5, 0)); // []
+console.log(squares(7, -2)); // []
+```
+>**檢查條件：**
+>>如果 n 是負數或 0，直接返回空陣列 []。
+
+>**初始化陣列：**
+>>將 x 作為第一個元素加入陣列。
+
+>**計算平方：**
+>>使用 for 迴圈從第 2 個位置開始（索引為 1），每次將前一個數字平方後，加入到結果陣列中。
+>> <code> result[i - 1] ** 2 </code>來計算平方。
+
+>**返回結果：**
+>>當迴圈結束後，返回包含所有計算結果的陣列。
+
+-----
+
 ### [「 Training JS #9: loop statement --while and do..while - 基礎迴圈 」](https://www.codewars.com/kata/57216d4bcdd71175d6000560)
 要完成這個函數 padIt，我們需要在函數內部撰寫一個循環，該循環會運行 n 次。每次循環，我們會在字符串 str 的左右兩邊交替添加一個 *
 
@@ -34,6 +76,7 @@ console.log(padIt("!", 5));     // 輸出: "**!*"
 >**交替填充：**
 >>使用 <code>if (n % 2 === 1)</code> 來檢查 n 是否為奇數，如果是，則在字符串 str 的左邊添加一個 *。
 >>否則，則在字符串 <code>str</code> 的右邊添加一個 *。
+
 >**減少計數器：**
 >>在每次循環結束時，將 n 減 1，以便最終能夠正確地結束循環。
 
