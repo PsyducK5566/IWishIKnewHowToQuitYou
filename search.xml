@@ -219,9 +219,276 @@ body{
       </tags>
   </entry>
   <entry>
+    <title>SQL小節練習：主鍵、外來鍵、inner join</title>
+    <url>/IWishIKnewHowToQuitYou/2024/11/05/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner-join/</url>
+    <content><![CDATA[<p><a href="https://gamma.app/docs/SQL--23heyix4r93u5u0?mode=doc">課堂簡報連結</a><br><a href="https://pg-sql.com/">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
+<h2 id="Q1：拯救明華國小的資料庫，哪個欄位適合變成外來鍵？"><a href="#Q1：拯救明華國小的資料庫，哪個欄位適合變成外來鍵？" class="headerlink" title="Q1：拯救明華國小的資料庫，哪個欄位適合變成外來鍵？"></a>Q1：拯救明華國小的資料庫，哪個欄位適合變成<strong>外來鍵</strong>？</h2><table>
+  <tr>
+    <th>學生編號</th>
+    <th>姓名</th>
+    <th>班級</th>
+    <th>性別</th>
+    <th>年齡</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>小明</td>
+    <td>三年一班</td>
+    <td>男</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>小華</td>
+    <td>三年二班</td>
+    <td>女</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>小美</td>
+    <td>三年一班</td>
+    <td>男</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>小強</td>
+    <td>三年一班</td>
+    <td>女</td>
+    <td>8</td>
+  </tr>
+   <tr>
+    <td>5</td>
+    <td>小智</td>
+    <td>三年二班</td>
+    <td>男</td>
+    <td>9</td>
+  </tr>
+</table>
+
+<p>班級。因為班級與學生呈現<strong>一對多</strong>的關係，所以應該把班級拆成學生外來鍵。</p>
+<blockquote>
+<p><strong>班級的獨特性：</strong>每個班級會有一個獨特的名稱或編號，用於標識不同的班級。<br><strong>關聯性：</strong>班級可以用來連接到一個包含班級詳細資訊的表，這樣可以實現資料的關聯性。</p>
+</blockquote>
+<p>創建班級資料表<br><font color=#0000FF> In [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> class_list (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY, <span class="comment">--自動生成的唯一識別碼（使用 SERIAL 型別，會自動遞增），作為每個班級的主鍵（PRIMARY KEY）</span></span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>) </span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [1]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-1%262%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E8%A1%A8%E6%A0%BC%E5%BC%8F.png?alt=media&token=b97fc110-7fb1-434b-9bee-02926e59d793" alt="creat table result"></p>
+<p>創建學生資料表<br><font color=#0000FFF> In [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY, <span class="comment">--自動生成的唯一識別碼，作為每個學生的主鍵。</span></span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">    gender <span class="type">VARCHAR</span>(<span class="number">10</span>), <span class="comment">--這是一個整數欄位，用來儲存學生的性別識別碼，參照 gender_list 表格中的 id 欄位。</span></span><br><span class="line">    age <span class="type">INTEGER</span>,</span><br><span class="line">    class_id <span class="type">INTEGER</span>, <span class="comment">--這是一個整數欄位（INTEGER），用來儲存學生所屬班級的識別碼，並且是參照 class_list 表格中的 id 欄位（這是一個外鍵關係，確保學生所屬的班級在 class_list 中是存在的）。</span></span><br><span class="line">    <span class="keyword">FOREIGN</span> KEY (class_id) <span class="keyword">REFERENCES</span> class_list(id) <span class="comment">-- 設定外來鍵關聯。</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [2]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-1%262%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E8%A1%A8%E6%A0%BC%E5%BC%8F.png?alt=media&token=b97fc110-7fb1-434b-9bee-02926e59d793" alt="creat table result"></p>
+<p>新增班級資料<br><font color=#0000FF> In [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> class_list (name) <span class="keyword">VALUES</span> <span class="comment">--這部分表示要向class_list表中插入數據，並指定插入的欄位是name</span></span><br><span class="line">    (<span class="string">&#x27;三年一班&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;三年二班&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [3]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-3%20%E8%BC%B8%E5%85%A5%E6%95%B8%E6%93%9A.png?alt=media&token=05638155-7ae4-4eff-b190-6370b8ae3345" alt="INSERT INTO result"></p>
+<p>新增學生資料<br><font color=#0000FF> In [4]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students (name, age, gender, class_id) <span class="keyword">VALUES</span></span><br><span class="line">    (<span class="string">&#x27;小明&#x27;</span>, <span class="number">8</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">&#x27;小華&#x27;</span>, <span class="number">9</span>, <span class="string">&#x27;女&#x27;</span>, <span class="number">2</span>),</span><br><span class="line">    (<span class="string">&#x27;小美&#x27;</span>, <span class="number">8</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">&#x27;小強&#x27;</span>, <span class="number">8</span>, <span class="string">&#x27;女&#x27;</span>, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">&#x27;小智&#x27;</span>, <span class="number">9</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>這些數據將被插入到students表中，每個學生都有一個自動生成的唯一id。class_id欄位用於指明學生所屬的班級，並且應該對應於class_list表中已存在的班級id，以維持數據的完整性和關聯性。</p>
+</blockquote>
+<p><font color=#FF0000> Out [4]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-4%20%E8%BC%B8%E5%85%A5%E6%95%B8%E6%93%9A.png?alt=media&token=54ae6917-925d-4725-9133-adf8220e5fbb" alt="ISERT INTO result"></p>
+<p>顯示數據<br><font color=#0000FF> In [5]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    students.id <span class="keyword">AS</span> 學生編號,</span><br><span class="line">    students.name <span class="keyword">AS</span> 姓名,</span><br><span class="line">    class_list.name <span class="keyword">AS</span> 班級,</span><br><span class="line">    students.gender <span class="keyword">AS</span> 性別,</span><br><span class="line">    students.age <span class="keyword">AS</span> 年齡    </span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> class_list <span class="keyword">ON</span> students.class_id <span class="operator">=</span> class_list.id;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>這個查詢會返回一個結果集，其中包含每個學生的編號、姓名、班級名稱、性別和年齡。這樣的查詢有助於獲取完整的學生和班級資訊，便於查看和分析。</p>
+</blockquote>
+<p><font color=#FF0000> Out [5]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-5%20%E9%A1%AF%E7%A4%BA%E6%95%B8%E6%93%9A.png?alt=media&token=3efb6f21-603e-4c91-84c6-8a1a71ee6d70" alt="SELECT FROM Students"></p>
+<h2 id="Q2：第一題的延伸，多了一個班級老師"><a href="#Q2：第一題的延伸，多了一個班級老師" class="headerlink" title="Q2：第一題的延伸，多了一個班級老師"></a>Q2：第一題的延伸，多了一個<em>班級老師</em></h2><table>
+  <tr>
+    <th>學生編號</th>
+    <th>姓名</th>
+    <th>班級</th>
+    <th>班級老師</th>
+    <th>性別</th>
+    <th>年齡</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>小明</td>
+    <td>三年一班</td>
+    <td>廖洧杰</td>
+    <td>男</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>小華</td>
+    <td>三年二班</td>
+    <td>卡期伯</td>
+    <td>女</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>小美</td>
+    <td>三年一班</td>
+    <td>查理</td>
+    <td>男</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>小強</td>
+    <td>三年一班</td>
+    <td>麥可</td>
+    <td>女</td>
+    <td>8</td>
+  </tr>
+   <tr>
+    <td>5</td>
+    <td>小智</td>
+    <td>三年二班</td>
+    <td>李燕容</td>
+    <td>男</td>
+    <td>9</td>
+  </tr>
+</table>
+
+<p>在設計資料庫時，是否將班級導師設為外來鍵取決於你的數據關聯需求。以下是一些考量：</p>
+<h4 id="使用外來鍵的情況"><a href="#使用外來鍵的情況" class="headerlink" title="使用外來鍵的情況"></a>使用外來鍵的情況</h4><h5 id="導師有獨立的表格："><a href="#導師有獨立的表格：" class="headerlink" title="導師有獨立的表格："></a>導師有獨立的表格：</h5><p>如果導師有自己的表格（例如teachers表），並且你需要存儲導師的詳細資訊（如聯絡方式、專業等），那麼將teacher_id設為外來鍵是合適的。</p>
+<h5 id="數據一致性："><a href="#數據一致性：" class="headerlink" title="數據一致性："></a>數據一致性：</h5><p>使用外來鍵可以確保數據的完整性和一致性，防止班級中出現不存在的導師。</p>
+<h4 id="不使用外來鍵的情況"><a href="#不使用外來鍵的情況" class="headerlink" title="不使用外來鍵的情況"></a>不使用外來鍵的情況</h4><h5 id="簡單的系統："><a href="#簡單的系統：" class="headerlink" title="簡單的系統："></a>簡單的系統：</h5><p>如果系統相對簡單，且導師資訊不需要獨立管理，可以直接在class_list表中使用teacher名稱欄位。</p>
+<h5 id="靈活性："><a href="#靈活性：" class="headerlink" title="靈活性："></a>靈活性：</h5><p>不使用外來鍵可以增加靈活性，尤其是在導師變動頻繁或不需要嚴格關聯的情況下。</p>
+<p>從表中可以觀察班級與班級老師呈現<strong>一對多</strong>關係(六角幼兒園?)，學生與老師則是<strong>一對一</strong>關係；故在此我們把老師資料拆成學生的外來鍵。</p>
+<p>創建班級老師資料表<br><font color=#0000FF> In [6]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> teachers (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY,     <span class="comment">-- 老師編號，主鍵</span></span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>)           <span class="comment">-- 老師名稱</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>id是這個表的第一個欄位，用來存儲老師的編號。<br>SERIAL是一個數據類型，表示這個欄位會自動生成遞增的整數值，通常用於主鍵。<br>PRIMARY KEY表示這個欄位是主鍵，每個值必須是唯一的，這樣可以唯一標識每一位老師。</p>
+</blockquote>
+<p><font color=#FF0000> Out [6]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-1.png?alt=media&token=d79c3f30-07f8-4d7a-8554-05903932e24e" alt="CREAT TABLE teachers"></p>
+<p>新增老師資料<br><font color=#0000FF> In [7]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> teachers (name) <span class="keyword">VALUES</span> <span class="comment">--向teachers表的name欄位中插入數據。</span></span><br><span class="line">    (<span class="string">&#x27;廖洧杰&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;卡斯伯&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;查理&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;麥可&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;李燕容&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [7]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-2.png?alt=media&token=f105bb3f-2aa1-406c-9611-32962d2758ff" alt="INSERT INTO teachers"></p>
+<p>將學生資料表新增班級老師欄位(teacher_id)<br><font color=#0000FF> In [8]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> students <span class="comment">--表示要對students表進行修改。</span></span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">COLUMN</span> teacher_id <span class="type">INTEGER</span>,</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> fk_teacher_id <span class="comment">--這個約束確保teacher_id欄位中的值必須存在於teachers表的id欄位中，從而建立學生與老師之間的關聯。</span></span><br><span class="line"><span class="keyword">FOREIGN</span> KEY (teacher_id) <span class="keyword">REFERENCES</span> teachers(id);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>ADD COLUMN 用來添加一個新的欄位到表中。<br>teacher_id 是新欄位的名稱，用來存儲對應老師的編號。<br>FOREIGN KEY 用來定義一個外來鍵約束。<br>(teacher_id) 表示這個外來鍵約束作用的欄位是teacher_id。<br>REFERENCES teachers(id)表示teacher_id 引用的是teachers表中的id欄位。</p>
+</blockquote>
+<p><font color=#FF0000> Out [8]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-3.png?alt=media&token=2b85b771-6e79-484b-8116-e41925b38d12" alt="ALTER TABLE"></p>
+<blockquote>
+<p>ALTER 是 SQL 中的語法，用來修改已存在的資料表<br>執行這段指令並無任何提示語出現</p>
+</blockquote>
+<p>這樣設計的好處是可以在students表中直接關聯到teachers表中的一位老師，這樣的關聯有助於保持數據的一致性。<br>例如，如果一個學生有一位指定的老師，您可以通過teacher_id來確保這個關聯是正確的，並且可以方便地查詢每個學生的導師資訊。</p>
+<p>更新學生資料表<br><font color=#0000FF> In [9]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">1</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">2</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">3</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">4</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">5</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更新students表中的teacher_id欄位，為每個學生分配一位老師。</p>
+</blockquote>
+<p><font color=#FF0000> Out [9]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-4.png?alt=media&token=8669f45b-4b84-495c-ba53-4973b45ff3e5" alt="UPDATE SET WHERE"></p>
+<p>這些更新操作將每個學生與一位特定的老師關聯起來，這樣可以在數據庫中方便地查詢和管理學生與老師之間的關係。</p>
+<p>使用INNER JOIN 合併資料表查詢學生與班級導師的詳細資料<br><font color=#0000FF> In [10]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    students.id <span class="keyword">AS</span> 學生編號,</span><br><span class="line">    students.name <span class="keyword">AS</span> 姓名,</span><br><span class="line">    class_list.name <span class="keyword">AS</span> 班級,</span><br><span class="line">    teachers.name <span class="keyword">AS</span> 班級老師,</span><br><span class="line">    students.gender <span class="keyword">AS</span> 性別,</span><br><span class="line">    students.age <span class="keyword">AS</span> 年齡    </span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> class_list <span class="keyword">ON</span> students.class_id <span class="operator">=</span> class_list.id</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> teachers <span class="keyword">ON</span> students.teacher_id <span class="operator">=</span> teachers.id</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>INNER JOIN 用於將{ }表與{ }表連接起來<br>ON students.class_id &#x3D; class_list.id表示連接的條件是students表中的class_id欄位與class_list表中的id欄位相等。<br>ON students.teacher_id &#x3D; teachers.id表示連接的條件是students表中的teacher_id欄位與teachers表中的id欄位相等。</p>
+</blockquote>
+<p><font color=#FF0000> Out [10]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-5.png?alt=media&token=59b20324-037e-4354-b7b3-6ced5373fe96" alt="SELECT FORM INNER JOIN ON"></p>
+<h2 id="Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！"><a href="#Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！" class="headerlink" title="Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！"></a>Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！</h2><table>
+  <tr>
+    <th>小孩編號</th>
+    <th>姓名</th>
+    <th>父母名稱</th>
+    <th>父母電話</th>
+    <th>父母性別</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>小明</td>
+    <td>王大祥</td>
+    <td>0973254254</td>
+    <td>男</td>    
+  </tr> 
+  <tr>
+    <td>2</td>
+    <td>小華</td>
+    <td>王曉如</td>
+    <td>0955717855</td>
+    <td>女</td>    
+  </tr> 
+  <tr>
+    <td>3</td>
+    <td>小美</td>
+    <td>王大祥</td>
+    <td>0973254254</td>
+    <td>男</td>    
+  </tr> 
+  <tr>
+    <td>4</td>
+    <td>小強</td>
+    <td>王曉如</td>
+    <td>0955717855</td>
+    <td>女</td>    
+  </tr>
+    <tr>
+    <td>5</td>
+    <td>小智</td>
+    <td>王大祥</td>
+    <td>0973254254</td>
+    <td>男</td>    
+  </tr>
+</table>
+
+<p>重複的父母資料可以通過將父母信息獨立出來，建立一個單獨的父母資料表來解決。<br>然後使用關聯鍵（如父母ID）將小孩表和父母表關聯起來。這樣可以減少數據冗餘，並提高數據庫的可維護性和一致性。</p>
+<p>創建父母資料表<br><font color=#0000FF> In [11]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> parents (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">    phone <span class="type">VARCHAR</span>(<span class="number">15</span>),</span><br><span class="line">    gender <span class="type">VARCHAR</span>(<span class="number">10</span>)    </span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [11]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-1.png?alt=media&token=92233014-31b6-4909-a7d2-2b8a9757f671" alt="CREATE TABLE parents"></p>
+<p>新增父母資料<br><font color=#0000FF> In [12]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> parents(name, phone, gender)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">    (<span class="string">&#x27;王大祥&#x27;</span>, <span class="string">&#x27;0973254254&#x27;</span>, <span class="string">&#x27;男&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;王曉如&#x27;</span>, <span class="string">&#x27;0955717855&#x27;</span>, <span class="string">&#x27;女&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [12]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-2.png?alt=media&token=78ddfb65-0edc-4430-b4aa-6b49da0fa02f" alt="INSERT INTO parents"></p>
+<p>新增學生資料表的父母欄位(parent_id)<br><font color=#0000FF> In [13]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> students</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">COLUMN</span> parent_id <span class="type">INTEGER</span>,</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> fk_parent_id</span><br><span class="line"><span class="keyword">FOREIGN</span> KEY (parent_id) <span class="keyword">REFERENCES</span> parents(id);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [13]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-3.png?alt=media&token=6a66594e-638d-4ac8-aa0a-16c680b20cca" alt="INSERT INTO parents"></p>
+<p>更新學生資料表， 新增父母資料<br><font color=#0000FF> In [14]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> students </span><br><span class="line"><span class="keyword">SET</span> parent_id <span class="operator">=</span> <span class="number">1</span></span><br><span class="line"><span class="keyword">WHERE</span> id <span class="keyword">IN</span> (<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>); <span class="comment">-- 設定 id 為 1,3,5 學生的 parent_id = 1 (王大祥)</span></span><br><span class="line"><span class="keyword">UPDATE</span> students </span><br><span class="line"><span class="keyword">SET</span> parent_id <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"><span class="keyword">WHERE</span> id <span class="keyword">IN</span> (<span class="number">2</span>, <span class="number">4</span>); <span class="comment">-- 設定 id 為 2, 4 學生的 parent_id = 2 (王曉如)</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更新了students表中的parent_id欄位，以建立學生與父母之間的關聯：</p>
+</blockquote>
+<p><font color=#FF0000> Out [14]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-4.png?alt=media&token=664ee05d-ac7c-4167-8708-8f144a790544" alt="UPDATE SET WHERE"></p>
+<p>使用 INNER JOIN 合併資料表查詢學生與家長的詳細資料<br><font color=#0000FF> In [15]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    students.id <span class="keyword">AS</span> 小孩編號,</span><br><span class="line">    students.name <span class="keyword">AS</span> 學生姓名, </span><br><span class="line">    parents.name <span class="keyword">AS</span> 父母名稱, </span><br><span class="line">    parents.phone <span class="keyword">AS</span> 父母電話, </span><br><span class="line">    parents.gender <span class="keyword">AS</span> 父母性別</span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> parents <span class="keyword">on</span> parents.id <span class="operator">=</span> students.parent_id;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>通過INNER JOIN將students表與parents表聯接，使用students.parent_id和parents.id作為關聯條件。這樣可以列出每個學生及其對應的父母信息。</p>
+</blockquote>
+<p><font color=#FF0000> Out [15]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-5.png?alt=media&token=5545ee06-fcaa-4b84-b072-eaf17ecfd287" alt="SELECT AS FROM INNER JOIN ON"></p>
+<h2 id="回顧"><a href="#回顧" class="headerlink" title="回顧"></a>回顧</h2><p>在本節，我們練習了：<br>一、規劃外來鍵與資料表拆分<br>二、主鍵設定方式以及ID 自動地增方法<br>三、搭配 Where 條件，合併資料表查詢<br>四、使用 inner join，合併資料表查詢</p>
+<p>如果沒有問題的話，那我們就可以前往下一章節囉。d(d＇∀＇)</p>
+]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Lady YinMin&#39;s Regards</title>
     <url>/IWishIKnewHowToQuitYou/2024/11/09/Lady%20YinMin&#39;s%20Regards/</url>
-    <content><![CDATA[<h2 id="The-item-was-named-after-user-Lady-YinMin-This-coder-was-known-as-one-of-the-community-lead-of-HexSchool"><a href="#The-item-was-named-after-user-Lady-YinMin-This-coder-was-known-as-one-of-the-community-lead-of-HexSchool" class="headerlink" title="The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool."></a>The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool.</h2><h3 id="「-Training-JS-9-loop-statement-–while-and-do-while-基礎迴圈-」"><a href="#「-Training-JS-9-loop-statement-–while-and-do-while-基礎迴圈-」" class="headerlink" title="「 Training JS #9: loop statement –while and do..while - 基礎迴圈 」"></a><a href="https://www.codewars.com/kata/57216d4bcdd71175d6000560">「 Training JS #9: loop statement –while and do..while - 基礎迴圈 」</a></h3><p>要完成這個函數 padIt，我們需要在函數內部撰寫一個循環，該循環會運行 n 次。每次循環，我們會在字符串 str 的左右兩邊交替添加一個 *</p>
+    <content><![CDATA[<h2 id="The-item-was-named-after-user-Lady-YinMin-This-coder-was-known-as-one-of-the-community-lead-of-HexSchool"><a href="#The-item-was-named-after-user-Lady-YinMin-This-coder-was-known-as-one-of-the-community-lead-of-HexSchool" class="headerlink" title="The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool."></a>The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool.</h2><h3 id="「-Squares-sequence-平方序列-」"><a href="#「-Squares-sequence-平方序列-」" class="headerlink" title="「 Squares sequence - 平方序列 」"></a><a href="https://www.codewars.com/kata/5546180ca783b6d2d5000062">「 Squares sequence - 平方序列 」</a></h3><p>描述撰寫的完整 JavaScript 函式，實現從給定數字 x 開始，依次計算前一個數字的平方，並返回長度為 n 的陣列。如果 n &lt;&#x3D; 0，則返回空陣列：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">squares</span>(<span class="params">x, n</span>) &#123;</span><br><span class="line">    <span class="comment">// 如果 n 是負數或等於 0，返回空陣列</span></span><br><span class="line">    <span class="keyword">if</span> (n &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> [];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 初始化結果陣列，並將第一個元素設為 x</span></span><br><span class="line">    <span class="keyword">let</span> result = [x];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 從第二個位置開始，計算平方並加入陣列</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">        result.<span class="title function_">push</span>(result[i - <span class="number">1</span>] ** <span class="number">2</span>); <span class="comment">// 將前一個數字平方後加入陣列</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> result; <span class="comment">// 返回結果陣列</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//test:</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">squares</span>(<span class="number">2</span>, <span class="number">5</span>)); <span class="comment">// [2, 4, 16, 256, 65536]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">squares</span>(<span class="number">3</span>, <span class="number">3</span>)); <span class="comment">// [3, 9, 81]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">squares</span>(<span class="number">5</span>, <span class="number">0</span>)); <span class="comment">// []</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">squares</span>(<span class="number">7</span>, -<span class="number">2</span>)); <span class="comment">// []</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>檢查條件：</strong></p>
+<blockquote>
+<p>如果 n 是負數或 0，直接返回空陣列 []。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>初始化陣列：</strong></p>
+<blockquote>
+<p>將 x 作為第一個元素加入陣列。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>計算平方：</strong></p>
+<blockquote>
+<p>使用 for 迴圈從第 2 個位置開始（索引為 1），每次將前一個數字平方後，加入到結果陣列中。<br><code> result[i - 1] ** 2 </code>來計算平方。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>返回結果：</strong></p>
+<blockquote>
+<p>當迴圈結束後，返回包含所有計算結果的陣列。</p>
+</blockquote>
+</blockquote>
+<hr>
+<h3 id="「-Training-JS-9-loop-statement-–while-and-do-while-基礎迴圈-」"><a href="#「-Training-JS-9-loop-statement-–while-and-do-while-基礎迴圈-」" class="headerlink" title="「 Training JS #9: loop statement –while and do..while - 基礎迴圈 」"></a><a href="https://www.codewars.com/kata/57216d4bcdd71175d6000560">「 Training JS #9: loop statement –while and do..while - 基礎迴圈 」</a></h3><p>要完成這個函數 padIt，我們需要在函數內部撰寫一個循環，該循環會運行 n 次。每次循環，我們會在字符串 str 的左右兩邊交替添加一個 *</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">padIt</span>(<span class="params">str, n</span>) &#123;</span><br><span class="line">  <span class="keyword">while</span> (n &gt; <span class="number">0</span>) &#123;  <span class="comment">// 當 n 大於 0 時，繼續循環</span></span><br><span class="line">    <span class="keyword">if</span> (n % <span class="number">2</span> === <span class="number">1</span>) &#123;  <span class="comment">// 如果 n 是奇數，則在左邊添加 *</span></span><br><span class="line">      str = <span class="string">&#x27;*&#x27;</span> + str;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;  <span class="comment">// 如果 n 是偶數，則在右邊添加 *</span></span><br><span class="line">      str = str + <span class="string">&#x27;*&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    n--;  <span class="comment">// 每次循環後，將 n 減 1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> str;  <span class="comment">// 返回最終的填充字符串</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 範例使用</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">padIt</span>(<span class="string">&quot;hello&quot;</span>, <span class="number">1</span>)); <span class="comment">// 輸出: &quot;*hello&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">padIt</span>(<span class="string">&quot;world&quot;</span>, <span class="number">2</span>)); <span class="comment">// 輸出: &quot;*world*&quot;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">padIt</span>(<span class="string">&quot;!&quot;</span>, <span class="number">5</span>));     <span class="comment">// 輸出: &quot;**!*&quot;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>循環條件：</strong></p>
@@ -232,7 +499,13 @@ body{
 <blockquote>
 <p><strong>交替填充：</strong></p>
 <blockquote>
-<p>使用 <code>if (n % 2 === 1)</code> 來檢查 n 是否為奇數，如果是，則在字符串 str 的左邊添加一個 *。<br>否則，則在字符串 <code>str</code> 的右邊添加一個 *。<br><strong>減少計數器：</strong><br>在每次循環結束時，將 n 減 1，以便最終能夠正確地結束循環。</p>
+<p>使用 <code>if (n % 2 === 1)</code> 來檢查 n 是否為奇數，如果是，則在字符串 str 的左邊添加一個 *。<br>否則，則在字符串 <code>str</code> 的右邊添加一個 *。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>減少計數器：</strong></p>
+<blockquote>
+<p>在每次循環結束時，將 n 減 1，以便最終能夠正確地結束循環。</p>
 </blockquote>
 </blockquote>
 <hr>
@@ -519,246 +792,6 @@ body{
 ]]></content>
   </entry>
   <entry>
-    <title>SQL小節練習：主鍵、外來鍵、inner join</title>
-    <url>/IWishIKnewHowToQuitYou/2024/11/05/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner-join/</url>
-    <content><![CDATA[<p><a href="https://gamma.app/docs/SQL--23heyix4r93u5u0?mode=doc">課堂簡報連結</a><br><a href="https://pg-sql.com/">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
-<h2 id="Q1：拯救明華國小的資料庫，哪個欄位適合變成外來鍵？"><a href="#Q1：拯救明華國小的資料庫，哪個欄位適合變成外來鍵？" class="headerlink" title="Q1：拯救明華國小的資料庫，哪個欄位適合變成外來鍵？"></a>Q1：拯救明華國小的資料庫，哪個欄位適合變成<strong>外來鍵</strong>？</h2><table>
-  <tr>
-    <th>學生編號</th>
-    <th>姓名</th>
-    <th>班級</th>
-    <th>性別</th>
-    <th>年齡</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>小明</td>
-    <td>三年一班</td>
-    <td>男</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>小華</td>
-    <td>三年二班</td>
-    <td>女</td>
-    <td>9</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>小美</td>
-    <td>三年一班</td>
-    <td>男</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>小強</td>
-    <td>三年一班</td>
-    <td>女</td>
-    <td>8</td>
-  </tr>
-   <tr>
-    <td>5</td>
-    <td>小智</td>
-    <td>三年二班</td>
-    <td>男</td>
-    <td>9</td>
-  </tr>
-</table>
-
-<p>班級。因為班級與學生呈現<strong>一對多</strong>的關係，所以應該把班級拆成學生外來鍵。</p>
-<blockquote>
-<p><strong>班級的獨特性：</strong>每個班級會有一個獨特的名稱或編號，用於標識不同的班級。<br><strong>關聯性：</strong>班級可以用來連接到一個包含班級詳細資訊的表，這樣可以實現資料的關聯性。</p>
-</blockquote>
-<p>創建班級資料表<br><font color=#0000FF> In [1]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> class_list (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY, <span class="comment">--自動生成的唯一識別碼（使用 SERIAL 型別，會自動遞增），作為每個班級的主鍵（PRIMARY KEY）</span></span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>) </span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [1]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-1%262%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E8%A1%A8%E6%A0%BC%E5%BC%8F.png?alt=media&token=b97fc110-7fb1-434b-9bee-02926e59d793" alt="creat table result"></p>
-<p>創建學生資料表<br><font color=#0000FFF> In [2]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY, <span class="comment">--自動生成的唯一識別碼，作為每個學生的主鍵。</span></span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">    gender <span class="type">VARCHAR</span>(<span class="number">10</span>), <span class="comment">--這是一個整數欄位，用來儲存學生的性別識別碼，參照 gender_list 表格中的 id 欄位。</span></span><br><span class="line">    age <span class="type">INTEGER</span>,</span><br><span class="line">    class_id <span class="type">INTEGER</span>, <span class="comment">--這是一個整數欄位（INTEGER），用來儲存學生所屬班級的識別碼，並且是參照 class_list 表格中的 id 欄位（這是一個外鍵關係，確保學生所屬的班級在 class_list 中是存在的）。</span></span><br><span class="line">    <span class="keyword">FOREIGN</span> KEY (class_id) <span class="keyword">REFERENCES</span> class_list(id) <span class="comment">-- 設定外來鍵關聯。</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [2]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-1%262%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E8%A1%A8%E6%A0%BC%E5%BC%8F.png?alt=media&token=b97fc110-7fb1-434b-9bee-02926e59d793" alt="creat table result"></p>
-<p>新增班級資料<br><font color=#0000FF> In [3]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> class_list (name) <span class="keyword">VALUES</span> <span class="comment">--這部分表示要向class_list表中插入數據，並指定插入的欄位是name</span></span><br><span class="line">    (<span class="string">&#x27;三年一班&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;三年二班&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [3]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-3%20%E8%BC%B8%E5%85%A5%E6%95%B8%E6%93%9A.png?alt=media&token=05638155-7ae4-4eff-b190-6370b8ae3345" alt="INSERT INTO result"></p>
-<p>新增學生資料<br><font color=#0000FF> In [4]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> students (name, age, gender, class_id) <span class="keyword">VALUES</span></span><br><span class="line">    (<span class="string">&#x27;小明&#x27;</span>, <span class="number">8</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">&#x27;小華&#x27;</span>, <span class="number">9</span>, <span class="string">&#x27;女&#x27;</span>, <span class="number">2</span>),</span><br><span class="line">    (<span class="string">&#x27;小美&#x27;</span>, <span class="number">8</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">&#x27;小強&#x27;</span>, <span class="number">8</span>, <span class="string">&#x27;女&#x27;</span>, <span class="number">1</span>),</span><br><span class="line">    (<span class="string">&#x27;小智&#x27;</span>, <span class="number">9</span>, <span class="string">&#x27;男&#x27;</span>, <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>這些數據將被插入到students表中，每個學生都有一個自動生成的唯一id。class_id欄位用於指明學生所屬的班級，並且應該對應於class_list表中已存在的班級id，以維持數據的完整性和關聯性。</p>
-</blockquote>
-<p><font color=#FF0000> Out [4]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-4%20%E8%BC%B8%E5%85%A5%E6%95%B8%E6%93%9A.png?alt=media&token=54ae6917-925d-4725-9133-adf8220e5fbb" alt="ISERT INTO result"></p>
-<p>顯示數據<br><font color=#0000FF> In [5]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    students.id <span class="keyword">AS</span> 學生編號,</span><br><span class="line">    students.name <span class="keyword">AS</span> 姓名,</span><br><span class="line">    class_list.name <span class="keyword">AS</span> 班級,</span><br><span class="line">    students.gender <span class="keyword">AS</span> 性別,</span><br><span class="line">    students.age <span class="keyword">AS</span> 年齡    </span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> class_list <span class="keyword">ON</span> students.class_id <span class="operator">=</span> class_list.id;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>這個查詢會返回一個結果集，其中包含每個學生的編號、姓名、班級名稱、性別和年齡。這樣的查詢有助於獲取完整的學生和班級資訊，便於查看和分析。</p>
-</blockquote>
-<p><font color=#FF0000> Out [5]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F1-5%20%E9%A1%AF%E7%A4%BA%E6%95%B8%E6%93%9A.png?alt=media&token=3efb6f21-603e-4c91-84c6-8a1a71ee6d70" alt="SELECT FROM Students"></p>
-<h2 id="Q2：第一題的延伸，多了一個班級老師"><a href="#Q2：第一題的延伸，多了一個班級老師" class="headerlink" title="Q2：第一題的延伸，多了一個班級老師"></a>Q2：第一題的延伸，多了一個<em>班級老師</em></h2><table>
-  <tr>
-    <th>學生編號</th>
-    <th>姓名</th>
-    <th>班級</th>
-    <th>班級老師</th>
-    <th>性別</th>
-    <th>年齡</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>小明</td>
-    <td>三年一班</td>
-    <td>廖洧杰</td>
-    <td>男</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>小華</td>
-    <td>三年二班</td>
-    <td>卡期伯</td>
-    <td>女</td>
-    <td>9</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>小美</td>
-    <td>三年一班</td>
-    <td>查理</td>
-    <td>男</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>小強</td>
-    <td>三年一班</td>
-    <td>麥可</td>
-    <td>女</td>
-    <td>8</td>
-  </tr>
-   <tr>
-    <td>5</td>
-    <td>小智</td>
-    <td>三年二班</td>
-    <td>李燕容</td>
-    <td>男</td>
-    <td>9</td>
-  </tr>
-</table>
-
-<p>在設計資料庫時，是否將班級導師設為外來鍵取決於你的數據關聯需求。以下是一些考量：</p>
-<h4 id="使用外來鍵的情況"><a href="#使用外來鍵的情況" class="headerlink" title="使用外來鍵的情況"></a>使用外來鍵的情況</h4><h5 id="導師有獨立的表格："><a href="#導師有獨立的表格：" class="headerlink" title="導師有獨立的表格："></a>導師有獨立的表格：</h5><p>如果導師有自己的表格（例如teachers表），並且你需要存儲導師的詳細資訊（如聯絡方式、專業等），那麼將teacher_id設為外來鍵是合適的。</p>
-<h5 id="數據一致性："><a href="#數據一致性：" class="headerlink" title="數據一致性："></a>數據一致性：</h5><p>使用外來鍵可以確保數據的完整性和一致性，防止班級中出現不存在的導師。</p>
-<h4 id="不使用外來鍵的情況"><a href="#不使用外來鍵的情況" class="headerlink" title="不使用外來鍵的情況"></a>不使用外來鍵的情況</h4><h5 id="簡單的系統："><a href="#簡單的系統：" class="headerlink" title="簡單的系統："></a>簡單的系統：</h5><p>如果系統相對簡單，且導師資訊不需要獨立管理，可以直接在class_list表中使用teacher名稱欄位。</p>
-<h5 id="靈活性："><a href="#靈活性：" class="headerlink" title="靈活性："></a>靈活性：</h5><p>不使用外來鍵可以增加靈活性，尤其是在導師變動頻繁或不需要嚴格關聯的情況下。</p>
-<p>從表中可以觀察班級與班級老師呈現<strong>一對多</strong>關係(六角幼兒園?)，學生與老師則是<strong>一對一</strong>關係；故在此我們把老師資料拆成學生的外來鍵。</p>
-<p>創建班級老師資料表<br><font color=#0000FF> In [6]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> teachers (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY,     <span class="comment">-- 老師編號，主鍵</span></span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>)           <span class="comment">-- 老師名稱</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>id是這個表的第一個欄位，用來存儲老師的編號。<br>SERIAL是一個數據類型，表示這個欄位會自動生成遞增的整數值，通常用於主鍵。<br>PRIMARY KEY表示這個欄位是主鍵，每個值必須是唯一的，這樣可以唯一標識每一位老師。</p>
-</blockquote>
-<p><font color=#FF0000> Out [6]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-1.png?alt=media&token=d79c3f30-07f8-4d7a-8554-05903932e24e" alt="CREAT TABLE teachers"></p>
-<p>新增老師資料<br><font color=#0000FF> In [7]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> teachers (name) <span class="keyword">VALUES</span> <span class="comment">--向teachers表的name欄位中插入數據。</span></span><br><span class="line">    (<span class="string">&#x27;廖洧杰&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;卡斯伯&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;查理&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;麥可&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;李燕容&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [7]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-2.png?alt=media&token=f105bb3f-2aa1-406c-9611-32962d2758ff" alt="INSERT INTO teachers"></p>
-<p>將學生資料表新增班級老師欄位(teacher_id)<br><font color=#0000FF> In [8]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> students <span class="comment">--表示要對students表進行修改。</span></span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">COLUMN</span> teacher_id <span class="type">INTEGER</span>,</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> fk_teacher_id <span class="comment">--這個約束確保teacher_id欄位中的值必須存在於teachers表的id欄位中，從而建立學生與老師之間的關聯。</span></span><br><span class="line"><span class="keyword">FOREIGN</span> KEY (teacher_id) <span class="keyword">REFERENCES</span> teachers(id);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>ADD COLUMN 用來添加一個新的欄位到表中。<br>teacher_id 是新欄位的名稱，用來存儲對應老師的編號。<br>FOREIGN KEY 用來定義一個外來鍵約束。<br>(teacher_id) 表示這個外來鍵約束作用的欄位是teacher_id。<br>REFERENCES teachers(id)表示teacher_id 引用的是teachers表中的id欄位。</p>
-</blockquote>
-<p><font color=#FF0000> Out [8]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-3.png?alt=media&token=2b85b771-6e79-484b-8116-e41925b38d12" alt="ALTER TABLE"></p>
-<blockquote>
-<p>ALTER 是 SQL 中的語法，用來修改已存在的資料表<br>執行這段指令並無任何提示語出現</p>
-</blockquote>
-<p>這樣設計的好處是可以在students表中直接關聯到teachers表中的一位老師，這樣的關聯有助於保持數據的一致性。<br>例如，如果一個學生有一位指定的老師，您可以通過teacher_id來確保這個關聯是正確的，並且可以方便地查詢每個學生的導師資訊。</p>
-<p>更新學生資料表<br><font color=#0000FF> In [9]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">1</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">2</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">3</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">4</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> students <span class="keyword">SET</span> teacher_id <span class="operator">=</span> <span class="number">5</span> <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>更新students表中的teacher_id欄位，為每個學生分配一位老師。</p>
-</blockquote>
-<p><font color=#FF0000> Out [9]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-4.png?alt=media&token=8669f45b-4b84-495c-ba53-4973b45ff3e5" alt="UPDATE SET WHERE"></p>
-<p>這些更新操作將每個學生與一位特定的老師關聯起來，這樣可以在數據庫中方便地查詢和管理學生與老師之間的關係。</p>
-<p>使用INNER JOIN 合併資料表查詢學生與班級導師的詳細資料<br><font color=#0000FF> In [10]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    students.id <span class="keyword">AS</span> 學生編號,</span><br><span class="line">    students.name <span class="keyword">AS</span> 姓名,</span><br><span class="line">    class_list.name <span class="keyword">AS</span> 班級,</span><br><span class="line">    teachers.name <span class="keyword">AS</span> 班級老師,</span><br><span class="line">    students.gender <span class="keyword">AS</span> 性別,</span><br><span class="line">    students.age <span class="keyword">AS</span> 年齡    </span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> class_list <span class="keyword">ON</span> students.class_id <span class="operator">=</span> class_list.id</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> teachers <span class="keyword">ON</span> students.teacher_id <span class="operator">=</span> teachers.id</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>INNER JOIN 用於將{ }表與{ }表連接起來<br>ON students.class_id &#x3D; class_list.id表示連接的條件是students表中的class_id欄位與class_list表中的id欄位相等。<br>ON students.teacher_id &#x3D; teachers.id表示連接的條件是students表中的teacher_id欄位與teachers表中的id欄位相等。</p>
-</blockquote>
-<p><font color=#FF0000> Out [10]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F2-5.png?alt=media&token=59b20324-037e-4354-b7b3-6ced5373fe96" alt="SELECT FORM INNER JOIN ON"></p>
-<h2 id="Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！"><a href="#Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！" class="headerlink" title="Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！"></a>Q3：小孩的家庭歸類資料庫，父母資料一直重複實在討厭！</h2><table>
-  <tr>
-    <th>小孩編號</th>
-    <th>姓名</th>
-    <th>父母名稱</th>
-    <th>父母電話</th>
-    <th>父母性別</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>小明</td>
-    <td>王大祥</td>
-    <td>0973254254</td>
-    <td>男</td>    
-  </tr> 
-  <tr>
-    <td>2</td>
-    <td>小華</td>
-    <td>王曉如</td>
-    <td>0955717855</td>
-    <td>女</td>    
-  </tr> 
-  <tr>
-    <td>3</td>
-    <td>小美</td>
-    <td>王大祥</td>
-    <td>0973254254</td>
-    <td>男</td>    
-  </tr> 
-  <tr>
-    <td>4</td>
-    <td>小強</td>
-    <td>王曉如</td>
-    <td>0955717855</td>
-    <td>女</td>    
-  </tr>
-    <tr>
-    <td>5</td>
-    <td>小智</td>
-    <td>王大祥</td>
-    <td>0973254254</td>
-    <td>男</td>    
-  </tr>
-</table>
-
-<p>重複的父母資料可以通過將父母信息獨立出來，建立一個單獨的父母資料表來解決。<br>然後使用關聯鍵（如父母ID）將小孩表和父母表關聯起來。這樣可以減少數據冗餘，並提高數據庫的可維護性和一致性。</p>
-<p>創建父母資料表<br><font color=#0000FF> In [11]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> parents (</span><br><span class="line">    id SERIAL <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">    phone <span class="type">VARCHAR</span>(<span class="number">15</span>),</span><br><span class="line">    gender <span class="type">VARCHAR</span>(<span class="number">10</span>)    </span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [11]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-1.png?alt=media&token=92233014-31b6-4909-a7d2-2b8a9757f671" alt="CREATE TABLE parents"></p>
-<p>新增父母資料<br><font color=#0000FF> In [12]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> parents(name, phone, gender)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">    (<span class="string">&#x27;王大祥&#x27;</span>, <span class="string">&#x27;0973254254&#x27;</span>, <span class="string">&#x27;男&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;王曉如&#x27;</span>, <span class="string">&#x27;0955717855&#x27;</span>, <span class="string">&#x27;女&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [12]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-2.png?alt=media&token=78ddfb65-0edc-4430-b4aa-6b49da0fa02f" alt="INSERT INTO parents"></p>
-<p>新增學生資料表的父母欄位(parent_id)<br><font color=#0000FF> In [13]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> students</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">COLUMN</span> parent_id <span class="type">INTEGER</span>,</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> fk_parent_id</span><br><span class="line"><span class="keyword">FOREIGN</span> KEY (parent_id) <span class="keyword">REFERENCES</span> parents(id);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [13]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-3.png?alt=media&token=6a66594e-638d-4ac8-aa0a-16c680b20cca" alt="INSERT INTO parents"></p>
-<p>更新學生資料表， 新增父母資料<br><font color=#0000FF> In [14]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> students </span><br><span class="line"><span class="keyword">SET</span> parent_id <span class="operator">=</span> <span class="number">1</span></span><br><span class="line"><span class="keyword">WHERE</span> id <span class="keyword">IN</span> (<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>); <span class="comment">-- 設定 id 為 1,3,5 學生的 parent_id = 1 (王大祥)</span></span><br><span class="line"><span class="keyword">UPDATE</span> students </span><br><span class="line"><span class="keyword">SET</span> parent_id <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"><span class="keyword">WHERE</span> id <span class="keyword">IN</span> (<span class="number">2</span>, <span class="number">4</span>); <span class="comment">-- 設定 id 為 2, 4 學生的 parent_id = 2 (王曉如)</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>更新了students表中的parent_id欄位，以建立學生與父母之間的關聯：</p>
-</blockquote>
-<p><font color=#FF0000> Out [14]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-4.png?alt=media&token=664ee05d-ac7c-4167-8708-8f144a790544" alt="UPDATE SET WHERE"></p>
-<p>使用 INNER JOIN 合併資料表查詢學生與家長的詳細資料<br><font color=#0000FF> In [15]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">    students.id <span class="keyword">AS</span> 小孩編號,</span><br><span class="line">    students.name <span class="keyword">AS</span> 學生姓名, </span><br><span class="line">    parents.name <span class="keyword">AS</span> 父母名稱, </span><br><span class="line">    parents.phone <span class="keyword">AS</span> 父母電話, </span><br><span class="line">    parents.gender <span class="keyword">AS</span> 父母性別</span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> parents <span class="keyword">on</span> parents.id <span class="operator">=</span> students.parent_id;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>通過INNER JOIN將students表與parents表聯接，使用students.parent_id和parents.id作為關聯條件。這樣可以列出每個學生及其對應的父母信息。</p>
-</blockquote>
-<p><font color=#FF0000> Out [15]: </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner%20join%2F3-5.png?alt=media&token=5545ee06-fcaa-4b84-b072-eaf17ecfd287" alt="SELECT AS FROM INNER JOIN ON"></p>
-<h2 id="回顧"><a href="#回顧" class="headerlink" title="回顧"></a>回顧</h2><p>在本節，我們練習了：<br>一、規劃外來鍵與資料表拆分<br>二、主鍵設定方式以及ID 自動地增方法<br>三、搭配 Where 條件，合併資料表查詢<br>四、使用 inner join，合併資料表查詢</p>
-<p>如果沒有問題的話，那我們就可以前往下一章節囉。d(d＇∀＇)</p>
-]]></content>
-      <tags>
-        <tag>Practice</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SQL小節練習：家具店的菜雞銷售奇遇記</title>
     <url>/IWishIKnewHowToQuitYou/2024/10/28/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98/</url>
     <content><![CDATA[<p>謹以本篇記錄小美同學運用入門SQL語法，維運『築夢家居』的事績。</p>
@@ -924,10 +957,128 @@ body{
       </tags>
   </entry>
   <entry>
+    <title>SQL小節練習：晴天咖啡廳</title>
+    <url>/IWishIKnewHowToQuitYou/2024/11/21/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3/</url>
+    <content><![CDATA[<h2 id="資料載入"><a href="#資料載入" class="headerlink" title="資料載入"></a>資料載入</h2><p><a href="post-sql.com">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
+<p>將資料倒入 pg-sql</p>
+<p><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products (</span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">100</span>),         <span class="comment">-- 商品名稱</span></span><br><span class="line">    price <span class="type">INTEGER</span>,            <span class="comment">-- 原價</span></span><br><span class="line">    discount_price <span class="type">INTEGER</span>,    <span class="comment">-- 優惠價</span></span><br><span class="line">    stock <span class="type">INTEGER</span>,            <span class="comment">-- 庫存數量</span></span><br><span class="line">    category <span class="type">VARCHAR</span>(<span class="number">50</span>),      <span class="comment">-- 商品分類</span></span><br><span class="line">    status <span class="type">VARCHAR</span>(<span class="number">20</span>)         <span class="comment">-- 商品狀態</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> products (name, price, discount_price, stock, category, status) <span class="keyword">VALUES</span></span><br><span class="line">    (<span class="string">&#x27;精品手沖咖啡&#x27;</span>, <span class="number">180</span>, <span class="number">160</span>, <span class="number">50</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;美式咖啡&#x27;</span>, <span class="number">120</span>, <span class="number">120</span>, <span class="number">100</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;摩卡咖啡&#x27;</span>, <span class="number">150</span>, <span class="number">150</span>, <span class="number">80</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;特調拿鐵&#x27;</span>, <span class="number">160</span>, <span class="number">140</span>, <span class="number">60</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;伯爵紅茶&#x27;</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">70</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;玫瑰花茶&#x27;</span>, <span class="number">120</span>, <span class="number">120</span>, <span class="number">30</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;柳橙汁&#x27;</span>, <span class="number">90</span>, <span class="number">80</span>, <span class="number">40</span>, <span class="string">&#x27;果汁&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;水果茶&#x27;</span>, <span class="number">130</span>, <span class="number">110</span>, <span class="number">45</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;提拉米蘇&#x27;</span>, <span class="number">160</span>, <span class="number">160</span>, <span class="number">15</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;草莓乳酪蛋糕&#x27;</span>, <span class="number">180</span>, <span class="number">150</span>, <span class="number">8</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;巧克力布朗尼&#x27;</span>, <span class="number">150</span>, <span class="number">150</span>, <span class="number">0</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;特選咖啡豆&#x27;</span>, <span class="number">500</span>, <span class="number">450</span>, <span class="number">20</span>, <span class="string">&#x27;咖啡豆&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;摩卡咖啡豆&#x27;</span>, <span class="number">480</span>, <span class="number">480</span>, <span class="number">15</span>, <span class="string">&#x27;咖啡豆&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;濾掛式咖啡包&#x27;</span>, <span class="number">25</span>, <span class="number">20</span>, <span class="number">200</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;手沖濾紙&#x27;</span>, <span class="number">180</span>, <span class="number">180</span>, <span class="number">30</span>, <span class="string">&#x27;器材&#x27;</span>, <span class="string">&#x27;active&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#0000FF>  In [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [2]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2F1.png?alt=media&token=2c1b49c7-ed1a-4583-904f-4d4bfb813c1e" alt="coffeeShopProduct"></p>
+<blockquote>
+<p>創建了一個名為 products 的資料表，該表用來存儲商品的詳細信息。</p>
+<blockquote>
+<p><strong>name：</strong>商品名稱，類型為 VARCHAR(100)，用來存儲商品的名稱。<br><strong>price：</strong>原價，類型為 INTEGER，用來存儲商品的原始價格。<br><strong>discount_price：</strong>優惠價，類型為 INTEGER，用來存儲商品的折扣後價格。<br><strong>stock：</strong>庫存數量，類型為 INTEGER，用來存儲商品的庫存數量。<br><strong>category：</strong>商品分類，類型為 VARCHAR(50)，用來存儲商品的分類，例如「咖啡」、「茶飲」等。<br><strong>status：</strong>商品狀態，類型為 VARCHAR(20)，用來存儲商品的狀態，例如「active」（可售）或「inactive」（不可售）。</p>
+</blockquote>
+</blockquote>
+<h2 id="基礎查詢篇："><a href="#基礎查詢篇：" class="headerlink" title="基礎查詢篇："></a>基礎查詢篇：</h2><h3 id="情境-1：缺貨確認"><a href="#情境-1：缺貨確認" class="headerlink" title="情境 1：缺貨確認"></a>情境 1：缺貨確認</h3><p>顧客：「草莓乳酪蛋糕還有嗎？」<br>小杰想查：要確認草莓乳酪蛋糕的庫存</p>
+<p><font color=#0000FF>  In [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> stock <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;草莓乳酪蛋糕&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [3]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq1.png?alt=media&token=e3852780-01f6-43c4-b1f7-57345b7c14ee" alt="q1"></p>
+<blockquote>
+<p>返回「草莓乳酪蛋糕」的庫存數量。根據最初倒入的數據，「草莓乳酪蛋糕」的庫存數量應該是8。</p>
+</blockquote>
+<h2 id="情境-2：優惠查詢"><a href="#情境-2：優惠查詢" class="headerlink" title="情境 2：優惠查詢"></a>情境 2：優惠查詢</h2><p>顧客：「有什麼特價的咖啡嗎？」<br>小杰想查：列出所有有特價（優惠價低於原價）的咖啡類商品</p>
+<p><font color=#0000FF>  In [4]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡&#x27;</span> <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> price;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [4]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq2.png?alt=media&token=cc0d3abf-6d9f-4015-b607-c8069060ae85" alt="q2"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡」且優惠價低於原價的商品。<br>這樣就可以找到目前正在促銷的咖啡類商品。</p>
+</blockquote>
+<h2 id="情境-3：價格區間"><a href="#情境-3：價格區間" class="headerlink" title="情境 3：價格區間"></a>情境 3：價格區間</h2><p>顧客：「有沒有100元以下的飲品？」<br>小杰想查：找出所有100元以下的飲品</p>
+<p><font color=#0000FF>  In [5]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;果汁&#x27;</span>) <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [5]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq3.png?alt=media&token=dd7ebec2-8fc0-4cdf-9c6f-a3e71544d915" alt="q3"></p>
+<blockquote>
+<p>選擇所有分類為「咖啡」、「茶飲」或「果汁」且優惠價低於100元的商品。<br>這樣就可以找到所有符合條件的飲品。</p>
+</blockquote>
+<h2 id="AND條件篇"><a href="#AND條件篇" class="headerlink" title="AND條件篇"></a>AND條件篇</h2><h3 id="情境-4：庫存與價格"><a href="#情境-4：庫存與價格" class="headerlink" title="情境 4：庫存與價格"></a>情境 4：庫存與價格</h3><p>顧客：「有沒有特價，而且還有貨的甜點？」<br>小杰想查：要同時符合有特價（優惠價&lt;原價）且還有庫存的甜點</p>
+<p><font color=#0000FF>  In [6]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;甜點&#x27;</span> <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> price <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [6]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq4.png?alt=media&token=5bab43d9-c1fa-40a7-86cf-0c880a22663a" alt="q4"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「甜點」、優惠價低於原價且庫存量大於0的商品。<br>這樣可以找出目前有特價並且還有庫存的甜點。</p>
+</blockquote>
+<h2 id="情境-5：價格與分類"><a href="#情境-5：價格與分類" class="headerlink" title="情境 5：價格與分類"></a>情境 5：價格與分類</h2><p>店長：「幫我查一下所有200元以上，而且還有庫存的咖啡類商品」<br>小杰想查：列出符合價格和分類條件的商品</p>
+<p><font color=#0000FF>  In [7]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&gt;</span> <span class="number">200</span> <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [7]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq5.png?alt=media&token=42bdbb1a-84e6-4efd-af7a-3c431356417c" alt="q5"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡」、原價超過200元且庫存量大於0的商品。</p>
+</blockquote>
+<h2 id="OR條件篇"><a href="#OR條件篇" class="headerlink" title="OR條件篇"></a>OR條件篇</h2><h3 id="情境-6：多分類查詢"><a href="#情境-6：多分類查詢" class="headerlink" title="情境 6：多分類查詢"></a>情境 6：多分類查詢</h3><p>顧客：「我想看看你們的咖啡豆和濾掛包」<br>小杰想查：列出咖啡豆類和濾掛式咖啡的商品</p>
+<p><font color=#0000FF>  In [8]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡豆&#x27;</span> <span class="keyword">OR</span> name <span class="operator">=</span> <span class="string">&#x27;濾掛式咖啡包&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [8]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq6.png?alt=media&token=e762f084-686d-4551-8165-45dd5e868014" alt="q6"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡豆」的商品以及名稱為「濾掛式咖啡包」的商品。</p>
+</blockquote>
+<h2 id="BETWEEN篇"><a href="#BETWEEN篇" class="headerlink" title="BETWEEN篇"></a>BETWEEN篇</h2><h3 id="情境-7：價格區間"><a href="#情境-7：價格區間" class="headerlink" title="情境 7：價格區間"></a>情境 7：價格區間</h3><p>顧客：「想找100到200元之間的飲品」<br>小杰想查：列出這個價格區間的飲品</p>
+<p><font color=#0000FF>  In [9]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;果汁&#x27;</span>) <span class="keyword">AND</span> discount_price <span class="keyword">BETWEEN</span> <span class="number">100</span> <span class="keyword">AND</span> <span class="number">200</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [9]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq7.png?alt=media&token=d6133a03-1f4b-4916-99aa-6983a7d59d72" alt="q7"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡」、「茶飲」或「果汁」，且優惠價在100到200元之間的商品。</p>
+</blockquote>
+<h2 id="更新資料篇"><a href="#更新資料篇" class="headerlink" title="更新資料篇"></a>更新資料篇</h2><h3 id="情境-8：調整價格"><a href="#情境-8：調整價格" class="headerlink" title="情境 8：調整價格"></a>情境 8：調整價格</h3><p>店長：「美式咖啡要降價10元」<br>小杰想查：如何更新美式咖啡的優惠價</p>
+<p><font color=#0000FF>  In [10]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> discount_price <span class="operator">=</span> discount_price <span class="operator">-</span> <span class="number">10</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;美式咖啡&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [10]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-result.png?alt=media&token=9a462bdb-86de-4f74-8b0f-018bb078e4f6" alt="q8"></p>
+<p><font color=#0000FF>  In [11]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;特調拿鐵&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [11]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-.png?alt=media&token=78170701-c53f-4412-961c-f3f9677433e4" alt="q8Table"></p>
+<blockquote>
+<p>將 products 表中名稱為「美式咖啡」的商品的優惠價降低10元。</p>
+</blockquote>
+<h3 id="情境-9：更新庫存"><a href="#情境-9：更新庫存" class="headerlink" title="情境 9：更新庫存"></a>情境 9：更新庫存</h3><p>店長：「特選咖啡豆進了10包」<br>小杰想查：如何增加特選咖啡豆的庫存</p>
+<p><font color=#0000FF>  In [12]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> discount_price <span class="operator">=</span> discount_price <span class="operator">-</span> <span class="number">10</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;美式咖啡&#x27;</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [12]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-result.png?alt=media&token=9a462bdb-86de-4f74-8b0f-018bb078e4f6" alt="q9"></p>
+<p><font color=#0000FF>  In [13]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, stock</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;特選咖啡豆&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [13]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq9-.png?alt=media&token=7e39fd68-fbca-44d9-b3f7-14aa799773b5" alt="q9Table"></p>
+<blockquote>
+<p>將 products 表中名稱為「特選咖啡豆」的商品的庫存增加10包。</p>
+</blockquote>
+<p><font color=#c0c0c0> 吹著前奏望著天空 我想起花瓣試著掉落 </font></p>
+]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>五件討厭的事</title>
     <url>/IWishIKnewHowToQuitYou/2024/06/04/%E4%BA%94%E4%BB%B6%E8%A8%8E%E5%8E%AD%E7%9A%84%E4%BA%8B/</url>
     <content><![CDATA[<p>討厭說謊<br>但實話總讓人傷心<br>不掉眼淚就是堅強的話<br>為何我站不起來<br>⠀<br>討厭自己那麼努力<br>差點能成為一個擅長等待的人<br>然而火燒太快<br>雨總是來不及下<br>⠀<br>討厭你那麼愛錢<br>卻一點也不願意愛我<br>我如此富裕<br>感情餘額總是赤字<br>⠀<br>討厭心酸的感覺<br>明明大家都說酸鹼可以中和<br>為什麼鹼性的眼淚<br>沒讓我復原<br>⠀<br>討厭大部分美好的話語後面<br>都會被加上「但是」<br>比如：我愛妳但是<br>而不是：但是我愛妳 </p>
 <h6 id="詩文｜靡靡-Tiny《五件討厭的事》"><a href="#詩文｜靡靡-Tiny《五件討厭的事》" class="headerlink" title="詩文｜靡靡 Tiny《五件討厭的事》"></a>詩文｜靡靡 Tiny《五件討厭的事》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你一定是在設計系畢業</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/16/%E4%BD%A0%E4%B8%80%E5%AE%9A%E6%98%AF%E5%9C%A8%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%95%A2%E6%A5%AD/</url>
+    <content><![CDATA[<p>你一定是在設計系畢業</p>
+<p>才能如此從容不迫地</p>
+<p>設計相遇</p>
+<p>設計對眼</p>
+<p>設計漏拍的心跳</p>
+<p>設計呼吸的躲藏</p>
+<p>以及世界的停頓</p>
+<h6 id="詩文｜劉倩妏〈你一定是在設計系畢業〉"><a href="#詩文｜劉倩妏〈你一定是在設計系畢業〉" class="headerlink" title="詩文｜劉倩妏〈你一定是在設計系畢業〉"></a>詩文｜劉倩妏〈你一定是在設計系畢業〉</h6>]]></content>
       <tags>
         <tag>Poetry</tag>
       </tags>
@@ -951,21 +1102,6 @@ body{
 ]]></content>
       <tags>
         <tag>Quotes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你一定是在設計系畢業</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/16/%E4%BD%A0%E4%B8%80%E5%AE%9A%E6%98%AF%E5%9C%A8%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%95%A2%E6%A5%AD/</url>
-    <content><![CDATA[<p>你一定是在設計系畢業</p>
-<p>才能如此從容不迫地</p>
-<p>設計相遇</p>
-<p>設計對眼</p>
-<p>設計漏拍的心跳</p>
-<p>設計呼吸的躲藏</p>
-<p>以及世界的停頓</p>
-<h6 id="詩文｜劉倩妏〈你一定是在設計系畢業〉"><a href="#詩文｜劉倩妏〈你一定是在設計系畢業〉" class="headerlink" title="詩文｜劉倩妏〈你一定是在設計系畢業〉"></a>詩文｜劉倩妏〈你一定是在設計系畢業〉</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
       </tags>
   </entry>
   <entry>
@@ -1306,18 +1442,6 @@ body{
       </tags>
   </entry>
   <entry>
-    <title>詩人節</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/10/%E8%A9%A9%E4%BA%BA%E7%AF%80/</url>
-    <content><![CDATA[<p>沒有詩寫過多</p>
-<p>只有粽慾過度</p>
-<p>蛋都立好了</p>
-<p>棉被還捨不得收</p>
-<h6 id="詩文｜李豪《詩人節》"><a href="#詩文｜李豪《詩人節》" class="headerlink" title="詩文｜李豪《詩人節》"></a>詩文｜李豪《詩人節》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>水星逆行</title>
     <url>/IWishIKnewHowToQuitYou/2024/10/28/%E6%B0%B4%E6%98%9F%E9%80%86%E8%A1%8C/</url>
     <content><![CDATA[<p>很難過的時候<br>就把所有的燈關掉<br>看一部電影<br>在最快樂的橋段裡睡去<br>當作沒有看見<br>那個不園滿的結局</p>
@@ -1325,6 +1449,18 @@ body{
 <p>這樣悶熱的夏天<br>特別適合傷心的人<br>哭不出來的眼淚<br>都變成汗水<br>讓他流一個晚上<br>感冒會比較容易好起來</p>
 <p>趕快休息<br>明天記得起床吃早餐<br>你可以從現在開始期待<br>飲料杯的笑話<br>比你糟透的人生還爛</p>
 <h6 id="詩文｜吳旻育《大人症候群》"><a href="#詩文｜吳旻育《大人症候群》" class="headerlink" title="詩文｜吳旻育《大人症候群》"></a>詩文｜吳旻育《大人症候群》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>詩人節</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/10/%E8%A9%A9%E4%BA%BA%E7%AF%80/</url>
+    <content><![CDATA[<p>沒有詩寫過多</p>
+<p>只有粽慾過度</p>
+<p>蛋都立好了</p>
+<p>棉被還捨不得收</p>
+<h6 id="詩文｜李豪《詩人節》"><a href="#詩文｜李豪《詩人節》" class="headerlink" title="詩文｜李豪《詩人節》"></a>詩文｜李豪《詩人節》</h6>]]></content>
       <tags>
         <tag>Poetry</tag>
       </tags>
