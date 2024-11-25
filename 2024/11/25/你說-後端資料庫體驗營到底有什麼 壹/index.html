@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/IWishIKnewHowToQuitYou/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/IWishIKnewHowToQuitYou/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/IWishIKnewHowToQuitYou/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/IWishIKnewHowToQuitYou/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/IWishIKnewHowToQuitYou/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/silver/pace-theme-center-radar.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"psyduck5566.github.io","root":"/IWishIKnewHowToQuitYou/","images":"/IWishIKnewHowToQuitYou/images","scheme":"Mist","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/IWishIKnewHowToQuitYou/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/IWishIKnewHowToQuitYou/js/config.js"></script>
+
+    <meta name="description" content="體驗營只有體驗營才有的東西">
+<meta property="og:type" content="article">
+<meta property="og:title" content="你說, 後端資料庫體驗營到底有什麼? 壹">
+<meta property="og:url" content="https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/25/%E4%BD%A0%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC%20%E5%A3%B9/index.html">
+<meta property="og:site_name" content="I wish I knew how to quit you.">
+<meta property="og:description" content="體驗營只有體驗營才有的東西">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F1.png?alt=media&token=e777a077-1daa-46de-b002-9787280a2ee6">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F2.png?alt=media&token=77d928a9-d52f-4b4f-89a8-5787c529de3e">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F2-checkTable.png?alt=media&token=75baa3ba-8e72-458a-92b7-a89e4bc10f21">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F3.png?alt=media&token=b6254611-6749-49c0-a9bc-1b689a5c2ce9">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F3-checkTable.png?alt=media&token=916b20a2-693e-4349-b49f-c8cd3869d61f">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F4.png?alt=media&token=b70bdad0-853b-4dd2-acf8-346fc208f1bd">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F4-checkTable.png?alt=media&token=dddb56ed-efa9-4ce8-a719-e6a9a19edb6a">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F5.png?alt=media&token=663c2239-3a01-46a5-9b0c-689766b6eb0b">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F6.png?alt=media&token=42a87d64-89e9-4de4-bad6-b317804cad2e">
+<meta property="article:published_time" content="2024-11-25T14:18:43.000Z">
+<meta property="article:modified_time" content="2024-11-25T16:18:29.472Z">
+<meta property="article:author" content="KoOducK (psyduck5566)">
+<meta property="article:tag" content="Practice">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F1.png?alt=media&token=e777a077-1daa-46de-b002-9787280a2ee6">
+
+
+<link rel="canonical" href="https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/25/%E4%BD%A0%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC%20%E5%A3%B9/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/25/%E4%BD%A0%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC%20%E5%A3%B9/","path":"2024/11/25/你說-後端資料庫體驗營到底有什麼 壹/","title":"你說, 後端資料庫體驗營到底有什麼? 壹"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>你說, 後端資料庫體驗營到底有什麼? 壹 | I wish I knew how to quit you.</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/IWishIKnewHowToQuitYou/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/IWishIKnewHowToQuitYou/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">I wish I knew how to quit you.</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">I was completely taken with you...</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/IWishIKnewHowToQuitYou/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/IWishIKnewHowToQuitYou/about/" rel="section"><i class="fa-regular fa-heart fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/IWishIKnewHowToQuitYou/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AB%8B%E5%85%88%E5%BB%BA%E7%AB%8B-users-%E8%B3%87%E6%96%99%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">請先建立 users 資料表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E8%88%87%E7%94%A8%E9%80%94"><span class="nav-number">2.</span> <span class="nav-text">功能與用途</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A4%E8%A1%A8%E9%81%A9%E7%94%A8%E6%96%BC%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8%E8%80%85%E8%B3%87%E6%96%99%EF%BC%8C%E6%8F%90%E4%BE%9B%E4%BB%A5%E4%B8%8B%E5%8A%9F%E8%83%BD%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">此表適用於管理系統中的使用者資料，提供以下功能：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99%EF%BC%8C%E8%B3%87%E6%96%99%E8%A1%A8%E7%82%BA-USER"><span class="nav-number"></span> <span class="nav-text">用戶資料，資料表為 USER</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%A2%9E%E5%85%AD%E7%AD%86%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99%EF%BC%8C%E8%B3%87%E6%96%99%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">新增六筆用戶資料，資料如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8-Email-%E6%89%BE%E5%88%B0-%E6%9D%8E%E7%87%95%E5%AE%B9%E3%80%81%E8%82%8C%E8%82%89%E6%A3%92%E5%AD%90%E3%80%81Q%E5%A4%AA%E9%83%8E%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%BB%96%E7%9A%84-Role-%E7%82%BA-USER-%E5%B0%87%E4%BB%96%E7%9A%84-Role-%E4%BF%AE%E6%94%B9%E7%82%BA-COACH"><span class="nav-number">2.</span> <span class="nav-text">用 Email 找到 李燕容、肌肉棒子、Q太郎，如果他的 Role 為 USER 將他的 Role 修改為 COACH</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%AA%E9%99%A4-USER-%E8%B3%87%E6%96%99%E8%A1%A8%E4%B8%AD%EF%BC%8C%E7%94%A8-Email-%E6%89%BE%E5%88%B0-%E9%80%8F%E6%98%8E%E4%BA%BA%EF%BC%8C%E4%B8%A6%E5%88%AA%E9%99%A4%E8%A9%B2%E7%AD%86%E8%B3%87%E6%96%99"><span class="nav-number">3.</span> <span class="nav-text">刪除 USER 資料表中，用 Email 找到 透明人，並刪除該筆資料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%A9%A2%E5%8F%96%E5%BE%97-USER-%E8%B3%87%E6%96%99%E8%A1%A8%E7%9B%AE%E5%89%8D%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B6%E6%95%B8%E9%87%8F%EF%BC%88%E6%8F%90%E7%A4%BA%EF%BC%9A%E4%BD%BF%E7%94%A8count%E5%87%BD%E5%BC%8F%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">查詢取得 USER 資料表目前所有用戶數量（提示：使用count函式）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%A9%A2%E5%8F%96%E5%BE%97-USER-%E8%B3%87%E6%96%99%E8%A1%A8%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99%EF%BC%8C%E4%B8%A6%E5%88%97%E5%87%BA%E5%89%8D-3-%E7%AD%86%EF%BC%88%E6%8F%90%E7%A4%BA%EF%BC%9A%E4%BD%BF%E7%94%A8limit%E8%AA%9E%E6%B3%95%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">查詢取得 USER 資料表所有用戶資料，並列出前 3 筆（提示：使用limit語法）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%8D%E5%A4%96%E7%9F%A5%E8%AD%98%E8%A3%9C%E5%85%85"><span class="nav-number"></span> <span class="nav-text">額外知識補充</span></a></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="KoOducK (psyduck5566)"
+      src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Psyduck%20icon%2FIMG_3164.JPG?alt=media&token=4a6b93f8-cc18-4b5f-a288-a9628efba982">
+  <p class="site-author-name" itemprop="name">KoOducK (psyduck5566)</p>
+  <div class="site-description" itemprop="description">Being a novice in the field of coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/IWishIKnewHowToQuitYou/archives/">
+          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/IWishIKnewHowToQuitYou/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:snowdrinking@gmail.com" title="E-Mail → mailto:snowdrinking@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://www.chilingjj.org/" title="https:&#x2F;&#x2F;www.chilingjj.org&#x2F;" rel="noopener" target="_blank">志玲姊姊慈善基金會</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.hexschool.com/" title="https:&#x2F;&#x2F;www.hexschool.com&#x2F;" rel="noopener" target="_blank">六角學院</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.casper.tw/" title="https:&#x2F;&#x2F;www.casper.tw&#x2F;" rel="noopener" target="_blank">前端，沒有極限</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://andywang-95.github.io/Hexo-blog/" title="http:&#x2F;&#x2F;andywang-95.github.io&#x2F;Hexo-blog&#x2F;" rel="noopener" target="_blank">Jiahe's Blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://arielyao0822.github.io/hexo2024/" title="http:&#x2F;&#x2F;arielyao0822.github.io&#x2F;hexo2024&#x2F;" rel="noopener" target="_blank">Ariel's Blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://medium.com/@hanforwork896/" title="https:&#x2F;&#x2F;medium.com&#x2F;@hanforwork896&#x2F;" rel="noopener" target="_blank">Hannah 的前端手扎</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/25/%E4%BD%A0%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC%20%E5%A3%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Psyduck%20icon%2FIMG_3164.JPG?alt=media&token=4a6b93f8-cc18-4b5f-a288-a9628efba982">
+      <meta itemprop="name" content="KoOducK (psyduck5566)">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="I wish I knew how to quit you.">
+      <meta itemprop="description" content="Being a novice in the field of coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="你說, 後端資料庫體驗營到底有什麼? 壹 | I wish I knew how to quit you.">
+      <meta itemprop="description" content="體驗營只有體驗營才有的東西">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          你說, 後端資料庫體驗營到底有什麼? 壹
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2024-11-25 22:18:43" itemprop="dateCreated datePublished" datetime="2024-11-25T22:18:43+08:00">2024-11-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2024-11-26 00:18:29" itemprop="dateModified" datetime="2024-11-26T00:18:29+08:00">2024-11-26</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">體驗營只有體驗營才有的東西</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>序</p>
+<p>有一間廠商即將建置「健身教練線上直播課平台」<br>其優點是：</p>
+<ul>
+<li><strong>小班制健身直播課制：</strong>教練會在平台開課，學生前往教練開設的課程頁面報名，課程時間到了後，就可點擊課程直播室進行上課</li>
+<li>堂數售價：每位健身教練的收費都一致，一堂 50 分鐘<strong>小班制健身直播課</strong>都是 200 元</li>
+</ul>
+<p><strong>堂數組合包方案</strong></p>
+<ul>
+<li>7 堂組合包方案：<ul>
+<li>價格：1,400 元</li>
+</ul>
+</li>
+<li>14 堂方案：<ul>
+<li>價格：2,520 元</li>
+</ul>
+</li>
+<li>21 堂方案：<ul>
+<li>價格：4,800 元  Σ(°Д°;</li>
+</ul>
+</li>
+</ul>
+<h3 id="請先建立-users-資料表"><a href="#請先建立-users-資料表" class="headerlink" title="請先建立 users 資料表"></a>請先建立 users 資料表</h3><p><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;USER&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;email&quot; <span class="type">varchar</span>(<span class="number">320</span>) <span class="keyword">UNIQUE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;role&quot; <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>, <span class="comment">-- 角色，分別有 &quot;USER&quot;、&quot;COACH&quot;</span></span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [1]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F1.png?alt=media&token=e777a077-1daa-46de-b002-9787280a2ee6" alt="result"></p>
+<p>id</p>
+<blockquote>
+<p><strong>資料型別：</strong> <code>uuid</code><br><strong>功能：</strong>作為每個使用者的唯一識別碼（主鍵）。<br><strong>特性：</strong></p>
+<blockquote>
+<p><code>PRIMARY KEY</code>：此欄位是主鍵，保證每筆記錄的唯一性。<br><code>NOT NULL</code>：<br><code>DEFAULT (gen_random_uuid())</code>：自動生成一個隨機的 UUID 作為預設值，無需手動指定。</p>
+</blockquote>
+</blockquote>
+<p>name</p>
+<blockquote>
+<p><strong>資料型別：</strong> <code>varchar(50)</code><br><strong>功能：</strong>儲存使用者的名稱。<br><strong>特性：</strong></p>
+<blockquote>
+<p><code>NOT NULL</code>：此欄位不得為空。<br>長度限制：最多 50 個字元。</p>
+</blockquote>
+</blockquote>
+<p>email</p>
+<blockquote>
+<p><strong>資料型別：</strong> <code>varchar(320)</code><br><strong>功能：</strong>儲存使用者的電子郵件地址。<br><strong>特性：</strong></p>
+<blockquote>
+<p><code>UNIQUE</code>：此欄位的值需唯一，不能有重複的電子郵件。<br><code>NOT NULL</code>：此欄位不得為空。<br><strong>長度限制：</strong>最多 320 個字元（符合電子郵件標準）。</p>
+</blockquote>
+</blockquote>
+<p>role</p>
+<blockquote>
+<p><strong>資料型別：</strong> <code>varchar(20)</code><br><strong>功能：</strong>儲存使用者的角色類型。<br><strong>特性：</strong></p>
+<blockquote>
+<p>角色值：可選值為 “USER”（普通使用者）或 “COACH”（教練）<br><code>NOT NULL</code>：此欄位不得為空。</p>
+</blockquote>
+</blockquote>
+<p>created_at</p>
+<blockquote>
+<p><strong>資料型別：</strong> <code>timestamp</code><br><strong>功能：</strong>記錄使用者的建立時間。<br><strong>特性：</strong></p>
+<blockquote>
+<p><code>NOT NULL</code>：此欄位不得為空。<br><code>DEFAULT (CURRENT_TIMESTAMP)</code>：自動填入當前的時間戳，表示記錄建立的時間。</p>
+</blockquote>
+</blockquote>
+<p>updated_at</p>
+<blockquote>
+<p><strong>資料型別：</strong> <code>timestamp</code><br><strong>功能：</strong>記錄使用者的最後更新時間。<br><strong>特性：</strong></p>
+<blockquote>
+<p><code>NOT NULL</code>：此欄位不得為空。<br><code>DEFAULT (CURRENT_TIMESTAMP)</code>：自動填入當前的時間戳，表示記錄最後更新的時間。</p>
+</blockquote>
+</blockquote>
+<h3 id="功能與用途"><a href="#功能與用途" class="headerlink" title="功能與用途"></a>功能與用途</h3><h4 id="此表適用於管理系統中的使用者資料，提供以下功能："><a href="#此表適用於管理系統中的使用者資料，提供以下功能：" class="headerlink" title="此表適用於管理系統中的使用者資料，提供以下功能："></a>此表適用於管理系統中的使用者資料，提供以下功能：</h4><ol>
+<li>唯一的 id 用於識別每個使用者。</li>
+<li>儲存使用者的基本資訊（名稱與電子郵件）。</li>
+<li>區分使用者角色（普通使用者或教練）。</li>
+<li>自動記錄建立與更新時間，便於追蹤資料變更。</li>
+</ol>
+<h2 id="用戶資料，資料表為-USER"><a href="#用戶資料，資料表為-USER" class="headerlink" title="用戶資料，資料表為 USER"></a>用戶資料，資料表為 USER</h2><h3 id="新增六筆用戶資料，資料如下："><a href="#新增六筆用戶資料，資料如下：" class="headerlink" title="新增六筆用戶資料，資料如下："></a><u>新增</u>六筆用戶資料，資料如下：</h3><ul>
+<li>用戶名稱為 李燕容，Email 為 <a href="mailto:&#108;&#101;&#101;&#x32;&#x30;&#x30;&#x30;&#x40;&#104;&#x65;&#120;&#115;&#x63;&#x68;&#111;&#x6f;&#x6c;&#x74;&#101;&#115;&#x74;&#46;&#105;&#x6f;">&#108;&#101;&#101;&#x32;&#x30;&#x30;&#x30;&#x40;&#104;&#x65;&#120;&#115;&#x63;&#x68;&#111;&#x6f;&#x6c;&#x74;&#101;&#115;&#x74;&#46;&#105;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 王小明，Email 為 <a href="mailto:&#x77;&#88;&#108;&#x54;&#113;&#64;&#x68;&#101;&#120;&#115;&#99;&#104;&#x6f;&#x6f;&#x6c;&#x74;&#x65;&#115;&#x74;&#x2e;&#x69;&#x6f;">&#x77;&#88;&#108;&#x54;&#113;&#64;&#x68;&#101;&#120;&#115;&#99;&#104;&#x6f;&#x6f;&#x6c;&#x74;&#x65;&#115;&#x74;&#x2e;&#x69;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 肌肉棒子，Email 為 <a href="mailto:&#109;&#117;&#x73;&#x63;&#108;&#101;&#x40;&#104;&#101;&#120;&#x73;&#x63;&#x68;&#111;&#x6f;&#x6c;&#116;&#101;&#x73;&#116;&#x2e;&#x69;&#111;">&#109;&#117;&#x73;&#x63;&#108;&#101;&#x40;&#104;&#101;&#120;&#x73;&#x63;&#x68;&#111;&#x6f;&#x6c;&#116;&#101;&#x73;&#116;&#x2e;&#x69;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 好野人，Email 為 <a href="mailto:&#114;&#105;&#99;&#x68;&#x6d;&#97;&#110;&#x40;&#x68;&#101;&#x78;&#115;&#x63;&#x68;&#x6f;&#111;&#108;&#116;&#101;&#x73;&#116;&#46;&#105;&#x6f;">&#114;&#105;&#99;&#x68;&#x6d;&#97;&#110;&#x40;&#x68;&#101;&#x78;&#115;&#x63;&#x68;&#x6f;&#111;&#108;&#116;&#101;&#x73;&#116;&#46;&#105;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 Q太郎，Email 為 <a href="mailto:&#x73;&#x74;&#x61;&#114;&#x70;&#x6c;&#x61;&#x74;&#x69;&#x6e;&#117;&#109;&#x40;&#x68;&#x65;&#120;&#x73;&#x63;&#x68;&#x6f;&#x6f;&#x6c;&#116;&#x65;&#x73;&#x74;&#x2e;&#105;&#111;">&#x73;&#x74;&#x61;&#114;&#x70;&#x6c;&#x61;&#x74;&#x69;&#x6e;&#117;&#109;&#x40;&#x68;&#x65;&#120;&#x73;&#x63;&#x68;&#x6f;&#x6f;&#x6c;&#116;&#x65;&#x73;&#x74;&#x2e;&#105;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 透明人，Email 為 <a href="mailto:&#111;&#112;&#x61;&#99;&#x69;&#116;&#121;&#48;&#x40;&#x68;&#x65;&#x78;&#x73;&#x63;&#x68;&#x6f;&#111;&#108;&#116;&#x65;&#115;&#116;&#46;&#x69;&#x6f;">&#111;&#112;&#x61;&#99;&#x69;&#116;&#121;&#48;&#x40;&#x68;&#x65;&#x78;&#x73;&#x63;&#x68;&#x6f;&#111;&#108;&#116;&#x65;&#115;&#116;&#46;&#x69;&#x6f;</a>，Role 為 USER</li>
+</ul>
+<p>使用 INSERT INTO 語句將資料插入到 USER 資料表中：</p>
+<p><font color=#0000FF> ln [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;USER&quot; (&quot;name&quot;, &quot;email&quot;, &quot;role&quot;)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">  (<span class="string">&#x27;李燕容&#x27;</span>, <span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;王小明&#x27;</span>, <span class="string">&#x27;wXlTq@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;肌肉棒子&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;好野人&#x27;</span>, <span class="string">&#x27;richman@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;Q太郎&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;透明人&#x27;</span>, <span class="string">&#x27;opacity0@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [2]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F2.png?alt=media&token=77d928a9-d52f-4b4f-89a8-5787c529de3e" alt="result1"></p>
+<p>使用以下語句查看資料載入後的樣子：<br><font color=#0000FF> ln [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span><span class="operator">*</span><span class="keyword">FROM</span> &quot;USER&quot; ;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [3]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F2-checkTable.png?alt=media&token=75baa3ba-8e72-458a-92b7-a89e4bc10f21" alt="result1Table"></p>
+<blockquote>
+<p><strong>欄位選擇：</strong></p>
+<blockquote>
+<p>只插入 name（用戶名稱）、email（電子郵件）和 role（角色）。<br>id 會自動生成，因為設置了 <code>DEFAULT (gen_random_uuid())</code>。<br>created_at 和 updated_at 因 <code> DEFAULT (CURRENT_TIMESTAMP)</code> 會自動填入當前時間。</p>
+</blockquote>
+</blockquote>
+<h3 id="用-Email-找到-李燕容、肌肉棒子、Q太郎，如果他的-Role-為-USER-將他的-Role-修改為-COACH"><a href="#用-Email-找到-李燕容、肌肉棒子、Q太郎，如果他的-Role-為-USER-將他的-Role-修改為-COACH" class="headerlink" title="用 Email 找到 李燕容、肌肉棒子、Q太郎，如果他的 Role 為 USER 將他的 Role 修改為 COACH"></a>用 Email 找到 李燕容、肌肉棒子、Q太郎，如果他的 Role 為 USER 將他的 Role <u>修改</u>為 COACH</h3><p>修改指定用戶的 SQL 語法，根據 email 找到符合條件的用戶，並將 role 從 USER 更新為 COACH：</p>
+<p><font color=#0000FF> ln [4]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> &quot;USER&quot;</span><br><span class="line"><span class="keyword">SET</span> &quot;role&quot; <span class="operator">=</span> <span class="string">&#x27;COACH&#x27;</span></span><br><span class="line"><span class="keyword">WHERE</span> &quot;email&quot; <span class="keyword">IN</span> (<span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>)</span><br><span class="line">  <span class="keyword">AND</span> &quot;role&quot; <span class="operator">=</span> <span class="string">&#x27;USER&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [4]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F3.png?alt=media&token=b6254611-6749-49c0-a9bc-1b689a5c2ce9" alt="result2"></p>
+<blockquote>
+<p><code>UPDATE "USER"</code>：</p>
+<blockquote>
+<p>指定要修改的資料表為 USER。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>SET "role" = 'COACH'</code>：</p>
+<blockquote>
+<p>將 role 欄位的值更新為 ‘COACH’。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>WHERE </code>條件：</p>
+<blockquote>
+<p>email 條件：只更新 email 為 <a href="mailto:&#x6c;&#101;&#101;&#x32;&#48;&#48;&#x30;&#x40;&#104;&#101;&#120;&#x73;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#116;&#101;&#115;&#x74;&#46;&#x69;&#x6f;">&#x6c;&#101;&#101;&#x32;&#48;&#48;&#x30;&#x40;&#104;&#101;&#120;&#x73;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#116;&#101;&#115;&#x74;&#46;&#x69;&#x6f;</a>、<a href="mailto:&#x6d;&#117;&#115;&#x63;&#x6c;&#x65;&#64;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#x74;&#46;&#105;&#111;">&#x6d;&#117;&#115;&#x63;&#x6c;&#x65;&#64;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#x74;&#46;&#105;&#111;</a> 和 <a href="mailto:&#115;&#x74;&#97;&#114;&#x70;&#108;&#x61;&#x74;&#x69;&#x6e;&#117;&#x6d;&#64;&#104;&#101;&#x78;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#116;&#101;&#x73;&#x74;&#x2e;&#x69;&#111;">&#115;&#x74;&#97;&#114;&#x70;&#108;&#x61;&#x74;&#x69;&#x6e;&#117;&#x6d;&#64;&#104;&#101;&#x78;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#116;&#101;&#x73;&#x74;&#x2e;&#x69;&#111;</a> 的用戶。<br>role &#x3D; ‘USER’ 條件：僅在 role 為 ‘USER’ 的情況下進行更新，避免不必要的修改。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><code>IN</code> 關鍵字：</p>
+<blockquote>
+<p>用於匹配多個 email 值，簡化了多個 OR 條件的寫法。</p>
+</blockquote>
+</blockquote>
+<p><strong><font color=#FF0000> 注意事項 </font></strong></p>
+<blockquote>
+<p><strong>條件檢查：</strong></p>
+<blockquote>
+<p>如果用戶的 role 已經是 COACH，這條語句不會影響該資料（因為加了 <code>AND "role" = 'USER'</code> 的條件）。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>安全性：</strong></p>
+<blockquote>
+<p>確保 WHERE 條件正確，避免更新到不應該修改的資料。</p>
+</blockquote>
+</blockquote>
+<p>檢查更新結果<br>可以使用以下語句來確認更新是否成功：</p>
+<p><font color=#0000FF> ln [5]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> &quot;name&quot;, &quot;email&quot;, &quot;role&quot;</span><br><span class="line"><span class="keyword">FROM</span> &quot;USER&quot;</span><br><span class="line"><span class="keyword">WHERE</span> &quot;email&quot; <span class="keyword">IN</span> (<span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [5]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F3-checkTable.png?alt=media&token=916b20a2-693e-4349-b49f-c8cd3869d61f" alt="result2Table"></p>
+<h3 id="刪除-USER-資料表中，用-Email-找到-透明人，並刪除該筆資料"><a href="#刪除-USER-資料表中，用-Email-找到-透明人，並刪除該筆資料" class="headerlink" title="刪除 USER 資料表中，用 Email 找到 透明人，並刪除該筆資料"></a><u>刪除</u> USER 資料表中，用 Email 找到 透明人，並刪除該筆資料</h3><p>刪除 USER 資料表中 透明人 資料的 SQL 語法，根據 email 找到並刪除該筆資料：</p>
+<p><font color=#0000FF> ln [6]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> &quot;USER&quot;</span><br><span class="line"><span class="keyword">WHERE</span> &quot;email&quot; <span class="operator">=</span> <span class="string">&#x27;opacity0@hexschooltest.io&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [6]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F4.png?alt=media&token=b70bdad0-853b-4dd2-acf8-346fc208f1bd" alt="result3"></p>
+<blockquote>
+<p><strong><code> DELETE FROM "USER"</code></strong>:</p>
+<blockquote>
+<p>指定要刪除資料的資料表為 USER。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong><code>WHERE "email" = '<a href="mailto:&#x6f;&#x70;&#x61;&#99;&#105;&#116;&#x79;&#x30;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#104;&#x6f;&#111;&#108;&#x74;&#x65;&#x73;&#116;&#x2e;&#x69;&#111;">&#x6f;&#x70;&#x61;&#99;&#105;&#116;&#x79;&#x30;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#104;&#x6f;&#111;&#108;&#x74;&#x65;&#x73;&#116;&#x2e;&#x69;&#111;</a>'</code></strong>:</p>
+<blockquote>
+<p>使用 WHERE 條件篩選出 email 為 <a href="mailto:&#111;&#112;&#x61;&#x63;&#105;&#116;&#121;&#48;&#x40;&#104;&#x65;&#120;&#115;&#x63;&#104;&#111;&#111;&#x6c;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#x6f;">&#111;&#112;&#x61;&#x63;&#105;&#116;&#121;&#48;&#x40;&#104;&#x65;&#120;&#115;&#x63;&#104;&#111;&#111;&#x6c;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#x6f;</a> 的資料，確保只刪除符合條件的那一筆資料。</p>
+</blockquote>
+</blockquote>
+<p><strong><font color=#FF0000> 注意事項 </font></strong></p>
+<blockquote>
+<p><strong>確認刪除條件：</strong></p>
+<blockquote>
+<p>確保 email 條件正確，避免刪除錯誤的資料。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>不可逆操作：</strong></p>
+<blockquote>
+<p><code>DELETE</code>操作是不可逆的，刪除後無法恢復。</p>
+</blockquote>
+</blockquote>
+<p>可以執行以下查詢語句，確認資料是否已成功刪除：</p>
+<p><font color=#0000FF> ln [7]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> &quot;USER&quot; <span class="keyword">WHERE</span> &quot;email&quot; <span class="operator">=</span> <span class="string">&#x27;opacity0@hexschooltest.io&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [7]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F4-checkTable.png?alt=media&token=dddb56ed-efa9-4ce8-a719-e6a9a19edb6a" alt="result3Table"></p>
+<p>查詢結果為空，表示刪除成功。</p>
+<h3 id="查詢取得-USER-資料表目前所有用戶數量（提示：使用count函式）"><a href="#查詢取得-USER-資料表目前所有用戶數量（提示：使用count函式）" class="headerlink" title="查詢取得 USER 資料表目前所有用戶數量（提示：使用count函式）"></a><u>查詢</u>取得 USER 資料表目前所有用戶數量（提示：使用count函式）</h3><p>查詢 USER 資料表中目前用戶數量的 SQL 語法：</p>
+<p><font color=#0000FF> ln [8]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>) <span class="keyword">AS</span> user_count</span><br><span class="line"><span class="keyword">FROM</span> &quot;USER&quot;;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [8]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F5.png?alt=media&token=663c2239-3a01-46a5-9b0c-689766b6eb0b" alt="result4"></p>
+<blockquote>
+<p><strong><code>SELECT COUNT(*)</code>:</strong></p>
+<blockquote>
+<p>使用 COUNT(*) 函數計算資料表中所有資料列的數量。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong><code>AS user_count</code>：</strong></p>
+<blockquote>
+<p>將計算結果命名為 user_count，方便識別結果欄位。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong><code>FROM "USER"</code>:</strong></p>
+<blockquote>
+<p>指定要查詢的資料表為 USER。</p>
+</blockquote>
+</blockquote>
+<h3 id="查詢取得-USER-資料表所有用戶資料，並列出前-3-筆（提示：使用limit語法）"><a href="#查詢取得-USER-資料表所有用戶資料，並列出前-3-筆（提示：使用limit語法）" class="headerlink" title="查詢取得 USER 資料表所有用戶資料，並列出前 3 筆（提示：使用limit語法）"></a><u>查詢</u>取得 USER 資料表所有用戶資料，並列出前 3 筆（提示：使用limit語法）</h3><p>以下是查詢 USER 資料表中所有用戶資料並列出前 3 筆的 SQL 語法：</p>
+<p><font color=#0000FF> ln [9]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> &quot;USER&quot;</span><br><span class="line">LIMIT <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+
+<p>執行上述語句後，會返回 USER 資料表中的前 3 筆資料，例如：</p>
+<p><font color=#FF0000> Out [9]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241125%20Practice%2F6.png?alt=media&token=42a87d64-89e9-4de4-bad6-b317804cad2e" alt="result5"></p>
+<blockquote>
+<p><code>SELECT *</code>:</p>
+<blockquote>
+<p>選取 USER 資料表中的所有欄位。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong><code>FROM "USER"</code>:</strong></p>
+<blockquote>
+<p>指定要查詢的資料表為 USER。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong><code>LIMIT 3</code>:</strong></p>
+<blockquote>
+<p>限制查詢結果只返回前 3 筆資料。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>檢查資料完整性：</strong></p>
+<blockquote>
+<p>如果資料表中有重複資料或需要特定篩選，可以加上 WHERE 條件進一步過濾。</p>
+</blockquote>
+</blockquote>
+<h2 id="額外知識補充"><a href="#額外知識補充" class="headerlink" title="額外知識補充"></a>額外知識補充</h2><ol>
+<li>下方的 <code>created_at</code>、 <code>updated_at</code> 的  <code>DEFAULT</code> 是預設值意思，若是在建立資料時沒填寫的話不會報錯，而是會能放預設值</li>
+<li>下方的建立資料表，會需要用雙引號<code>"USER"</code>原因是，<em><strong>postgreSQL 的 user 是關鍵字</strong></em>，為了避免撞名所以需要加上雙引號</li>
+<li>在選取資料表時， 也請留意要加上雙引號，例如 <code>SELECT * FROM "USER"</code></li>
+<li><code>timestamp</code>也是一種資料格式(Data Type)，主要是「時間格式」，範例為 2024-11-24T17:42:04.452Z</li>
+</ol>
+<p>SEE YOU TOMORROW (σ′▽‵)′▽‵)σ</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/IWishIKnewHowToQuitYou/tags/Practice/" rel="tag"># Practice</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/IWishIKnewHowToQuitYou/2024/11/21/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3/" rel="prev" title="SQL小節練習：晴天咖啡廳">
+                  <i class="fa fa-angle-left"></i> SQL小節練習：晴天咖啡廳
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">KoOducK (psyduck5566)</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/psyduck5566" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/IWishIKnewHowToQuitYou/js/comments.js"></script><script src="/IWishIKnewHowToQuitYou/js/utils.js"></script><script src="/IWishIKnewHowToQuitYou/js/motion.js"></script><script src="/IWishIKnewHowToQuitYou/js/schemes/muse.js"></script><script src="/IWishIKnewHowToQuitYou/js/sidebar.js"></script><script src="/IWishIKnewHowToQuitYou/js/next-boot.js"></script><script src="/IWishIKnewHowToQuitYou/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/IWishIKnewHowToQuitYou/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/IWishIKnewHowToQuitYou/js/third-party/pace.js"></script>
+
+
+  
+
+
+
+
+
+</body>
+</html>
