@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/IWishIKnewHowToQuitYou/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/IWishIKnewHowToQuitYou/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/IWishIKnewHowToQuitYou/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/IWishIKnewHowToQuitYou/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/IWishIKnewHowToQuitYou/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/silver/pace-theme-center-radar.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"psyduck5566.github.io","root":"/IWishIKnewHowToQuitYou/","images":"/IWishIKnewHowToQuitYou/images","scheme":"Mist","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/IWishIKnewHowToQuitYou/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/IWishIKnewHowToQuitYou/js/config.js"></script>
+
+    <meta name="description" content="就是要尋找那什麼">
+<meta property="og:type" content="article">
+<meta property="og:title" content="妳說, 後端資料庫體驗營到底有什麼? 貳">
+<meta property="og:url" content="https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/26/%E5%A6%B3%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC-%E8%B2%B3/index.html">
+<meta property="og:site_name" content="I wish I knew how to quit you.">
+<meta property="og:description" content="就是要尋找那什麼">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F1.png?alt=media&token=d377ed6b-a4e4-4ff0-810e-38d3aa0d94d6">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F1-Table.png?alt=media&token=16fe8cc7-70dd-4f3e-b8b0-afb158590753">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F2.png?alt=media&token=ddae3083-d881-4664-8207-fcd497906152">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F2-Table.png?alt=media&token=0c42fd13-169b-4510-ad8c-9a52dbe507cb">
+<meta property="article:published_time" content="2024-11-25T17:29:17.000Z">
+<meta property="article:modified_time" content="2024-11-26T15:02:44.144Z">
+<meta property="article:author" content="KoOducK (psyduck5566)">
+<meta property="article:tag" content="Practice">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F1.png?alt=media&token=d377ed6b-a4e4-4ff0-810e-38d3aa0d94d6">
+
+
+<link rel="canonical" href="https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/26/%E5%A6%B3%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC-%E8%B2%B3/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/26/%E5%A6%B3%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC-%E8%B2%B3/","path":"2024/11/26/妳說-後端資料庫體驗營到底有什麼-貳/","title":"妳說, 後端資料庫體驗營到底有什麼? 貳"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>妳說, 後端資料庫體驗營到底有什麼? 貳 | I wish I knew how to quit you.</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/IWishIKnewHowToQuitYou/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/IWishIKnewHowToQuitYou/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">I wish I knew how to quit you.</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">I was completely taken with you...</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/IWishIKnewHowToQuitYou/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/IWishIKnewHowToQuitYou/about/" rel="section"><i class="fa-regular fa-heart fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/IWishIKnewHowToQuitYou/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%83%85%E5%A2%83%E8%AC%9B%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">情境講解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E5%BA%AB%E9%A0%90%E8%A8%AD%E8%B3%87%E8%A8%8A%E8%88%87%E6%AC%84%E4%BD%8D%E4%BB%8B%E7%B4%B9"><span class="nav-number">2.</span> <span class="nav-text">資料庫預設資訊與欄位介紹</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E8%A1%A8%E4%B9%8B%E9%96%93%E7%9A%84%E9%97%9C%E8%81%AF"><span class="nav-number"></span> <span class="nav-text">資料表之間的關聯</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%84%E5%90%88%E5%8C%85%E6%96%B9%E6%A1%88-CREDIT-PACKAGE%E3%80%81%E5%AE%A2%E6%88%B6%E8%B3%BC%E8%B2%B7%E8%AA%B2%E7%A8%8B%E5%A0%82%E6%95%B8-CREDIT-PURCHASE"><span class="nav-number"></span> <span class="nav-text">組合包方案 CREDIT_PACKAGE、客戶購買課程堂數 CREDIT_PURCHASE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%96%B0%E5%A2%9E%EF%BC%9A%E5%9C%A8CREDIT-PACKAGE-%E8%B3%87%E6%96%99%E8%A1%A8%E6%96%B0%E5%A2%9E%E4%B8%89%E7%AD%86%E8%B3%87%E6%96%99%EF%BC%8C%E8%B3%87%E6%96%99%E9%9C%80%E6%B1%82%E5%A6%82%E4%B8%8B%EF%BC%9A"><span class="nav-number"></span> <span class="nav-text">1. 新增：在CREDIT_PACKAGE 資料表新增三筆資料，資料需求如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E6%96%B0%E5%A2%9E%EF%BC%9A%E5%9C%A8-CREDIT-PURCHASE-%E8%B3%87%E6%96%99%E8%A1%A8%EF%BC%8C%E6%96%B0%E5%A2%9E%E4%B8%89%E7%AD%86%E8%B3%87%E6%96%99%EF%BC%9A%EF%BC%88%E8%AB%8B%E4%BD%BF%E7%94%A8-name-%E6%AC%84%E4%BD%8D%E5%81%9A%E5%AD%90%E6%9F%A5%E8%A9%A2%EF%BC%89"><span class="nav-number"></span> <span class="nav-text">2新增：在 CREDIT_PURCHASE 資料表，新增三筆資料：（請使用 name 欄位做子查詢）</span></a></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="KoOducK (psyduck5566)"
+      src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Psyduck%20icon%2FIMG_3164.JPG?alt=media&token=4a6b93f8-cc18-4b5f-a288-a9628efba982">
+  <p class="site-author-name" itemprop="name">KoOducK (psyduck5566)</p>
+  <div class="site-description" itemprop="description">Being a novice in the field of coding.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/IWishIKnewHowToQuitYou/archives/">
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/IWishIKnewHowToQuitYou/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:snowdrinking@gmail.com" title="E-Mail → mailto:snowdrinking@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://www.chilingjj.org/" title="https:&#x2F;&#x2F;www.chilingjj.org&#x2F;" rel="noopener" target="_blank">志玲姊姊慈善基金會</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.hexschool.com/" title="https:&#x2F;&#x2F;www.hexschool.com&#x2F;" rel="noopener" target="_blank">六角學院</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.casper.tw/" title="https:&#x2F;&#x2F;www.casper.tw&#x2F;" rel="noopener" target="_blank">前端，沒有極限</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://andywang-95.github.io/Hexo-blog/" title="http:&#x2F;&#x2F;andywang-95.github.io&#x2F;Hexo-blog&#x2F;" rel="noopener" target="_blank">Jiahe's Blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="http://arielyao0822.github.io/hexo2024/" title="http:&#x2F;&#x2F;arielyao0822.github.io&#x2F;hexo2024&#x2F;" rel="noopener" target="_blank">Ariel's Blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://medium.com/@hanforwork896/" title="https:&#x2F;&#x2F;medium.com&#x2F;@hanforwork896&#x2F;" rel="noopener" target="_blank">Hannah 的前端手扎</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://psyduck5566.github.io/IWishIKnewHowToQuitYou/2024/11/26/%E5%A6%B3%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC-%E8%B2%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Psyduck%20icon%2FIMG_3164.JPG?alt=media&token=4a6b93f8-cc18-4b5f-a288-a9628efba982">
+      <meta itemprop="name" content="KoOducK (psyduck5566)">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="I wish I knew how to quit you.">
+      <meta itemprop="description" content="Being a novice in the field of coding.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="妳說, 後端資料庫體驗營到底有什麼? 貳 | I wish I knew how to quit you.">
+      <meta itemprop="description" content="就是要尋找那什麼">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          妳說, 後端資料庫體驗營到底有什麼? 貳
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+      
+
+      <time title="創建時間：2024-11-26 01:29:17 / 修改時間：23:02:44" itemprop="dateCreated datePublished" datetime="2024-11-26T01:29:17+08:00">2024-11-26</time>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">就是要尋找那什麼</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>續</p>
+<h4 id="情境講解"><a href="#情境講解" class="headerlink" title="情境講解"></a>情境講解</h4><ol>
+<li>為滿足商業需求的組合包方案，於是建立了 <code>CREDIT_PACKAGE</code> 資料表，來記錄各組合包資訊</li>
+<li>客戶在買的訂單記錄，都會記錄在 <code>CREDIT_PURCHASE</code> 資料表中</li>
+</ol>
+<h4 id="資料庫預設資訊與欄位介紹"><a href="#資料庫預設資訊與欄位介紹" class="headerlink" title="資料庫預設資訊與欄位介紹"></a>資料庫預設資訊與欄位介紹</h4><ol>
+<li><strong>USER</strong>：使用者資料</li>
+<li><strong>CREDIT_PACKAGE</strong>：組合包方案</li>
+</ol>
+<ul>
+<li><code>credit_amount</code>：堂數</li>
+<li><code>price</code>:金額</li>
+</ul>
+<ol start="3">
+<li><strong>CREDIT_PURCHASE</strong>：客戶購買課程堂數</li>
+</ol>
+<ul>
+<li><code>user_id</code>：使用者(USER) 的 id 資訊</li>
+<li><code>purchased_credits</code>：購買堂數</li>
+<li><code>price_paid</code>：購買金額</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> EXTENSION IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> &quot;uuid-ossp&quot;;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;USER&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;email&quot; <span class="type">varchar</span>(<span class="number">320</span>) <span class="keyword">UNIQUE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;role&quot; <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PACKAGE&quot; (</span><br><span class="line">  &quot;id&quot; serial <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;credit_amount&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),</span><br><span class="line">  &quot;credit_package_id&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;CREDIT_PACKAGE&quot;(id),</span><br><span class="line">  &quot;purchased_credits&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price_paid&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;purchase_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>這段 SQL 語句創建了三個資料表，分別是 USER、CREDIT_PACKAGE 和 CREDIT_PURCHASE</p>
+<p><strong>USER 表</strong><br>用於存儲用戶的基本信息。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;USER&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()), <span class="comment">-- 唯一標識符，使用 UUID 自動生成</span></span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                               <span class="comment">-- 用戶名稱，最多 50 字元，必填</span></span><br><span class="line">  &quot;email&quot; <span class="type">varchar</span>(<span class="number">320</span>) <span class="keyword">UNIQUE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                     <span class="comment">-- 電子郵件，最多 320 字元，必填且唯一</span></span><br><span class="line">  &quot;role&quot; <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                              <span class="comment">-- 用戶角色，必填，可能的值如 &quot;USER&quot; 或 &quot;COACH&quot;</span></span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>), <span class="comment">-- 創建時間，默認為當前時間</span></span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)  <span class="comment">-- 更新時間，默認為當前時間</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>id：</strong>使用 <code>gen_random_uuid()</code> 自動生成唯一標識符。<br><strong>email：</strong>設置了唯一性約束，確保每個用戶的電子郵件地址不重複。<br><strong>role：</strong>用戶角色欄位，可用於區分普通用戶和其他角色（如教練）。<br><code>created_at</code>和<code>updated_at</code>：用於記錄用戶的創建和更新時間。</p>
+</blockquote>
+<p><strong>CREDIT_PACKAGE 表</strong><br>用於存儲信用點數套餐的詳細信息。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PACKAGE&quot; (</span><br><span class="line">  &quot;id&quot; serial <span class="keyword">PRIMARY</span> KEY,                       <span class="comment">-- 唯一標識符，自動遞增</span></span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                  <span class="comment">-- 套餐名稱，最多 50 字元，必填</span></span><br><span class="line">  &quot;credit_amount&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,             <span class="comment">-- 套餐中包含的信用點數數量，必填</span></span><br><span class="line">  &quot;price&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,               <span class="comment">-- 套餐價格，必填，精確到小數點後兩位</span></span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>) <span class="comment">-- 創建時間，默認為當前時間</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>id：</strong>使用 <code>serial</code><br><strong>credit_amount：</strong>存儲套餐中包含的信用點數數量。 自動生成唯一標識符。<br><strong>price：</strong>記錄套餐的價格，使用 <code>numeric(10,2)</code> 確保價格的精度。<br><strong>created_at：</strong>記錄套餐的創建時間。</p>
+</blockquote>
+<p><strong>CREDIT_PURCHASE 表</strong><br>用於記錄用戶購買信用點數的交易。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()), <span class="comment">-- 唯一標識符，使用 UUID 自動生成</span></span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),             <span class="comment">-- 外鍵，引用 &quot;USER&quot; 表的 id</span></span><br><span class="line">  &quot;credit_package_id&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;CREDIT_PACKAGE&quot;(id), <span class="comment">-- 外鍵，引用 &quot;CREDIT_PACKAGE&quot; 表的 id</span></span><br><span class="line">  &quot;purchased_credits&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                      <span class="comment">-- 購買的信用點數數量</span></span><br><span class="line">  &quot;price_paid&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                       <span class="comment">-- 實際支付的金額，精確到小數點後兩位</span></span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>), <span class="comment">-- 創建時間，默認為當前時間</span></span><br><span class="line">  &quot;purchase_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>) <span class="comment">-- 購買時間，默認為當前時間</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>id：</strong>使用 <code>gen_random_uuid()</code>自動生成唯一標識符。<br><strong>user_id：</strong>外鍵，指向<code>USER</code> 表中的 <code>id</code>用於關聯用戶。<br><strong>credit_package_id：</strong>外鍵，指向<code>CREDIT_PACKAGE</code>表中的<code>id</code>，用於關聯購買的信用點數套餐。<br><strong>purchased_credits：</strong>記錄購買的信用點數數量。<br><strong>price_paid：</strong>記錄用戶實際支付的金額。<br><strong>purchase_at：</strong>記錄交易發生的時間。</p>
+</blockquote>
+<h3 id="資料表之間的關聯"><a href="#資料表之間的關聯" class="headerlink" title="資料表之間的關聯"></a>資料表之間的關聯</h3><p><strong>USER 與 CREDIT_PURCHASE</strong></p>
+<blockquote>
+<p><code>CREDIT_PURCHASE.user_id</code>是外鍵，指向 <code>USER.id</code>。<br>表示每筆信用點數購買記錄都關聯到一個用戶。</p>
+</blockquote>
+<p><strong>CREDIT_PACKAGE 與 CREDIT_PURCHASE</strong></p>
+<blockquote>
+<p><code>CREDIT_PURCHASE.credit_package_id</code>是外鍵，指向 <code>CREDIT_PACKAGE.id</code>。<br>表示每筆購買記錄都關聯到一個信用點數套餐。</p>
+</blockquote>
+<p><strong><font color=#FF0000> 注意事項 </font></strong><br><strong>uuid-ossp 擴展</strong></p>
+<blockquote>
+<p>必須啟用 <code>uuid-ossp </code>擴展，才能使用 <code>gen_random_uuid()</code> 生成 <code>UUID</code>。如果未啟用，可執行以下語句：</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> EXTENSION IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> &quot;uuid-ossp&quot;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>外鍵約束</strong></p>
+<blockquote>
+<p>外鍵約束 <code>(REFERENCES) </code>確保數據的一致性。例如，<code>CREDIT_PURCHASE.user_id </code>必須是 <code>USER </code>表中已存在的 <code>id</code>。</p>
+</blockquote>
+<h2 id="組合包方案-CREDIT-PACKAGE、客戶購買課程堂數-CREDIT-PURCHASE"><a href="#組合包方案-CREDIT-PACKAGE、客戶購買課程堂數-CREDIT-PURCHASE" class="headerlink" title="組合包方案 CREDIT_PACKAGE、客戶購買課程堂數 CREDIT_PURCHASE"></a>組合包方案 CREDIT_PACKAGE、客戶購買課程堂數 CREDIT_PURCHASE</h2><h3 id="1-新增：在CREDIT-PACKAGE-資料表新增三筆資料，資料需求如下："><a href="#1-新增：在CREDIT-PACKAGE-資料表新增三筆資料，資料需求如下：" class="headerlink" title="1. 新增：在CREDIT_PACKAGE 資料表新增三筆資料，資料需求如下："></a>1. 新增：在CREDIT_PACKAGE 資料表新增三筆資料，資料需求如下：</h3><ul>
+<li>名稱為 7 堂組合包方案，價格為1,400 元，堂數為7</li>
+<li>名稱為14 堂組合包方案，價格為2,520 元，堂數為14</li>
+<li>名稱為 21 堂組合包方案，價格為4,800 元，堂數為21</li>
+</ul>
+<p>以下是向 CREDIT_PACKAGE 資料表新增三筆資料的 SQL 語句：</p>
+<p><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;CREDIT_PACKAGE&quot; (name, credit_amount, price)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">  (<span class="string">&#x27;7 堂組合包方案&#x27;</span>, <span class="number">7</span>, <span class="number">1400.00</span>),</span><br><span class="line">  (<span class="string">&#x27;14 堂組合包方案&#x27;</span>, <span class="number">14</span>, <span class="number">2520.00</span>),</span><br><span class="line">  (<span class="string">&#x27;21 堂組合包方案&#x27;</span>, <span class="number">21</span>, <span class="number">4800.00</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [1]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F1.png?alt=media&token=d377ed6b-a4e4-4ff0-810e-38d3aa0d94d6"></p>
+<p><strong><code>INSERT INTO "CREDIT_PACKAGE"</code></strong></p>
+<blockquote>
+<p>指定要插入數據的資料表為 <code>CREDIT_PACKAGE</code>。<br>欄位包含 name（名稱）、credit_amount（堂數）、price（價格）。</p>
+</blockquote>
+<p><strong>價格格式</strong></p>
+<blockquote>
+<p>使用 <code>numeric(10,2)</code> 格式，確保價格精確到小數點後兩位。</p>
+</blockquote>
+<p>執行此語句後，CREDIT_PACKAGE 資料表中將新增三筆資料，id 和 created_at 欄位會根據表的設定自動生成。</p>
+<p><strong>驗證插入結果</strong><br><font color=#0000FF> ln [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot;;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [2]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F1-Table.png?alt=media&token=16fe8cc7-70dd-4f3e-b8b0-afb158590753"></p>
+<h3 id="2新增：在-CREDIT-PURCHASE-資料表，新增三筆資料：（請使用-name-欄位做子查詢）"><a href="#2新增：在-CREDIT-PURCHASE-資料表，新增三筆資料：（請使用-name-欄位做子查詢）" class="headerlink" title="2新增：在 CREDIT_PURCHASE 資料表，新增三筆資料：（請使用 name 欄位做子查詢）"></a>2新增：在 CREDIT_PURCHASE 資料表，新增三筆資料：（請使用 name 欄位做子查詢）</h3><ul>
+<li>王小明 購買 14 堂組合包方案</li>
+<li>王小明 購買 21 堂組合包方案</li>
+<li>好野人 購買 14 堂組合包方案</li>
+</ul>
+ <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 王小明提示範例</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> &quot;CREDIT_PURCHASE&quot; (user_id, credit_package_id, purchased_credits, price_paid) <span class="keyword">values</span></span><br><span class="line">((<span class="keyword">select</span> id <span class="keyword">from</span> &quot;USER&quot; <span class="keyword">where</span> email <span class="operator">=</span> <span class="string">&#x27;wXlTq@hexschooltest.io&#x27;</span>),</span><br><span class="line">  (<span class="keyword">select</span> id <span class="keyword">from</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">where</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>),</span><br><span class="line">  (<span class="keyword">select</span> credit_amount <span class="keyword">from</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">where</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>),</span><br><span class="line">  (<span class="keyword">select</span> price <span class="keyword">from</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">where</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>))</span><br></pre></td></tr></table></figure>
+<p>根據校長提供的範例，這段 SQL 是用來插入一筆資料到 CREDIT_PURCHASE 資料表，並且透過子查詢從其他資料表（例如 USER 和 CREDIT_PACKAGE）中取得相關欄位的值。<br>以下是基於提示範例，新增三筆資料的語法：</p>
+<p><font color=#0000FF> ln [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 王小明 購買 14 堂組合包方案</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;CREDIT_PURCHASE&quot; (user_id, credit_package_id, purchased_credits, price_paid) </span><br><span class="line"><span class="keyword">VALUES</span> (</span><br><span class="line">  (<span class="keyword">SELECT</span> id <span class="keyword">FROM</span> &quot;USER&quot; <span class="keyword">WHERE</span> email <span class="operator">=</span> <span class="string">&#x27;wXlTq@hexschooltest.io&#x27;</span>), <span class="comment">-- 王小明的 email</span></span><br><span class="line">  (<span class="keyword">SELECT</span> id <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>), <span class="comment">-- 14 堂組合包方案的 id</span></span><br><span class="line">  (<span class="keyword">SELECT</span> credit_amount <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>), <span class="comment">-- 堂數</span></span><br><span class="line">  (<span class="keyword">SELECT</span> price <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>) <span class="comment">-- 價格</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 王小明 購買 21 堂組合包方案</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;CREDIT_PURCHASE&quot; (user_id, credit_package_id, purchased_credits, price_paid) </span><br><span class="line"><span class="keyword">VALUES</span> (</span><br><span class="line">  (<span class="keyword">SELECT</span> id <span class="keyword">FROM</span> &quot;USER&quot; <span class="keyword">WHERE</span> email <span class="operator">=</span> <span class="string">&#x27;wXlTq@hexschooltest.io&#x27;</span>), <span class="comment">-- 王小明的 email</span></span><br><span class="line">  (<span class="keyword">SELECT</span> id <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;21 堂組合包方案&#x27;</span>), <span class="comment">-- 21 堂組合包方案的 id</span></span><br><span class="line">  (<span class="keyword">SELECT</span> credit_amount <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;21 堂組合包方案&#x27;</span>), <span class="comment">-- 堂數</span></span><br><span class="line">  (<span class="keyword">SELECT</span> price <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;21 堂組合包方案&#x27;</span>) <span class="comment">-- 價格</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 好野人 購買 14 堂組合包方案</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;CREDIT_PURCHASE&quot; (user_id, credit_package_id, purchased_credits, price_paid) </span><br><span class="line"><span class="keyword">VALUES</span> (</span><br><span class="line">  (<span class="keyword">SELECT</span> id <span class="keyword">FROM</span> &quot;USER&quot; <span class="keyword">WHERE</span> email <span class="operator">=</span> <span class="string">&#x27;richman@hexschooltest.io&#x27;</span>), <span class="comment">-- 好野人的 email</span></span><br><span class="line">  (<span class="keyword">SELECT</span> id <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>), <span class="comment">-- 14 堂組合包方案的 id</span></span><br><span class="line">  (<span class="keyword">SELECT</span> credit_amount <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>), <span class="comment">-- 堂數</span></span><br><span class="line">  (<span class="keyword">SELECT</span> price <span class="keyword">FROM</span> &quot;CREDIT_PACKAGE&quot; <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;14 堂組合包方案&#x27;</span>) <span class="comment">-- 價格</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [3]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F2.png?alt=media&token=ddae3083-d881-4664-8207-fcd497906152"></p>
+<p><strong>INSERT INTO：</strong></p>
+<blockquote>
+<p>向 <code>CREDIT_PURCHASE</code> 資料表新增資料。</p>
+<blockquote>
+<p>user_id：用戶 ID。<br>credit_package_id：信用套組 ID。<br>purchased_credits：購買的堂數。<br>price_paid：支付的金額。</p>
+</blockquote>
+</blockquote>
+<p><strong>子查詢：</strong></p>
+<blockquote>
+<p>(SELECT id FROM “USER” WHERE email &#x3D; ‘<a href="mailto:&#119;&#88;&#108;&#84;&#113;&#64;&#x68;&#x65;&#120;&#115;&#x63;&#x68;&#x6f;&#111;&#108;&#x74;&#x65;&#115;&#x74;&#46;&#105;&#x6f;">&#119;&#88;&#108;&#84;&#113;&#64;&#x68;&#x65;&#120;&#115;&#x63;&#x68;&#x6f;&#111;&#108;&#x74;&#x65;&#115;&#x74;&#46;&#105;&#x6f;</a>‘)：</p>
+<blockquote>
+<p>從 USER 資料表中查詢 email 為 <a href="mailto:&#119;&#x58;&#108;&#84;&#x71;&#64;&#x68;&#101;&#120;&#x73;&#99;&#104;&#111;&#111;&#108;&#116;&#101;&#x73;&#116;&#46;&#x69;&#111;">&#119;&#x58;&#108;&#84;&#x71;&#64;&#x68;&#101;&#120;&#x73;&#99;&#104;&#111;&#111;&#108;&#116;&#101;&#x73;&#116;&#46;&#x69;&#111;</a> 的用戶 ID。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>(SELECT id FROM “CREDIT_PACKAGE” WHERE name &#x3D; ‘14 堂組合包方案’)：</p>
+<blockquote>
+<p>從 CREDIT_PACKAGE 資料表中查詢名稱為 14 堂組合包方案 的套組 ID。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>(SELECT credit_amount FROM “CREDIT_PACKAGE” WHERE name &#x3D; ‘14 堂組合包方案’)：</p>
+<blockquote>
+<p>從 CREDIT_PACKAGE 資料表中查詢名稱為 14 堂組合包方案 的堂數。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>(SELECT price FROM “CREDIT_PACKAGE” WHERE name &#x3D; ‘14 堂組合包方案’)：</p>
+<blockquote>
+<p>從 CREDIT_PACKAGE 資料表中查詢名稱為 14 堂組合包方案 的價格。</p>
+</blockquote>
+</blockquote>
+<p>最後要查看 CREDIT_PURCHASE 資料表的詳細內容，並且結合 USER 和 CREDIT_PACKAGE 資料表，可以使用 JOIN 語法來查詢，這樣能更清楚地看到每筆交易的用戶名稱、購買的套餐名稱、堂數與支付金額等資訊。</p>
+<p><font color=#0000FF> ln [4]: </font></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">  cp.id <span class="keyword">AS</span> 購買記錄id,                  <span class="comment">-- 購買記錄的唯一識別碼</span></span><br><span class="line">  u.name <span class="keyword">AS</span> 消費者名稱,                <span class="comment">-- 用戶名稱</span></span><br><span class="line">  p.name <span class="keyword">AS</span> 課程名稱,                  <span class="comment">-- 購買的課程名稱</span></span><br><span class="line">  cp.purchased_credits <span class="keyword">AS</span> 購買堂數,    <span class="comment">-- 購買的課程堂數</span></span><br><span class="line">  cp.price_paid <span class="keyword">AS</span> 付款金額,           <span class="comment">-- 支付的金額</span></span><br><span class="line">  cp.created_at <span class="keyword">AS</span> 購買時間            <span class="comment">-- 購買的時間戳</span></span><br><span class="line"><span class="keyword">FROM</span> &quot;CREDIT_PURCHASE&quot; cp</span><br><span class="line"><span class="keyword">JOIN</span> &quot;USER&quot; u <span class="keyword">ON</span> cp.user_id <span class="operator">=</span> u.id        <span class="comment">-- 將 CREDIT_PURCHASE 和 USER 資料表連接</span></span><br><span class="line"><span class="keyword">JOIN</span> &quot;CREDIT_PACKAGE&quot; p <span class="keyword">ON</span> cp.credit_package_id <span class="operator">=</span> p.id; <span class="comment">-- 將 CREDIT_PURCHASE 和 CREDIT_PACKAGE 資料表連接</span></span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [4]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241126%20Practice%2F2-Table.png?alt=media&token=0c42fd13-169b-4510-ad8c-9a52dbe507cb"></p>
+<p><strong>為什麼需要 <code>JOIN </code>？</strong></p>
+<ul>
+<li>CREDIT_PURCHASE 資料表記錄了購買的基本資訊，但它只包含用戶的 user_id 和課程包的 credit_package_id，而不是用戶的名字或課程的名稱。</li>
+<li>USER 資料表存儲了用戶的詳細資訊（如名字），而 CREDIT_PACKAGE 資料表存儲了課程包的詳細資訊（如名稱）。</li>
+<li>使用 <code>JOIN</code>，我們可以通過關聯欄位（user_id 和 credit_package_id）將這些資料表結合，從而獲取完整的資訊</li>
+</ul>
+<p>SEE YOU TOMORROW (σ′▽‵)′▽‵)σ</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/IWishIKnewHowToQuitYou/tags/Practice/" rel="tag"># Practice</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/IWishIKnewHowToQuitYou/2024/11/25/%E4%BD%A0%E8%AA%AA-%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC%20%E5%A3%B9/" rel="prev" title="你說, 後端資料庫體驗營到底有什麼? 壹">
+                  <i class="fa fa-angle-left"></i> 你說, 後端資料庫體驗營到底有什麼? 壹
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">KoOducK (psyduck5566)</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 強力驅動
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/psyduck5566" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/IWishIKnewHowToQuitYou/js/comments.js"></script><script src="/IWishIKnewHowToQuitYou/js/utils.js"></script><script src="/IWishIKnewHowToQuitYou/js/motion.js"></script><script src="/IWishIKnewHowToQuitYou/js/schemes/muse.js"></script><script src="/IWishIKnewHowToQuitYou/js/sidebar.js"></script><script src="/IWishIKnewHowToQuitYou/js/next-boot.js"></script><script src="/IWishIKnewHowToQuitYou/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/IWishIKnewHowToQuitYou/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/IWishIKnewHowToQuitYou/js/third-party/pace.js"></script>
+
+
+  
+
+
+
+
+
+</body>
+</html>
