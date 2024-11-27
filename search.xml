@@ -1180,12 +1180,12 @@ body{
 <li>自動記錄建立與更新時間，便於追蹤資料變更。</li>
 </ol>
 <h2 id="用戶資料，資料表為-USER"><a href="#用戶資料，資料表為-USER" class="headerlink" title="用戶資料，資料表為 USER"></a>用戶資料，資料表為 USER</h2><h3 id="新增六筆用戶資料，資料如下："><a href="#新增六筆用戶資料，資料如下：" class="headerlink" title="新增六筆用戶資料，資料如下："></a><u>新增</u>六筆用戶資料，資料如下：</h3><ul>
-<li>用戶名稱為 李燕容，Email 為 <a href="mailto:&#108;&#101;&#x65;&#50;&#x30;&#48;&#48;&#x40;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#x6f;&#x6f;&#x6c;&#x74;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;">&#108;&#101;&#x65;&#50;&#x30;&#48;&#48;&#x40;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#x6f;&#x6f;&#x6c;&#x74;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;</a>，Role 為 USER</li>
-<li>用戶名稱為 王小明，Email 為 <a href="mailto:&#119;&#x58;&#108;&#84;&#x71;&#x40;&#104;&#101;&#x78;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#x74;&#101;&#115;&#x74;&#x2e;&#x69;&#111;">&#119;&#x58;&#108;&#84;&#x71;&#x40;&#104;&#101;&#x78;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#x74;&#101;&#115;&#x74;&#x2e;&#x69;&#111;</a>，Role 為 USER</li>
-<li>用戶名稱為 肌肉棒子，Email 為 <a href="mailto:&#109;&#117;&#x73;&#99;&#x6c;&#x65;&#x40;&#104;&#101;&#120;&#115;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#101;&#115;&#x74;&#46;&#x69;&#x6f;">&#109;&#117;&#x73;&#99;&#x6c;&#x65;&#x40;&#104;&#101;&#120;&#115;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#101;&#115;&#x74;&#46;&#x69;&#x6f;</a>，Role 為 USER</li>
-<li>用戶名稱為 好野人，Email 為 <a href="mailto:&#114;&#105;&#x63;&#104;&#x6d;&#97;&#x6e;&#x40;&#x68;&#x65;&#120;&#115;&#x63;&#104;&#111;&#x6f;&#108;&#116;&#x65;&#x73;&#x74;&#46;&#x69;&#x6f;">&#114;&#105;&#x63;&#104;&#x6d;&#97;&#x6e;&#x40;&#x68;&#x65;&#120;&#115;&#x63;&#104;&#111;&#x6f;&#108;&#116;&#x65;&#x73;&#x74;&#46;&#x69;&#x6f;</a>，Role 為 USER</li>
-<li>用戶名稱為 Q太郎，Email 為 <a href="mailto:&#x73;&#x74;&#x61;&#114;&#x70;&#x6c;&#x61;&#x74;&#x69;&#x6e;&#x75;&#x6d;&#64;&#x68;&#101;&#120;&#x73;&#x63;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#x74;&#46;&#105;&#x6f;">&#x73;&#x74;&#x61;&#114;&#x70;&#x6c;&#x61;&#x74;&#x69;&#x6e;&#x75;&#x6d;&#64;&#x68;&#101;&#120;&#x73;&#x63;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#x74;&#46;&#105;&#x6f;</a>，Role 為 USER</li>
-<li>用戶名稱為 透明人，Email 為 <a href="mailto:&#111;&#x70;&#x61;&#99;&#105;&#116;&#x79;&#x30;&#64;&#104;&#101;&#120;&#115;&#99;&#104;&#x6f;&#111;&#108;&#116;&#x65;&#115;&#x74;&#46;&#105;&#111;">&#111;&#x70;&#x61;&#99;&#105;&#116;&#x79;&#x30;&#64;&#104;&#101;&#120;&#115;&#99;&#104;&#x6f;&#111;&#108;&#116;&#x65;&#115;&#x74;&#46;&#105;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 李燕容，Email 為 <a href="mailto:&#x6c;&#x65;&#101;&#x32;&#48;&#48;&#48;&#64;&#x68;&#101;&#x78;&#115;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;">&#x6c;&#x65;&#101;&#x32;&#48;&#48;&#48;&#64;&#x68;&#101;&#x78;&#115;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 王小明，Email 為 <a href="mailto:&#x77;&#88;&#108;&#x54;&#x71;&#x40;&#x68;&#101;&#x78;&#x73;&#x63;&#104;&#x6f;&#111;&#108;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#111;">&#x77;&#88;&#108;&#x54;&#x71;&#x40;&#x68;&#101;&#x78;&#x73;&#x63;&#104;&#x6f;&#111;&#108;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 肌肉棒子，Email 為 <a href="mailto:&#109;&#x75;&#x73;&#x63;&#x6c;&#101;&#64;&#104;&#101;&#x78;&#x73;&#x63;&#104;&#x6f;&#111;&#x6c;&#116;&#101;&#x73;&#x74;&#x2e;&#105;&#111;">&#109;&#x75;&#x73;&#x63;&#x6c;&#101;&#64;&#104;&#101;&#x78;&#x73;&#x63;&#104;&#x6f;&#111;&#x6c;&#116;&#101;&#x73;&#x74;&#x2e;&#105;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 好野人，Email 為 <a href="mailto:&#x72;&#x69;&#x63;&#x68;&#x6d;&#97;&#110;&#64;&#x68;&#101;&#x78;&#x73;&#x63;&#x68;&#111;&#x6f;&#108;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#x6f;">&#x72;&#x69;&#x63;&#x68;&#x6d;&#97;&#110;&#64;&#x68;&#101;&#x78;&#x73;&#x63;&#x68;&#111;&#x6f;&#108;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 Q太郎，Email 為 <a href="mailto:&#115;&#x74;&#x61;&#114;&#112;&#x6c;&#97;&#116;&#x69;&#x6e;&#117;&#109;&#64;&#x68;&#101;&#120;&#115;&#x63;&#104;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#105;&#111;">&#115;&#x74;&#x61;&#114;&#112;&#x6c;&#97;&#116;&#x69;&#x6e;&#117;&#109;&#64;&#x68;&#101;&#120;&#115;&#x63;&#104;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#105;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 透明人，Email 為 <a href="mailto:&#111;&#112;&#x61;&#99;&#105;&#x74;&#x79;&#x30;&#64;&#104;&#101;&#x78;&#115;&#x63;&#x68;&#111;&#x6f;&#108;&#116;&#101;&#x73;&#x74;&#x2e;&#105;&#111;">&#111;&#112;&#x61;&#99;&#105;&#x74;&#x79;&#x30;&#64;&#104;&#101;&#x78;&#115;&#x63;&#x68;&#111;&#x6f;&#108;&#116;&#101;&#x73;&#x74;&#x2e;&#105;&#111;</a>，Role 為 USER</li>
 </ul>
 <p>使用 INSERT INTO 語句將資料插入到 USER 資料表中：</p>
 <p><font color=#0000FF> ln [2]: </font></p>
@@ -1220,7 +1220,7 @@ body{
 <blockquote>
 <p><code>WHERE </code>條件：</p>
 <blockquote>
-<p>email 條件：只更新 email 為 <a href="mailto:&#x6c;&#101;&#x65;&#x32;&#48;&#x30;&#x30;&#x40;&#104;&#x65;&#x78;&#115;&#x63;&#104;&#x6f;&#x6f;&#x6c;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#x6f;">&#x6c;&#101;&#x65;&#x32;&#48;&#x30;&#x30;&#x40;&#104;&#x65;&#x78;&#115;&#x63;&#104;&#x6f;&#x6f;&#x6c;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#x6f;</a>、<a href="mailto:&#109;&#x75;&#x73;&#99;&#108;&#x65;&#x40;&#104;&#101;&#x78;&#x73;&#x63;&#x68;&#111;&#111;&#108;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#111;">&#109;&#x75;&#x73;&#99;&#108;&#x65;&#x40;&#104;&#101;&#x78;&#x73;&#x63;&#x68;&#111;&#111;&#108;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#111;</a> 和 <a href="mailto:&#x73;&#x74;&#97;&#114;&#112;&#x6c;&#97;&#116;&#105;&#110;&#x75;&#109;&#x40;&#x68;&#101;&#120;&#115;&#x63;&#104;&#x6f;&#x6f;&#108;&#116;&#x65;&#x73;&#116;&#x2e;&#105;&#x6f;">&#x73;&#x74;&#97;&#114;&#112;&#x6c;&#97;&#116;&#105;&#110;&#x75;&#109;&#x40;&#x68;&#101;&#120;&#115;&#x63;&#104;&#x6f;&#x6f;&#108;&#116;&#x65;&#x73;&#116;&#x2e;&#105;&#x6f;</a> 的用戶。<br>role &#x3D; ‘USER’ 條件：僅在 role 為 ‘USER’ 的情況下進行更新，避免不必要的修改。</p>
+<p>email 條件：只更新 email 為 <a href="mailto:&#x6c;&#x65;&#x65;&#x32;&#x30;&#48;&#48;&#64;&#104;&#101;&#x78;&#115;&#99;&#104;&#x6f;&#111;&#x6c;&#116;&#101;&#115;&#x74;&#x2e;&#x69;&#x6f;">&#x6c;&#x65;&#x65;&#x32;&#x30;&#48;&#48;&#64;&#104;&#101;&#x78;&#115;&#99;&#104;&#x6f;&#111;&#x6c;&#116;&#101;&#115;&#x74;&#x2e;&#x69;&#x6f;</a>、<a href="mailto:&#109;&#x75;&#115;&#x63;&#x6c;&#x65;&#64;&#104;&#x65;&#120;&#115;&#x63;&#x68;&#111;&#111;&#x6c;&#x74;&#x65;&#115;&#x74;&#46;&#105;&#x6f;">&#109;&#x75;&#115;&#x63;&#x6c;&#x65;&#64;&#104;&#x65;&#120;&#115;&#x63;&#x68;&#111;&#111;&#x6c;&#x74;&#x65;&#115;&#x74;&#46;&#105;&#x6f;</a> 和 <a href="mailto:&#115;&#116;&#x61;&#114;&#x70;&#108;&#97;&#x74;&#x69;&#x6e;&#117;&#109;&#64;&#x68;&#x65;&#x78;&#x73;&#x63;&#104;&#x6f;&#111;&#x6c;&#116;&#x65;&#x73;&#x74;&#x2e;&#x69;&#x6f;">&#115;&#116;&#x61;&#114;&#x70;&#108;&#97;&#x74;&#x69;&#x6e;&#117;&#109;&#64;&#x68;&#x65;&#x78;&#x73;&#x63;&#104;&#x6f;&#111;&#x6c;&#116;&#x65;&#x73;&#x74;&#x2e;&#x69;&#x6f;</a> 的用戶。<br>role &#x3D; ‘USER’ 條件：僅在 role 為 ‘USER’ 的情況下進行更新，避免不必要的修改。</p>
 </blockquote>
 </blockquote>
 <blockquote>
@@ -1260,9 +1260,9 @@ body{
 </blockquote>
 </blockquote>
 <blockquote>
-<p><strong><code>WHERE "email" = '<a href="mailto:&#x6f;&#x70;&#97;&#99;&#x69;&#116;&#x79;&#48;&#x40;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#x74;&#x2e;&#x69;&#111;">&#x6f;&#x70;&#97;&#99;&#x69;&#116;&#x79;&#48;&#x40;&#x68;&#x65;&#x78;&#115;&#x63;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#x74;&#x2e;&#x69;&#111;</a>'</code></strong>:</p>
+<p><strong><code>WHERE "email" = '<a href="mailto:&#x6f;&#112;&#x61;&#99;&#105;&#x74;&#121;&#48;&#64;&#x68;&#x65;&#x78;&#x73;&#99;&#x68;&#x6f;&#111;&#108;&#x74;&#101;&#115;&#x74;&#46;&#105;&#111;">&#x6f;&#112;&#x61;&#99;&#105;&#x74;&#121;&#48;&#64;&#x68;&#x65;&#x78;&#x73;&#99;&#x68;&#x6f;&#111;&#108;&#x74;&#101;&#115;&#x74;&#46;&#105;&#111;</a>'</code></strong>:</p>
 <blockquote>
-<p>使用 WHERE 條件篩選出 email 為 <a href="mailto:&#x6f;&#x70;&#97;&#99;&#105;&#x74;&#x79;&#x30;&#x40;&#x68;&#101;&#120;&#x73;&#x63;&#x68;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#105;&#111;">&#x6f;&#x70;&#97;&#99;&#105;&#x74;&#x79;&#x30;&#x40;&#x68;&#101;&#120;&#x73;&#x63;&#x68;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#105;&#111;</a> 的資料，確保只刪除符合條件的那一筆資料。</p>
+<p>使用 WHERE 條件篩選出 email 為 <a href="mailto:&#111;&#x70;&#97;&#99;&#105;&#x74;&#121;&#x30;&#x40;&#104;&#101;&#120;&#x73;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#116;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;">&#111;&#x70;&#97;&#99;&#105;&#x74;&#121;&#x30;&#x40;&#104;&#101;&#120;&#x73;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#116;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;</a> 的資料，確保只刪除符合條件的那一筆資料。</p>
 </blockquote>
 </blockquote>
 <p><strong><font color=#FF0000> 注意事項 </font></strong></p>
@@ -1519,9 +1519,9 @@ body{
 </blockquote>
 <p><strong>子查詢：</strong></p>
 <blockquote>
-<p>(SELECT id FROM “USER” WHERE email &#x3D; ‘<a href="mailto:&#x77;&#88;&#x6c;&#84;&#113;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#x68;&#x6f;&#x6f;&#108;&#116;&#x65;&#115;&#116;&#x2e;&#x69;&#x6f;">&#x77;&#88;&#x6c;&#84;&#113;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#x68;&#x6f;&#x6f;&#108;&#116;&#x65;&#115;&#116;&#x2e;&#x69;&#x6f;</a>‘)：</p>
+<p>(SELECT id FROM “USER” WHERE email &#x3D; ‘<a href="mailto:&#119;&#x58;&#108;&#84;&#x71;&#64;&#104;&#x65;&#x78;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#111;">&#119;&#x58;&#108;&#84;&#x71;&#64;&#104;&#x65;&#x78;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#111;</a>‘)：</p>
 <blockquote>
-<p>從 USER 資料表中查詢 email 為 <a href="mailto:&#x77;&#88;&#x6c;&#84;&#113;&#x40;&#104;&#101;&#120;&#x73;&#x63;&#104;&#x6f;&#111;&#108;&#x74;&#101;&#115;&#x74;&#46;&#105;&#x6f;">&#x77;&#88;&#x6c;&#84;&#113;&#x40;&#104;&#101;&#120;&#x73;&#x63;&#104;&#x6f;&#111;&#108;&#x74;&#101;&#115;&#x74;&#46;&#105;&#x6f;</a> 的用戶 ID。</p>
+<p>從 USER 資料表中查詢 email 為 <a href="mailto:&#119;&#x58;&#108;&#x54;&#x71;&#64;&#104;&#101;&#120;&#115;&#99;&#x68;&#111;&#x6f;&#x6c;&#116;&#101;&#115;&#116;&#x2e;&#105;&#x6f;">&#119;&#x58;&#108;&#x54;&#x71;&#64;&#104;&#101;&#120;&#115;&#99;&#x68;&#111;&#x6f;&#x6c;&#116;&#101;&#115;&#116;&#x2e;&#105;&#x6f;</a> 的用戶 ID。</p>
 </blockquote>
 </blockquote>
 <blockquote>
@@ -1552,6 +1552,135 @@ body{
 <li>CREDIT_PURCHASE 資料表記錄了購買的基本資訊，但它只包含用戶的 user_id 和課程包的 credit_package_id，而不是用戶的名字或課程的名稱。</li>
 <li>USER 資料表存儲了用戶的詳細資訊（如名字），而 CREDIT_PACKAGE 資料表存儲了課程包的詳細資訊（如名稱）。</li>
 <li>使用 <code>JOIN</code>，我們可以通過關聯欄位（user_id 和 credit_package_id）將這些資料表結合，從而獲取完整的資訊</li>
+</ul>
+<p>SEE YOU TOMORROW (σ′▽‵)′▽‵)σ</p>
+]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>妳說，後端資料庫體驗營到底有什麼? 參</title>
+    <url>/IWishIKnewHowToQuitYou/2024/11/27/%E5%A6%B3%E8%AA%AA%EF%BC%8C%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC-%E5%8F%83/</url>
+    <content><![CDATA[<h3 id="教練身份講解"><a href="#教練身份講解" class="headerlink" title="教練身份講解"></a>教練身份講解</h3><p>在一個網頁平台上，會有多種角色，而在我們的任務二中的角色(role)會有：</p>
+<p>一般客戶：USER<br>教練：COACH<br>在我們的<a href="https://miro.com/app/board/uXjVLbiDml0=/">線稿圖</a>中，也有繪製如果他是教練角色時，他可以填寫自己的相關教練資料，其中欄位包含：</p>
+<p>大頭照<br>教練姓名<br>教練資歷<br>教練簡介<br>專長(可複選)</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> EXTENSION IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> &quot;uuid-ossp&quot;;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;USER&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;email&quot; <span class="type">varchar</span>(<span class="number">320</span>) <span class="keyword">UNIQUE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;role&quot; <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;COACH&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> uuid_generate_v4(),</span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),</span><br><span class="line">  &quot;experience_years&quot; <span class="type">integer</span>,</span><br><span class="line">  &quot;description&quot; text,</span><br><span class="line">  &quot;profile_image_url&quot; <span class="type">varchar</span>(<span class="number">2048</span>),</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  <span class="keyword">UNIQUE</span>(&quot;user_id&quot;)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PACKAGE&quot; (</span><br><span class="line">  &quot;id&quot; serial <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;credit_amount&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),</span><br><span class="line">  &quot;credit_package_id&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;CREDIT_PACKAGE&quot;(id),</span><br><span class="line">  &quot;purchased_credits&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price_paid&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;purchase_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;USER&quot; (&quot;name&quot;, &quot;email&quot;, &quot;role&quot;)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">  (<span class="string">&#x27;李燕容&#x27;</span>, <span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;王小明&#x27;</span>, <span class="string">&#x27;wXlTq@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;肌肉棒子&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;好野人&#x27;</span>, <span class="string">&#x27;richman@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;Q太郎&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;透明人&#x27;</span>, <span class="string">&#x27;opacity0@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="分析資料表結構與關聯"><a href="#分析資料表結構與關聯" class="headerlink" title="分析資料表結構與關聯"></a>分析資料表結構與關聯</h3><p>根據提供的資料表結構，以下是每個資料表的功能與關聯性分析：</p>
+<p><strong>1. USER 資料表</strong></p>
+<ul>
+<li>功能：儲存使用者的基本資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，唯一標識每個使用者。</li>
+<li>name：使用者名稱。</li>
+<li>email：使用者電子郵件，必須唯一。</li>
+<li>role：使用者角色，可選值有 “USER” 和 “COACH”。</li>
+<li>created_at &#x2F; updated_at：記錄資料建立與更新的時間。</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. COACH 資料表</strong></p>
+<ul>
+<li>功能：儲存教練的詳細資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，唯一標識每位教練。</li>
+<li>user_id：外鍵，參考 USER 表的 id，表示該教練是某位使用者。</li>
+<li>experience_years：教練的經驗年數。</li>
+<li>description：教練的個人描述。</li>
+<li>profile_image_url：教練的個人頭像連結。</li>
+<li>created_at &#x2F; updated_at：記錄資料建立與更新的時間。</li>
+</ul>
+</li>
+<li>關聯性：<ul>
+<li>每位教練對應到 USER 表中的一位使用者（1 對 1 關係）。</li>
+<li>user_id 欄位設置了唯一性約束（UNIQUE），確保一位使用者只能成為一位教練。</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. CREDIT_PACKAGE 資料表</strong></p>
+<ul>
+<li>功能：儲存可購買的點數包資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，自動遞增。</li>
+<li>name：點數包名稱（例如：”入門點數包”）。</li>
+<li>credit_amount：點數包內包含的點數數量。</li>
+<li>price：點數包的售價。</li>
+<li>created_at：記錄資料建立時間。</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. CREDIT_PURCHASE 資料表</strong></p>
+<ul>
+<li>功能：記錄使用者購買點數包的交易資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，唯一標識每筆交易。</li>
+<li>user_id：外鍵，參考 USER 表的 id，表示購買者。</li>
+<li>credit_package_id：外鍵，參考 CREDIT_PACKAGE 表的 id，表示購買的點數包。</li>
+<li>purchased_credits：實際購買的點數數量。</li>
+<li>price_paid：購買時支付的金額。</li>
+<li>created_at &#x2F; purchase_at：記錄交易的建立與購買時間。</li>
+</ul>
+</li>
+<li>關聯性：<ul>
+<li>每筆交易對應到一位使用者（多對一關係）。</li>
+<li>每筆交易對應到一個點數包（多對一關係）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="資料表間的關係"><a href="#資料表間的關係" class="headerlink" title="資料表間的關係"></a>資料表間的關係</h3><p>1.USER 與 COACH：</p>
+<ul>
+<li>一對一（One-to-One）：一位使用者可以是教練（COACH 表），但不是所有使用者都是教練。</li>
+<li>COACH 表的 user_id 是 USER 表的外鍵，且設置了唯一性約束。</li>
+</ul>
+<p>2.USER 與 CREDIT_PURCHASE：</p>
+<ul>
+<li>一對多（One-to-Many）：一位使用者可以有多筆點數包購買記錄。</li>
+</ul>
+<p>3.CREDIT_PACKAGE 與 CREDIT_PURCHASE：</p>
+<ul>
+<li>一對多（One-to-Many）：一個點數包可以被多位使用者購買。</li>
+</ul>
+<h3 id="教練資料-，資料表為-COACH"><a href="#教練資料-，資料表為-COACH" class="headerlink" title="教練資料 ，資料表為 COACH"></a>教練資料 ，資料表為 COACH</h3><p><strong>新增：</strong>在 COACH 資料表新增三筆資料，資料需求如下：<br>將用戶 李燕容 新增為教練，並且年資設定為2年（提示：使用 李燕容 的email ，取得 李燕容 的 id ）<br>將用戶肌肉棒子新增為教練，並且年資設定為2年（提示：使用 肌肉棒子 的email ，取得 肌肉棒子 的 id ）<br>將用戶Q太郎新增為教練，並且年資設定為2年（提示：使用 Q太郎 的email ，取得 Q太郎 的 id ）</p>
+<p>根據需求，需透過 USER 資料表中的 email 欄位，取得以下 3 位使用者的 id：</p>
+<p><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, email <span class="keyword">FROM</span> &quot;USER&quot;</span><br><span class="line"><span class="keyword">WHERE</span> email <span class="keyword">IN</span> (<span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [1]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F1(4).png?alt=media&token=fce1450e-23c8-449e-8f64-f50487a52adb" alt="1"></p>
+<p>使用查詢出的 id，將這 3 位使用者新增為教練，並設定年資為 2 年。</p>
+<p><font color=#0000FF> ln [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;COACH&quot; (&quot;user_id&quot;, &quot;experience_years&quot;, &quot;description&quot;, &quot;profile_image_url&quot;)</span><br><span class="line"><span class="keyword">VALUES</span> </span><br><span class="line">  (<span class="string">&#x27;6f1f764a-26ba-451c-8c3b-3ebd508584f5&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;熱愛健身與教學的教練&#x27;</span>, <span class="keyword">NULL</span>),</span><br><span class="line">  (<span class="string">&#x27;b8843ac6-9480-4de3-a1d5-7105e66a0acf&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;專注於力量訓練的教練&#x27;</span>, <span class="keyword">NULL</span>),</span><br><span class="line">  (<span class="string">&#x27;6e5c289a-70ed-49fb-b2bd-313f3558d5b3&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;24小時耐力訓練的專家&#x27;</span>, <span class="keyword">NULL</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [2]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F2.png?alt=media&token=106d15b5-2b2a-4ade-b6cd-cca95bf7e6fc" alt="2"></p>
+<p>執行以下查詢，確認是否成功新增這三位教練：</p>
+<p><font color=#0000FF> ln [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> c.id <span class="keyword">AS</span> coach_id, u.name <span class="keyword">AS</span> user_name, c.experience_years, c.description</span><br><span class="line"><span class="keyword">FROM</span> &quot;COACH&quot; c</span><br><span class="line"><span class="keyword">JOIN</span> &quot;USER&quot; u <span class="keyword">ON</span> c.user_id <span class="operator">=</span> u.id;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F1(4).png?alt=media&token=fce1450e-23c8-449e-8f64-f50487a52adb" alt="3"></p>
+<h2 id="何謂一對多、一對一"><a href="#何謂一對多、一對一" class="headerlink" title="何謂一對多、一對一"></a>何謂一對多、一對一</h2><h3 id="解釋一對多關係"><a href="#解釋一對多關係" class="headerlink" title="解釋一對多關係"></a>解釋一對多關係</h3><p>口訣：「多的要設定外來鍵」<br>流程：從欄位角度去規劃<br>1.以「使用者」角度：一個「使用者」會有多筆購買紀錄<br>2.以「購買紀錄」角度：一筆「購買紀錄」只會屬於 一個 使用者<br>➡️ 所以在「購買紀錄」表格（多的那方）設定外來鍵</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 一對多（使用者 -&gt; 購買紀錄） </span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (     </span><br><span class="line">    &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),  <span class="comment">-- 多的那方加外來鍵    </span></span><br><span class="line">); </span><br></pre></td></tr></table></figure>
+<h3 id="解釋一對一關係"><a href="#解釋一對一關係" class="headerlink" title="解釋一對一關係"></a>解釋一對一關係</h3><p>口訣：「外來鍵加唯一值」<br>流程：從欄位角度去規劃<br>1.以「使用者」角度：一個「使用者」最多只能是 一個 教練<br>2.以「教練」角度：一個「教練」只能對應到 一個 使用者<br>在雙方資料表都只能對應一個資訊時，則會是一對一的資料關係<br>➡️ 所以在「教練」表格設定外來鍵，並加上 UNIQUE 限制</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 一對一（使用者 &lt;-&gt; 教練） </span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;COACH&quot; (     </span><br><span class="line">    &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id) </span><br><span class="line">    <span class="comment">-- ...</span></span><br><span class="line">    <span class="keyword">UNIQUE</span>(&quot;user_id&quot;)  <span class="comment">-- 外來鍵加唯一值 </span></span><br><span class="line">);`</span><br></pre></td></tr></table></figure>
+
+<p><strong>UNIQUE 意思：</strong>表示此 user_id 在 COACH 資料表上不能重複，因為一個「教練」只能對應到 一個「使用者」。</p>
+<h1 id="1-分析流程：從欄位角度去規劃"><a href="#1-分析流程：從欄位角度去規劃" class="headerlink" title="1. 分析流程：從欄位角度去規劃"></a>1. 分析流程：從欄位角度去規劃</h1><ul>
+<li><p>以「用戶」角度：一位「用戶」有多篇「部落格文章」</p>
+</li>
+<li><p>以「部落格文章」角度：一篇「部落格文章」有一位「用戶」</p>
+</li>
+<li><p>以「訓練家」角度：一位「訓練家」有多隻「Pokémon 」</p>
+</li>
+<li><p>以「Pokémon 」角度：一隻「Pokémon 」有一位「訓練家」</p>
+</li>
+<li><p>以「書籍」角度：一本「書籍」有一位「作者」</p>
+</li>
+<li><p>以「作者」角度：一位「作者」有多本創作「書籍」</p>
+</li>
+</ul>
+<h1 id="2-依照上述描述，他是一對一關係、還是一對多？"><a href="#2-依照上述描述，他是一對一關係、還是一對多？" class="headerlink" title="2. 依照上述描述，他是一對一關係、還是一對多？"></a>2. 依照上述描述，他是一對一關係、還是一對多？</h1><ul>
+<li>用戶與部落格文章的資料表：一對多的關係</li>
+<li>訓練家與Pokémon 的資料表：一對多的關係</li>
+<li>作者與書籍的資料表：一對多的關係</li>
 </ul>
 <p>SEE YOU TOMORROW (σ′▽‵)′▽‵)σ</p>
 ]]></content>
