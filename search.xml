@@ -22,6 +22,23 @@
       </tags>
   </entry>
   <entry>
+    <title>2024 六角學院軟體工程師體驗營心得</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/02/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h2 id="當初為什麼報名體驗營"><a href="#當初為什麼報名體驗營" class="headerlink" title="當初為什麼報名體驗營?"></a>當初為什麼報名體驗營?</h2><p>內心有個聲音叫我去釐清真正的渴望和需求，理解身為一個成熟人類的社會責任，以便能更好地安排未來幾十年的職場活動，以及生活各層面的內容。</p>
+<h2 id="最大的收獲是"><a href="#最大的收獲是" class="headerlink" title="最大的收獲是?"></a>最大的收獲是?</h2><p>使用Hexo初步完成個人客製化樣式部落格。<br>另外對於排版與整體設計亦有了一個初步的認識。相信在接下來的學習過程裡，我會變得更能掌握這領域的知識；並期許自己能夠靈活運用、舉一反三。</p>
+<h2 id="最喜歡體驗營的哪些活動"><a href="#最喜歡體驗營的哪些活動" class="headerlink" title="最喜歡體驗營的哪些活動?"></a>最喜歡體驗營的哪些活動?</h2><p>第12小組每周四舉辦的線上讀書會。謝謝組員們，特別感謝 Arirel Yao、Jiahe、Mars 。</p>
+<h2 id="哪些自己可以做得很好的地方？"><a href="#哪些自己可以做得很好的地方？" class="headerlink" title="哪些自己可以做得很好的地方？"></a>哪些自己可以做得很好的地方？</h2><p>時間管理尚待加強。</p>
+<h2 id="對課程的建議或鼓勵"><a href="#對課程的建議或鼓勵" class="headerlink" title="對課程的建議或鼓勵?"></a>對課程的建議或鼓勵?</h2><p>感謝六角學院推出優質活動，讓我在學習的過程中結識到不同背景相同目標的夥伴們。<br>最後要非常感謝所有批改程式碼、願意給予建議的「Mentor」。</p>
+<p>“所以，這次只到6&#x2F;9……”<br>“能再寫一次，足矣”<br>“因為今天”</p>
+<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/28e51e98a75f8d69c10f0781671678c9.jpg?alt=media&token=bd902812-5393-48ba-9d8e-534d825d2e72" alt="再看一次">
+
+
+<h6 id="圖片取自-©火鳳燎原-陳某-All-Rights-Reserved"><a href="#圖片取自-©火鳳燎原-陳某-All-Rights-Reserved" class="headerlink" title="圖片取自 ©火鳳燎原 陳某 All Rights Reserved."></a>圖片取自 ©火鳳燎原 陳某 All Rights Reserved.</h6>]]></content>
+      <tags>
+        <tag>Essay</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Lady YinMin&#39;s Regards</title>
     <url>/IWishIKnewHowToQuitYou/2024/11/09/Lady%20YinMin&#39;s%20Regards/</url>
     <content><![CDATA[<h2 id="The-item-was-named-after-user-Lady-YinMin-This-coder-was-known-as-one-of-the-community-lead-of-HexSchool"><a href="#The-item-was-named-after-user-Lady-YinMin-This-coder-was-known-as-one-of-the-community-lead-of-HexSchool" class="headerlink" title="The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool."></a>The item was named after user Lady YinMin. This coder was known as one of the community lead of HexSchool.</h2><h3 id="「-Squares-sequence-平方序列-」"><a href="#「-Squares-sequence-平方序列-」" class="headerlink" title="「 Squares sequence - 平方序列 」"></a><a href="https://www.codewars.com/kata/5546180ca783b6d2d5000062">「 Squares sequence - 平方序列 」</a></h3><p>描述撰寫的完整 JavaScript 函式，實現從給定數字 x 開始，依次計算前一個數字的平方，並返回長度為 n 的陣列。如果 n &lt;&#x3D; 0，則返回空陣列：</p>
@@ -355,398 +372,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>SQL小節練習：家具店的菜雞銷售奇遇記</title>
-    <url>/IWishIKnewHowToQuitYou/2024/10/28/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98/</url>
-    <content><![CDATA[<p>謹以本篇記錄小美同學運用入門SQL語法，維運『築夢家居』的事績。</p>
-<p><a href="https://gamma.app/docs/SQL--23heyix4r93u5u0?mode=doc">課堂簡報連結</a><br><a href="post-sql.com">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
-<h2 id="資料載入"><a href="#資料載入" class="headerlink" title="資料載入"></a>資料載入</h2><p>首先，我們使用這段程式碼創建一個名為products的資料表，並插入一些商品數據。<br><font color=#0000FF> ln [1]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products (</span><br><span class="line">   name <span class="type">VARCHAR</span>(<span class="number">100</span>),         <span class="comment">-- 商品名稱</span></span><br><span class="line">   price <span class="type">INTEGER</span>,            <span class="comment">-- 原價</span></span><br><span class="line">   discount_price <span class="type">INTEGER</span>,    <span class="comment">-- 優惠價</span></span><br><span class="line">   stock <span class="type">INTEGER</span>,            <span class="comment">-- 庫存數量</span></span><br><span class="line">   category <span class="type">VARCHAR</span>(<span class="number">50</span>),      <span class="comment">-- 商品分類</span></span><br><span class="line">   status <span class="type">VARCHAR</span>(<span class="number">20</span>)         <span class="comment">-- 商品狀態</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [1]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F1.png?alt=media&token=af1d0c30-9165-45c0-950e-891d3d0c4d82" alt="create table"></p>
-<blockquote>
-<p><strong>CREATE TABLE products：</strong> 這行表示我們正在創建一個名為products的資料表。<br><strong>name VARCHAR(100)：</strong> 這欄位儲存商品名稱，最多可包含100個字元。<br><strong>price INTEGER：</strong> 這欄位儲存商品的原價，以整數形式表示。<br><strong>discount_price INTEGER：</strong> 這欄位儲存商品的優惠價，也是整數。<br><strong>stock INTEGER：</strong> 這欄位表示庫存數量，使用整數。<br><strong>category VARCHAR(50)：</strong> 這欄位表示商品的分類，最多可包含50個字元。<br><strong>status VARCHAR(20)：</strong> 這欄位表示商品的狀態，例如“active”或“inactive”，最多可包含20個字元。</p>
-</blockquote>
-<p>接著使用下列程式碼輸入資料。</p>
-<p><font color=#0000FF>  In [2]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> products (name, price, discount_price, stock, category, status) <span class="keyword">VALUES</span></span><br><span class="line">   (<span class="string">&#x27;北歐風雙人沙發&#x27;</span>, <span class="number">39900</span>, <span class="number">35900</span>, <span class="number">3</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;貓抓皮L型沙發&#x27;</span>, <span class="number">58900</span>, <span class="number">52900</span>, <span class="number">1</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;典雅三人座沙發&#x27;</span>, <span class="number">42800</span>, <span class="number">42800</span>, <span class="number">5</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;工業風電視櫃&#x27;</span>, <span class="number">5900</span>, <span class="number">4900</span>, <span class="number">12</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;簡約書櫃&#x27;</span>, <span class="number">3500</span>, <span class="number">3500</span>, <span class="number">8</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;玄關鞋櫃&#x27;</span>, <span class="number">2900</span>, <span class="number">2900</span>, <span class="number">15</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;日式雙人床架&#x27;</span>, <span class="number">12000</span>, <span class="number">11200</span>, <span class="number">6</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;掀床五尺雙人床&#x27;</span>, <span class="number">19900</span>, <span class="number">18900</span>, <span class="number">2</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;兒童床架&#x27;</span>, <span class="number">8900</span>, <span class="number">8900</span>, <span class="number">0</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;電腦辦公椅&#x27;</span>, <span class="number">4500</span>, <span class="number">3900</span>, <span class="number">20</span>, <span class="string">&#x27;椅子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;餐椅四入組&#x27;</span>, <span class="number">6000</span>, <span class="number">5200</span>, <span class="number">8</span>, <span class="string">&#x27;椅子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;北歐風餐桌&#x27;</span>, <span class="number">15800</span>, <span class="number">14800</span>, <span class="number">4</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;實木咖啡桌&#x27;</span>, <span class="number">3200</span>, <span class="number">2900</span>, <span class="number">10</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;電競書桌&#x27;</span>, <span class="number">8900</span>, <span class="number">8900</span>, <span class="number">0</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>);</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [2]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F2.png?alt=media&token=e945cdf0-d7f2-468e-91a5-3245f543c8d7" alt="create table data"></p>
-<blockquote>
-<p><strong>INSERT INTO products (…) VALUES (…)：</strong>這段語句用於向products表中插入多行數據。<br>每一行代表一個商品的數據，包括名稱、原價、優惠價、庫存、分類和狀態。</p>
-</blockquote>
-<p>現在我們就可以使用以下SQL查詢，來查看資料庫中products表的所有資料。<br><font color=#0000FF>  In [3]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [3]:  </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F3.png?alt=media&token=70b9c983-c836-4e3a-957b-ccad1ff77e23" alt="product databate"></p>
-<h2 id="基礎比較運算："><a href="#基礎比較運算：" class="headerlink" title="基礎比較運算："></a>基礎比較運算：</h2><h3 id="情境-1：單品查詢"><a href="#情境-1：單品查詢" class="headerlink" title="情境 1：單品查詢"></a>情境 1：單品查詢</h3><h4 id="客人：「這張北歐風雙人沙發多少錢？」"><a href="#客人：「這張北歐風雙人沙發多少錢？」" class="headerlink" title="客人：「這張北歐風雙人沙發多少錢？」"></a>客人：「這張北歐風雙人沙發多少錢？」</h4><p><font color=#0000FF> In [4]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;北歐風雙人沙發&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [4]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq1.png?alt=media&token=0f69dea2-10ec-493b-ac18-3cef62264953" alt="where name"></p>
-<blockquote>
-<p>這段查詢的作用是從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品名稱必須是“北歐風雙人沙發”。</p>
-</blockquote>
-<h2 id="情境-2：價格比較"><a href="#情境-2：價格比較" class="headerlink" title="情境 2：價格比較"></a>情境 2：價格比較</h2><h3 id="客人：「請列出-5000-元以下的櫃子有哪些？」"><a href="#客人：「請列出-5000-元以下的櫃子有哪些？」" class="headerlink" title="客人：「請列出 5000 元以下的櫃子有哪些？」"></a>客人：「請列出 5000 元以下的櫃子有哪些？」</h3><p><font color=#0000FF> In [5]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;櫃子&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&lt;</span> <span class="number">5000</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [5]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq2.png?alt=media&token=7a8f69c1-79cc-4744-8c3e-94de0721fe0f" alt="where and"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“櫃子”且原價低於5000。</p>
-</blockquote>
-<h2 id="情境-3：庫存確認"><a href="#情境-3：庫存確認" class="headerlink" title="情境 3：庫存確認"></a>情境 3：庫存確認</h2><h3 id="客人：「日式雙人床架還有貨嗎？」"><a href="#客人：「日式雙人床架還有貨嗎？」" class="headerlink" title="客人：「日式雙人床架還有貨嗎？」"></a>客人：「日式雙人床架還有貨嗎？」</h3><p><font color=#0000FF> In [6]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;日式雙人床架&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000>  Out [6]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq3.png?alt=media&token=a1074bad-6f29-4b10-ab0c-672169bc51bd" alt="where"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇“日式雙人床架”的庫存數量。如圖所示，剩下6個。</p>
-</blockquote>
-<h2 id="邏輯運算-AND："><a href="#邏輯運算-AND：" class="headerlink" title="邏輯運算 AND："></a>邏輯運算 AND：</h2><h3 id="情境-4：預算內的商品"><a href="#情境-4：預算內的商品" class="headerlink" title="情境 4：預算內的商品"></a>情境 4：預算內的商品</h3><h4 id="客人：「想找-4-萬以下，而且有現貨的沙發」"><a href="#客人：「想找-4-萬以下，而且有現貨的沙發」" class="headerlink" title="客人：「想找 4 萬以下，而且有現貨的沙發」"></a>客人：「想找 4 萬以下，而且有現貨的沙發」</h4><p><font color=#0000FF> In [7]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;沙發&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&lt;</span> <span class="number">40000</span> <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000>  Out [7]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq4.png?alt=media&token=ecb72dfb-4872-4197-af8c-6428663c4444" alt="where and and "></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“沙發”、原價低於40,000以及庫存數量大於0。</p>
-</blockquote>
-<h3 id="情境-5：特價且有貨"><a href="#情境-5：特價且有貨" class="headerlink" title="情境 5：特價且有貨"></a>情境 5：特價且有貨</h3><h4 id="客人：「沙發有哪些特價且現貨的品項？」"><a href="#客人：「沙發有哪些特價且現貨的品項？」" class="headerlink" title="客人：「沙發有哪些特價且現貨的品項？」"></a>客人：「沙發有哪些特價且現貨的品項？」</h4><p><font color=#0000FF> In [8]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;沙發&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&gt;</span> discount_price <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000>  Out [8]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq5.png?alt=media&token=4cd4560b-a2bd-437e-90f9-c31ee94b4bc5" alt="where and and "></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“沙發”、原價大於優惠價（表示特價）以及庫存數量大於0。</p>
-</blockquote>
-<h2 id="邏輯運算-OR："><a href="#邏輯運算-OR：" class="headerlink" title="邏輯運算 OR："></a>邏輯運算 OR：</h2><h3 id="情境-6：多分類查詢"><a href="#情境-6：多分類查詢" class="headerlink" title="情境 6：多分類查詢"></a>情境 6：多分類查詢</h3><h4 id="客人：「我要找櫃子或桌子」"><a href="#客人：「我要找櫃子或桌子」" class="headerlink" title="客人：「我要找櫃子或桌子」"></a>客人：「我要找櫃子或桌子」</h4><p><font color=#0000FF> In [9]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;櫃子&#x27;</span> <span class="keyword">OR</span> category <span class="operator">=</span> <span class="string">&#x27;桌子&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [9]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq6.png?alt=media&token=844a66fa-1da7-4b52-a0a7-d15544827154" alt="where or"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“櫃子”或“桌子”。這樣就能找到所有符合這些分類的商品。</p>
-</blockquote>
-<h3 id="情境-7：指定商品"><a href="#情境-7：指定商品" class="headerlink" title="情境 7：指定商品"></a>情境 7：指定商品</h3><h4 id="客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」"><a href="#客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」" class="headerlink" title="客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」"></a>客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」</h4><p><font color=#0000FF> In [10]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;北歐風雙人沙發&#x27;</span>, <span class="string">&#x27;貓抓皮L型沙發&#x27;</span>) <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [10]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq7.png?alt=media&token=27062c29-0cab-48df-ab02-3679642e3000" alt="where namee in and"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱和庫存數量，條件是商品名稱是“北歐風雙人沙發”或“貓抓皮L型沙發”，並且庫存數量大於0。這樣就能從兩個商品中，選出還有庫存的商品。</p>
-</blockquote>
-<h2 id="IN-運算："><a href="#IN-運算：" class="headerlink" title="IN 運算："></a>IN 運算：</h2><h3 id="情境-8：多分類查詢"><a href="#情境-8：多分類查詢" class="headerlink" title="情境 8：多分類查詢"></a>情境 8：多分類查詢</h3><h4 id="客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」"><a href="#客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」" class="headerlink" title="客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」"></a>客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」</h4><p><font color=#0000FF> In [11]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;桌子&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [11]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq8.png?alt=media&token=8e7c483e-c531-408f-9dcb-50d95086c21b" alt="where in"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品分類為“沙發”、“櫃子”或“桌子”。這樣就能找到所有屬於這三種類別的產品。</p>
-</blockquote>
-<h2 id="情境-9：特定商品"><a href="#情境-9：特定商品" class="headerlink" title="情境 9：特定商品"></a>情境 9：特定商品</h2><h3 id="客人：「電腦辦公椅和餐椅四入組的價格是多少？」"><a href="#客人：「電腦辦公椅和餐椅四入組的價格是多少？」" class="headerlink" title="客人：「電腦辦公椅和餐椅四入組的價格是多少？」"></a>客人：「電腦辦公椅和餐椅四入組的價格是多少？」</h3><p><font color=#0000FF> In [12]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;電腦辦公椅&#x27;</span>, <span class="string">&#x27;餐椅四入組&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000>  Out [12]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq9.png?alt=media&token=4a409e6d-0a66-431e-b0df-0b7bb3a4c9a0" alt="where name in"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、原價和優惠價，條件是商品名稱是“電腦辦公椅”或“餐椅四入組”</p>
-</blockquote>
-<h2 id="BETWEEN："><a href="#BETWEEN：" class="headerlink" title="BETWEEN："></a>BETWEEN：</h2><h3 id="情境-10：價格區間"><a href="#情境-10：價格區間" class="headerlink" title="情境 10：價格區間"></a>情境 10：價格區間</h3><h4 id="客人：「想找-10000-到-20000-之間的商品有哪些？」"><a href="#客人：「想找-10000-到-20000-之間的商品有哪些？」" class="headerlink" title="客人：「想找 10000 到 20000 之間的商品有哪些？」"></a>客人：「想找 10000 到 20000 之間的商品有哪些？」</h4><p><font color=#0000FF>  In [13]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> price <span class="keyword">BETWEEN</span> <span class="number">10000</span> <span class="keyword">AND</span> <span class="number">20000</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000>  Out [13]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq10.png?alt=media&token=8e417fca-c3f1-415f-9b60-28a61cd8b8df" alt="where between and"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，條件是商品的價格在10,000到20,000之間。</p>
-</blockquote>
-<h3 id="情境-11：庫存區間"><a href="#情境-11：庫存區間" class="headerlink" title="情境 11：庫存區間"></a>情境 11：庫存區間</h3><h4 id="主管：「請列出庫存在-5-到-15-之間的商品」"><a href="#主管：「請列出庫存在-5-到-15-之間的商品」" class="headerlink" title="主管：「請列出庫存在 5 到 15 之間的商品」"></a>主管：「請列出庫存在 5 到 15 之間的商品」</h4><p><font color=#0000FF>  In [14]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> stock <span class="keyword">BETWEEN</span> <span class="number">5</span> <span class="keyword">AND</span> <span class="number">15</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000>  Out [14]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq11.png?alt=media&token=ea97af73-0475-4491-9470-e45fe1ce0eeb" alt="where between and"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品的庫存數量在5到15之間。</p>
-</blockquote>
-<h2 id="NOT-IN："><a href="#NOT-IN：" class="headerlink" title="NOT IN："></a>NOT IN：</h2><h3 id="情境-12：排除商品"><a href="#情境-12：排除商品" class="headerlink" title="情境 12：排除商品"></a>情境 12：排除商品</h3><h4 id="主管：「列出除了沙發和床架以外的商品」"><a href="#主管：「列出除了沙發和床架以外的商品」" class="headerlink" title="主管：「列出除了沙發和床架以外的商品」"></a>主管：「列出除了沙發和床架以外的商品」</h4><p><font color=#0000FF>  In [15]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;床架&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [15]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq12.png?alt=media&token=76b87bab-1983-4fe1-9899-9bca9e822d7b" alt="where not in"></p>
-<blockquote>
-<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品的分類不屬於“沙發”或“床架”。</p>
-</blockquote>
-<h2 id="更新和刪除："><a href="#更新和刪除：" class="headerlink" title="更新和刪除："></a>更新和刪除：</h2><h3 id="情境-13：調整價格"><a href="#情境-13：調整價格" class="headerlink" title="情境 13：調整價格"></a>情境 13：調整價格</h3><h4 id="主管：「北歐風雙人沙發要調降-2000-元」"><a href="#主管：「北歐風雙人沙發要調降-2000-元」" class="headerlink" title="主管：「北歐風雙人沙發要調降 2000 元」"></a>主管：「北歐風雙人沙發要調降 2000 元」</h4><p><font color=#0000FF>  In [16]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> price <span class="operator">=</span> price <span class="operator">-</span> <span class="number">2000</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;北歐風雙人沙發&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000>  Out [16]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13.png?alt=media&token=7190057c-28f6-44d3-b685-8c38a86e63b7" alt="update set price where name"></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13-table.png?alt=media&token=0d709478-d812-4b95-ae96-4fa4abc074f5" alt="updated table"></p>
-<blockquote>
-<p>這段查詢會更新products表中“北歐風雙人沙發”的價格，將其現有價格減去2,000元。<br>更新後查詢「北歐風雙人沙發」price 應如上圖所示。</p>
-</blockquote>
-<h2 id="情境-14：更新庫存"><a href="#情境-14：更新庫存" class="headerlink" title="情境 14：更新庫存"></a>情境 14：更新庫存</h2><h3 id="主管：「電腦辦公椅進了-5-張」"><a href="#主管：「電腦辦公椅進了-5-張」" class="headerlink" title="主管：「電腦辦公椅進了 5 張」"></a>主管：「電腦辦公椅進了 5 張」</h3><p><font color=#0000FF> In [17]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> stock <span class="operator">=</span> stock <span class="operator">+</span> <span class="number">5</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;電腦辦公椅&#x27;</span>;</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [17]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13.png?alt=media&token=7190057c-28f6-44d3-b685-8c38a86e63b7" alt="update set stock where name"></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq14-table.png?alt=media&token=a259eff6-6bc7-46a5-8a34-c39b946b0b92" alt="update table"></p>
-<blockquote>
-<p>這段查詢會更新products表中“電腦辦公椅”的庫存數量，將其現有庫存增加5張。<br>更新後查詢「電腦辦公椅」stock 應如上圖所示。</p>
-</blockquote>
-<h3 id="情境-15：清除資料"><a href="#情境-15：清除資料" class="headerlink" title="情境 15：清除資料"></a>情境 15：清除資料</h3><h4 id="主管：「要清掉兒童床架和電競書桌的資料」"><a href="#主管：「要清掉兒童床架和電競書桌的資料」" class="headerlink" title="主管：「要清掉兒童床架和電競書桌的資料」"></a>主管：「要清掉兒童床架和電競書桌的資料」</h4><p><font color=#0000FF>In [18]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;兒童床架&#x27;</span>, <span class="string">&#x27;電競書桌&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [18]: </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq15.png?alt=media&token=8f71e060-3dfb-4f92-b060-f7fdfa9755b3" alt="delete"></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq15-table.png?alt=media&token=89285b10-ebb6-43c2-a416-fc85c9e759bd" alt="delete"></p>
-<blockquote>
-<p>這段查詢會從products表中刪除商品名稱為“兒童床架”和“電競書桌”的所有資料。<br>更新後的資料庫應如上圖所示。</p>
-</blockquote>
-<h2 id="回顧：-本次練習常用語法"><a href="#回顧：-本次練習常用語法" class="headerlink" title="回顧： 本次練習常用語法"></a>回顧： 本次練習常用語法</h2><p><font color=#FF6600>SELECT</font> column_name<br><font color=#FF6600>FROM</font> table_name</p>
-<blockquote>
-<blockquote>
-<p>SELECT與FROM 敘述是從指定的資料表中選擇欄位的查詢語法，查詢結果依據其存在資料表中的順序所呈現。</p>
-</blockquote>
-</blockquote>
-<p><font color=#FF6600>WHERE</font> condition</p>
-<blockquote>
-<blockquote>
-<p>WHERE 敘述能以「條件」作為篩選觀測值的依據。</p>
-</blockquote>
-</blockquote>
-<p>如果沒有問題的話，那我們就可以前往下一章節囉。d(d＇∀＇)</p>
-]]></content>
-      <tags>
-        <tag>Practice</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2024 六角學院軟體工程師體驗營 切版任務一</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/03/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F-%E5%88%87%E7%89%88%E4%BB%BB%E5%8B%99%E4%B8%80/</url>
-    <content><![CDATA[<div class="Container">
-    <ul class="Cards-list">
-        <li>
-            <img src="https://i.imgur.com/k370tkx.png" alt="pic 1 StarTripTicketBookingPlatform">
-            <h2>星際旅行訂票平台</h2>
-            <p>悠遊宇宙的夢想，從這裡開始實現</p>
-            <ul Class="Card-list-Tags">
-                <li>網頁設計</li>
-                <li>響應式設計</li>
-                <li>Bootstrap</li>
-            </ul>
-        </li>
-        <li>
-            <img src="https://i.imgur.com/csaKN9q.png" alt="pic 2 FinancialManagementAPP">
-            <h2>理財APP</h2>
-            <p>連動帳戶與行動支付，讓AI提供您最好的理財建議</p>
-            <ul class="Card-list-Tags">
-                <li>APP設計</li>
-                <li>iOS</li>
-                <li>React</li>
-            </ul>
-        </li>
-            <li>
-            <img src="https://i.imgur.com/8XhudJj.png" alt="pic 3 MedicalCosmeticClinicWebSite">
-            <h2>醫美診所官網</h2>
-            <P>永保青春的秘密，從粹究開始</P>
-            <ul class="Card-list-Tags">
-                <li>網頁設計</li>
-                <li>響應式設計</li>
-                <li>WordPress</li>
-            </ul>
-        </li>
-            <li>
-            <img src="https://i.imgur.com/zWhfUTx.png" alt="pic 4 BreakfastStorePOSUIDesign">
-            <h2>美美美早餐店 POS機 UI Design</h2>
-            <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
-            <ul class="Card-list-Tags">
-                <li>UI 設計</li>
-                <li>前端開發</li>
-                <li>Wix</li>
-            </ul>               
-        </li>           
-    </ul>
-</div>    
-
-<style>
-*{
-    padding:0;
-    margin:0;
-}
-/* https://fonts.google.com/selection/embed */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
-
-/* https://www.colorhexa.com/ */
-:root{
-    --very-very-dark-gray:#3B3B3B;
-    --dark-gray:#919191;
-    --very-light-gray:#f1f1f1;
-    --white:#ffffff;
-}
-
-/**加img reset讓圖片適應縮放。在body樣式設置為預設樣式。使用“box-sizing”語法**/
-*,*::before,*::after{
-    box-sizing: border-box;
-}
-
-img{    
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 5px;
-    margin-bottom: 16px;
-}
-
-body{
-    font-family:"Noto Sans TC",sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-.Container{
-    width: 1296px;
-    margin: 0  auto;
-    padding: 0 12px;
-    background-color: var(--white);    
-}
-.Cards-list{   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;   
-    margin: 0 auto ;
-    margin-top: 10px;
-    gap:80px 10px;
-    list-style: none;
-}
-.Cards-list li{
-    max-width: 48%;
-}
-
-.Cards-list h2{
-    color: var(--very-very-dark-gray);
-    font-size: 28px;
-    line-height: 33.6px;
-    font-weight: 700;
-    margin-bottom: 8px;
-
-}
-
-.Cards-list p{
-    color:var(--dark-gray);
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 24px;
-}
-
-.Cards-list-Tags{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-}
-
-.Card-list-Tags li{
-    display: inline-block;
-    text-align: center;
-    background-color: var(--very-light-gray);
-    color: var(--very-very-dark-gray);
-    line-height: 24px;
-    padding:4px 12px;
-    margin-right: 16px;
-    border-radius: 16px;
-}
-
-/*RWD 設置*/
-@media (max-width:992px){
-    .Cards-list{
-        flex-direction: column;
-        align-items:center;
-        margin: 10px 10px 0px 10px;
-        gap: 60px;
-    }
-    .Cards-list li{
-        max-width: 90%;
-    }
-    .Card-list-Tags li{
-        margin-right: 12px;
-    }   
-}
-@media(max-width:375px){
-    .Cards-list{
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0px 0px 0px;
-        gap: 48px;
-    }
-    .Cards-list li{
-        padding:0px 0px 12px 12px;        
-    }
-    .Cards-list h2{
-        font-size: 20px;
-    }
-    .Card-list-Tags li{
-        margin-right: 8px;
-    }   
-}
-
-</style>
-
-<br>
-<br>
-
-<h6 id="圖片取自六角學院-©-HexSchool-2024"><a href="#圖片取自六角學院-©-HexSchool-2024" class="headerlink" title="圖片取自六角學院 © HexSchool 2024"></a>圖片取自六角學院 © HexSchool 2024</h6>]]></content>
-      <tags>
-        <tag>Practice</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>五件討厭的事</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/04/%E4%BA%94%E4%BB%B6%E8%A8%8E%E5%8E%AD%E7%9A%84%E4%BA%8B/</url>
-    <content><![CDATA[<p>討厭說謊<br>但實話總讓人傷心<br>不掉眼淚就是堅強的話<br>為何我站不起來<br>⠀<br>討厭自己那麼努力<br>差點能成為一個擅長等待的人<br>然而火燒太快<br>雨總是來不及下<br>⠀<br>討厭你那麼愛錢<br>卻一點也不願意愛我<br>我如此富裕<br>感情餘額總是赤字<br>⠀<br>討厭心酸的感覺<br>明明大家都說酸鹼可以中和<br>為什麼鹼性的眼淚<br>沒讓我復原<br>⠀<br>討厭大部分美好的話語後面<br>都會被加上「但是」<br>比如：我愛妳但是<br>而不是：但是我愛妳 </p>
-<h6 id="詩文｜靡靡-Tiny《五件討厭的事》"><a href="#詩文｜靡靡-Tiny《五件討厭的事》" class="headerlink" title="詩文｜靡靡 Tiny《五件討厭的事》"></a>詩文｜靡靡 Tiny《五件討厭的事》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2024 六角學院軟體工程師體驗營心得</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/02/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h2 id="當初為什麼報名體驗營"><a href="#當初為什麼報名體驗營" class="headerlink" title="當初為什麼報名體驗營?"></a>當初為什麼報名體驗營?</h2><p>內心有個聲音叫我去釐清真正的渴望和需求，理解身為一個成熟人類的社會責任，以便能更好地安排未來幾十年的職場活動，以及生活各層面的內容。</p>
-<h2 id="最大的收獲是"><a href="#最大的收獲是" class="headerlink" title="最大的收獲是?"></a>最大的收獲是?</h2><p>使用Hexo初步完成個人客製化樣式部落格。<br>另外對於排版與整體設計亦有了一個初步的認識。相信在接下來的學習過程裡，我會變得更能掌握這領域的知識；並期許自己能夠靈活運用、舉一反三。</p>
-<h2 id="最喜歡體驗營的哪些活動"><a href="#最喜歡體驗營的哪些活動" class="headerlink" title="最喜歡體驗營的哪些活動?"></a>最喜歡體驗營的哪些活動?</h2><p>第12小組每周四舉辦的線上讀書會。謝謝組員們，特別感謝 Arirel Yao、Jiahe、Mars 。</p>
-<h2 id="哪些自己可以做得很好的地方？"><a href="#哪些自己可以做得很好的地方？" class="headerlink" title="哪些自己可以做得很好的地方？"></a>哪些自己可以做得很好的地方？</h2><p>時間管理尚待加強。</p>
-<h2 id="對課程的建議或鼓勵"><a href="#對課程的建議或鼓勵" class="headerlink" title="對課程的建議或鼓勵?"></a>對課程的建議或鼓勵?</h2><p>感謝六角學院推出優質活動，讓我在學習的過程中結識到不同背景相同目標的夥伴們。<br>最後要非常感謝所有批改程式碼、願意給予建議的「Mentor」。</p>
-<p>“所以，這次只到6&#x2F;9……”<br>“能再寫一次，足矣”<br>“因為今天”</p>
-<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/28e51e98a75f8d69c10f0781671678c9.jpg?alt=media&token=bd902812-5393-48ba-9d8e-534d825d2e72" alt="再看一次">
-
-
-<h6 id="圖片取自-©火鳳燎原-陳某-All-Rights-Reserved"><a href="#圖片取自-©火鳳燎原-陳某-All-Rights-Reserved" class="headerlink" title="圖片取自 ©火鳳燎原 陳某 All Rights Reserved."></a>圖片取自 ©火鳳燎原 陳某 All Rights Reserved.</h6>]]></content>
-      <tags>
-        <tag>Essay</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你也和我們一樣，對吧?</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/05/%E4%BD%A0%E4%B9%9F%E5%92%8C%E6%88%91%E5%80%91%E4%B8%80%E6%A8%A3%EF%BC%8C%E5%B0%8D%E5%90%A7/</url>
-    <content><![CDATA[<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Blog%20Materials%2F26cdf76055d195bc494b09f506fcc965.jpg?alt=media&token=f36870e6-a886-4927-85a8-a0e2cb1683de" alt="信徒">
-
-
-<h3 id="「……Will-you-walk-with-us-」"><a href="#「……Will-you-walk-with-us-」" class="headerlink" title="「……Will you walk with us?」"></a>「……Will you walk with us?」</h3><br>
-<br>
-© 2024 EldenRing All Rights Reserved.
-
-<style>
-    img{
-        filter: grayscale(100%);
-    }
-
-</style>
-]]></content>
-      <tags>
-        <tag>Quotes</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SQL小節練習：主鍵、外來鍵、inner join</title>
     <url>/IWishIKnewHowToQuitYou/2024/11/05/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E4%B8%BB%E9%8D%B5%E3%80%81%E5%A4%96%E4%BE%86%E9%8D%B5%E3%80%81inner-join/</url>
     <content><![CDATA[<p><a href="https://gamma.app/docs/SQL--23heyix4r93u5u0?mode=doc">課堂簡報連結</a><br><a href="https://pg-sql.com/">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
@@ -987,64 +612,496 @@ body{
       </tags>
   </entry>
   <entry>
-    <title>六角切版直播班每日任務挑戰</title>
-    <url>/IWishIKnewHowToQuitYou/2024/07/19/%E5%85%AD%E8%A7%92%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E6%AF%8F%E6%97%A5%E4%BB%BB%E5%8B%99%E6%8C%91%E6%88%B0/</url>
-    <content><![CDATA[<p>西洋有一句話：「You are what you eat」，套用在習慣上，你的習慣會決定你變成什麼樣的人。每個行動都是微小的投票，投給你想要的未來。</p>
-<p>你想要變成什麼樣的人，<br>是由你的微小行動決定的；<br>你的每個微小行動，<br>是由習慣決定的。</p>
-<p>所以，重點是：你想要變成什麼樣的人？<br>那就培養怎麼樣的習慣，投下足夠多的票，變成你想要的人。 《原子習慣》</p>
-<p>🏅每日任務挑戰列表</p>
-<p>Day1：<a href="">HTML 語意標籤運用</a><br>Day2：移除圖片空隙<br>Day3：CSS 選擇器運用（擬態選擇器、類別選擇器）<br>Day4：推擠方向<br>Day5：margin、padding 混合運用</p>
-<p>Day6：box-model<br>Day7：box-sizing<br>Day8：觀念選擇題<br>Day9：練習 Emmet 語法<br>Day10：margin: 0 auto、text-align 混合運用</p>
-<p>Day11：文字設定（font-size、line-height）<br>Day12：整合相同樣式<br>Day13：文字設定（font-family、font-weight、font-style）<br>Day14：垂直水平置中<br>Day15：flex 多屬性練習</p>
-<p>Day16：flex 完成九宮格排版<br>Day17：background-image<br>Day18：container 容器應用<br>Day19：線上 icon 載入<br>Day20：CSS 權重覆蓋</p>
-<p>Day21：RWD 觀念選擇題<br>Day22：RWD 版型、RWD 排版間距<br>Day23：表單設計<br>Day24：jQuery toggleClass<br>Day25：下拉選單</p>
-<p>Day26：錨點練習<br>Day27：SCSS 結構、SCSS 用法<br>Day28：SCSS 排序<br>Day29：mixin<br>Day30：練習使用元件</p>
-<p>Day31：表單練習與 spacing 的運用<br>Day32：元件與通用類別 I<br>Day33：元件與通用類別 II<br>Day34：<a href="https://codepen.io/psyduck5566/pen/vYqrjgd">Modal 與 collapse 元件實用</a><br>Day35：<a href="https://codepen.io/psyduck5566/pen/QWXBQxK">網格練習</a></p>
-<p>Day36：Bootstrap position 與背景圖片遮罩設定<br>Day37：Swiper 輪播套件介紹<br>Day38：Swiper 客製化樣式<br>Day39：<a href="https://codepen.io/psyduck5566/pen/ZEdqGOb">Bootstrap Navs and tabs</a><br>Day40：<a href="https://codepen.io/psyduck5566/pen/PoryZKJ">Background linear gradient</a></p>
-<p>Day41：Bootstrap input group<br>Day42：練習 keyframes<br>Day43：練習 transform<br>Day44：練習 object-fit<br>Day45：<a href="https://codepen.io/psyduck5566/pen/WNqYaLB">aos + animate</a></p>
-<p>Day46：Bootstrap Dropdown<br>Day47：Swiper RWD<br>Day48：Bootstrap Accordion<br>Day49：Modal 實作運用<br>Day50：Bootstrap Collapse</p>
+    <title>SQL小節練習：晴天咖啡廳</title>
+    <url>/IWishIKnewHowToQuitYou/2024/11/21/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3/</url>
+    <content><![CDATA[<h2 id="資料載入"><a href="#資料載入" class="headerlink" title="資料載入"></a>資料載入</h2><p><a href="post-sql.com">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
+<p>將資料倒入 pg-sql</p>
+<p><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products (</span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">100</span>),         <span class="comment">-- 商品名稱</span></span><br><span class="line">    price <span class="type">INTEGER</span>,            <span class="comment">-- 原價</span></span><br><span class="line">    discount_price <span class="type">INTEGER</span>,    <span class="comment">-- 優惠價</span></span><br><span class="line">    stock <span class="type">INTEGER</span>,            <span class="comment">-- 庫存數量</span></span><br><span class="line">    category <span class="type">VARCHAR</span>(<span class="number">50</span>),      <span class="comment">-- 商品分類</span></span><br><span class="line">    status <span class="type">VARCHAR</span>(<span class="number">20</span>)         <span class="comment">-- 商品狀態</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> products (name, price, discount_price, stock, category, status) <span class="keyword">VALUES</span></span><br><span class="line">    (<span class="string">&#x27;精品手沖咖啡&#x27;</span>, <span class="number">180</span>, <span class="number">160</span>, <span class="number">50</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;美式咖啡&#x27;</span>, <span class="number">120</span>, <span class="number">120</span>, <span class="number">100</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;摩卡咖啡&#x27;</span>, <span class="number">150</span>, <span class="number">150</span>, <span class="number">80</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;特調拿鐵&#x27;</span>, <span class="number">160</span>, <span class="number">140</span>, <span class="number">60</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;伯爵紅茶&#x27;</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">70</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;玫瑰花茶&#x27;</span>, <span class="number">120</span>, <span class="number">120</span>, <span class="number">30</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;柳橙汁&#x27;</span>, <span class="number">90</span>, <span class="number">80</span>, <span class="number">40</span>, <span class="string">&#x27;果汁&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;水果茶&#x27;</span>, <span class="number">130</span>, <span class="number">110</span>, <span class="number">45</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;提拉米蘇&#x27;</span>, <span class="number">160</span>, <span class="number">160</span>, <span class="number">15</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;草莓乳酪蛋糕&#x27;</span>, <span class="number">180</span>, <span class="number">150</span>, <span class="number">8</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;巧克力布朗尼&#x27;</span>, <span class="number">150</span>, <span class="number">150</span>, <span class="number">0</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;特選咖啡豆&#x27;</span>, <span class="number">500</span>, <span class="number">450</span>, <span class="number">20</span>, <span class="string">&#x27;咖啡豆&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;摩卡咖啡豆&#x27;</span>, <span class="number">480</span>, <span class="number">480</span>, <span class="number">15</span>, <span class="string">&#x27;咖啡豆&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;濾掛式咖啡包&#x27;</span>, <span class="number">25</span>, <span class="number">20</span>, <span class="number">200</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;手沖濾紙&#x27;</span>, <span class="number">180</span>, <span class="number">180</span>, <span class="number">30</span>, <span class="string">&#x27;器材&#x27;</span>, <span class="string">&#x27;active&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#0000FF>  In [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [2]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2F1.png?alt=media&token=2c1b49c7-ed1a-4583-904f-4d4bfb813c1e" alt="coffeeShopProduct"></p>
+<blockquote>
+<p>創建了一個名為 products 的資料表，該表用來存儲商品的詳細信息。</p>
+<blockquote>
+<p><strong>name：</strong>商品名稱，類型為 VARCHAR(100)，用來存儲商品的名稱。<br><strong>price：</strong>原價，類型為 INTEGER，用來存儲商品的原始價格。<br><strong>discount_price：</strong>優惠價，類型為 INTEGER，用來存儲商品的折扣後價格。<br><strong>stock：</strong>庫存數量，類型為 INTEGER，用來存儲商品的庫存數量。<br><strong>category：</strong>商品分類，類型為 VARCHAR(50)，用來存儲商品的分類，例如「咖啡」、「茶飲」等。<br><strong>status：</strong>商品狀態，類型為 VARCHAR(20)，用來存儲商品的狀態，例如「active」（可售）或「inactive」（不可售）。</p>
+</blockquote>
+</blockquote>
+<h2 id="基礎查詢篇："><a href="#基礎查詢篇：" class="headerlink" title="基礎查詢篇："></a>基礎查詢篇：</h2><h3 id="情境-1：缺貨確認"><a href="#情境-1：缺貨確認" class="headerlink" title="情境 1：缺貨確認"></a>情境 1：缺貨確認</h3><p>顧客：「草莓乳酪蛋糕還有嗎？」<br>小杰想查：要確認草莓乳酪蛋糕的庫存</p>
+<p><font color=#0000FF>  In [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> stock <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;草莓乳酪蛋糕&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [3]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq1.png?alt=media&token=e3852780-01f6-43c4-b1f7-57345b7c14ee" alt="q1"></p>
+<blockquote>
+<p>返回「草莓乳酪蛋糕」的庫存數量。根據最初倒入的數據，「草莓乳酪蛋糕」的庫存數量應該是8。</p>
+</blockquote>
+<h2 id="情境-2：優惠查詢"><a href="#情境-2：優惠查詢" class="headerlink" title="情境 2：優惠查詢"></a>情境 2：優惠查詢</h2><p>顧客：「有什麼特價的咖啡嗎？」<br>小杰想查：列出所有有特價（優惠價低於原價）的咖啡類商品</p>
+<p><font color=#0000FF>  In [4]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡&#x27;</span> <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> price;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [4]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq2.png?alt=media&token=cc0d3abf-6d9f-4015-b607-c8069060ae85" alt="q2"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡」且優惠價低於原價的商品。<br>這樣就可以找到目前正在促銷的咖啡類商品。</p>
+</blockquote>
+<h2 id="情境-3：價格區間"><a href="#情境-3：價格區間" class="headerlink" title="情境 3：價格區間"></a>情境 3：價格區間</h2><p>顧客：「有沒有100元以下的飲品？」<br>小杰想查：找出所有100元以下的飲品</p>
+<p><font color=#0000FF>  In [5]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;果汁&#x27;</span>) <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [5]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq3.png?alt=media&token=dd7ebec2-8fc0-4cdf-9c6f-a3e71544d915" alt="q3"></p>
+<blockquote>
+<p>選擇所有分類為「咖啡」、「茶飲」或「果汁」且優惠價低於100元的商品。<br>這樣就可以找到所有符合條件的飲品。</p>
+</blockquote>
+<h2 id="AND條件篇"><a href="#AND條件篇" class="headerlink" title="AND條件篇"></a>AND條件篇</h2><h3 id="情境-4：庫存與價格"><a href="#情境-4：庫存與價格" class="headerlink" title="情境 4：庫存與價格"></a>情境 4：庫存與價格</h3><p>顧客：「有沒有特價，而且還有貨的甜點？」<br>小杰想查：要同時符合有特價（優惠價&lt;原價）且還有庫存的甜點</p>
+<p><font color=#0000FF>  In [6]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;甜點&#x27;</span> <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> price <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [6]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq4.png?alt=media&token=5bab43d9-c1fa-40a7-86cf-0c880a22663a" alt="q4"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「甜點」、優惠價低於原價且庫存量大於0的商品。<br>這樣可以找出目前有特價並且還有庫存的甜點。</p>
+</blockquote>
+<h2 id="情境-5：價格與分類"><a href="#情境-5：價格與分類" class="headerlink" title="情境 5：價格與分類"></a>情境 5：價格與分類</h2><p>店長：「幫我查一下所有200元以上，而且還有庫存的咖啡類商品」<br>小杰想查：列出符合價格和分類條件的商品</p>
+<p><font color=#0000FF>  In [7]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&gt;</span> <span class="number">200</span> <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [7]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq5.png?alt=media&token=42bdbb1a-84e6-4efd-af7a-3c431356417c" alt="q5"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡」、原價超過200元且庫存量大於0的商品。</p>
+</blockquote>
+<h2 id="OR條件篇"><a href="#OR條件篇" class="headerlink" title="OR條件篇"></a>OR條件篇</h2><h3 id="情境-6：多分類查詢"><a href="#情境-6：多分類查詢" class="headerlink" title="情境 6：多分類查詢"></a>情境 6：多分類查詢</h3><p>顧客：「我想看看你們的咖啡豆和濾掛包」<br>小杰想查：列出咖啡豆類和濾掛式咖啡的商品</p>
+<p><font color=#0000FF>  In [8]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡豆&#x27;</span> <span class="keyword">OR</span> name <span class="operator">=</span> <span class="string">&#x27;濾掛式咖啡包&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [8]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq6.png?alt=media&token=e762f084-686d-4551-8165-45dd5e868014" alt="q6"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡豆」的商品以及名稱為「濾掛式咖啡包」的商品。</p>
+</blockquote>
+<h2 id="BETWEEN篇"><a href="#BETWEEN篇" class="headerlink" title="BETWEEN篇"></a>BETWEEN篇</h2><h3 id="情境-7：價格區間"><a href="#情境-7：價格區間" class="headerlink" title="情境 7：價格區間"></a>情境 7：價格區間</h3><p>顧客：「想找100到200元之間的飲品」<br>小杰想查：列出這個價格區間的飲品</p>
+<p><font color=#0000FF>  In [9]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;果汁&#x27;</span>) <span class="keyword">AND</span> discount_price <span class="keyword">BETWEEN</span> <span class="number">100</span> <span class="keyword">AND</span> <span class="number">200</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [9]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq7.png?alt=media&token=d6133a03-1f4b-4916-99aa-6983a7d59d72" alt="q7"></p>
+<blockquote>
+<p>從 products 表中選出所有分類為「咖啡」、「茶飲」或「果汁」，且優惠價在100到200元之間的商品。</p>
+</blockquote>
+<h2 id="更新資料篇"><a href="#更新資料篇" class="headerlink" title="更新資料篇"></a>更新資料篇</h2><h3 id="情境-8：調整價格"><a href="#情境-8：調整價格" class="headerlink" title="情境 8：調整價格"></a>情境 8：調整價格</h3><p>店長：「美式咖啡要降價10元」<br>小杰想查：如何更新美式咖啡的優惠價</p>
+<p><font color=#0000FF>  In [10]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> discount_price <span class="operator">=</span> discount_price <span class="operator">-</span> <span class="number">10</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;美式咖啡&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [10]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-result.png?alt=media&token=9a462bdb-86de-4f74-8b0f-018bb078e4f6" alt="q8"></p>
+<p><font color=#0000FF>  In [11]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;特調拿鐵&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [11]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-.png?alt=media&token=78170701-c53f-4412-961c-f3f9677433e4" alt="q8Table"></p>
+<blockquote>
+<p>將 products 表中名稱為「美式咖啡」的商品的優惠價降低10元。</p>
+</blockquote>
+<h3 id="情境-9：更新庫存"><a href="#情境-9：更新庫存" class="headerlink" title="情境 9：更新庫存"></a>情境 9：更新庫存</h3><p>店長：「特選咖啡豆進了10包」<br>小杰想查：如何增加特選咖啡豆的庫存</p>
+<p><font color=#0000FF>  In [12]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> discount_price <span class="operator">=</span> discount_price <span class="operator">-</span> <span class="number">10</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;美式咖啡&#x27;</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [12]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-result.png?alt=media&token=9a462bdb-86de-4f74-8b0f-018bb078e4f6" alt="q9"></p>
+<p><font color=#0000FF>  In [13]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, stock</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;特選咖啡豆&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [13]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq9-.png?alt=media&token=7e39fd68-fbca-44d9-b3f7-14aa799773b5" alt="q9Table"></p>
+<blockquote>
+<p>將 products 表中名稱為「特選咖啡豆」的商品的庫存增加10包。</p>
+</blockquote>
+<p><font color=#c0c0c0> 吹著前奏望著天空 我想起花瓣試著掉落 </font></p>
 ]]></content>
       <tags>
         <tag>Practice</tag>
       </tags>
   </entry>
   <entry>
-    <title>六角流週覆盤</title>
-    <url>/IWishIKnewHowToQuitYou/2024/10/27/%E5%85%AD%E8%A7%92%E6%B5%81%E9%80%B1%E8%A6%86%E7%9B%A4/</url>
-    <content><![CDATA[<h2 id="Question"><a href="#Question" class="headerlink" title="Question:"></a>Question:</h2><blockquote>
-<p><font color=#c0c0c0> 1. 本週做了什麼&#x2F;學了什麼內容? </font><br><font color=#c0c0c0> 2. 本週的進度有沒有符合預期規劃? 沒有的話，可以記錄原因，例如： </font><br><font color=#c0c0c0>	- 發生什麼事件 &#x2F; 因為什麼情緒 導致無法完成本週計劃？ </font><br><font color=#c0c0c0>	- 未來發生類似的事情，希望如何調整來幫助自己？ </font><br><font color=#c0c0c0> 3. 本週有沒有遇到什麼困難&#x2F;問題? 問題是如何解決的? </font><br><font color=#c0c0c0> 4. 本週感謝時間：(選填) </font><br><font color=#c0c0c0>	- 本週自己&#x2F;團隊有哪裡做的很棒? </font><br><font color=#c0c0c0>    - 本週有什麼讓你覺得很感恩? </font><br><font color=#c0c0c0> 5. 下週計畫要做哪些項目? </font><br><font color=#c0c0c0> 6. 有沒有想跟大家分享的事情（生活近況、學習狀況、假日在幹嘛、心靈上的調整 都可以唷） </font></p>
+    <title>2024 六角學院軟體工程師體驗營 切版任務一</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/03/2024-%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2%E8%BB%9F%E9%AB%94%E5%B7%A5%E7%A8%8B%E5%B8%AB%E9%AB%94%E9%A9%97%E7%87%9F-%E5%88%87%E7%89%88%E4%BB%BB%E5%8B%99%E4%B8%80/</url>
+    <content><![CDATA[<div class="Container">
+    <ul class="Cards-list">
+        <li>
+            <img src="https://i.imgur.com/k370tkx.png" alt="pic 1 StarTripTicketBookingPlatform">
+            <h2>星際旅行訂票平台</h2>
+            <p>悠遊宇宙的夢想，從這裡開始實現</p>
+            <ul Class="Card-list-Tags">
+                <li>網頁設計</li>
+                <li>響應式設計</li>
+                <li>Bootstrap</li>
+            </ul>
+        </li>
+        <li>
+            <img src="https://i.imgur.com/csaKN9q.png" alt="pic 2 FinancialManagementAPP">
+            <h2>理財APP</h2>
+            <p>連動帳戶與行動支付，讓AI提供您最好的理財建議</p>
+            <ul class="Card-list-Tags">
+                <li>APP設計</li>
+                <li>iOS</li>
+                <li>React</li>
+            </ul>
+        </li>
+            <li>
+            <img src="https://i.imgur.com/8XhudJj.png" alt="pic 3 MedicalCosmeticClinicWebSite">
+            <h2>醫美診所官網</h2>
+            <P>永保青春的秘密，從粹究開始</P>
+            <ul class="Card-list-Tags">
+                <li>網頁設計</li>
+                <li>響應式設計</li>
+                <li>WordPress</li>
+            </ul>
+        </li>
+            <li>
+            <img src="https://i.imgur.com/zWhfUTx.png" alt="pic 4 BreakfastStorePOSUIDesign">
+            <h2>美美美早餐店 POS機 UI Design</h2>
+            <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
+            <ul class="Card-list-Tags">
+                <li>UI 設計</li>
+                <li>前端開發</li>
+                <li>Wix</li>
+            </ul>               
+        </li>           
+    </ul>
+</div>    
+
+<style>
+*{
+    padding:0;
+    margin:0;
+}
+/* https://fonts.google.com/selection/embed */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* https://www.colorhexa.com/ */
+:root{
+    --very-very-dark-gray:#3B3B3B;
+    --dark-gray:#919191;
+    --very-light-gray:#f1f1f1;
+    --white:#ffffff;
+}
+
+/**加img reset讓圖片適應縮放。在body樣式設置為預設樣式。使用“box-sizing”語法**/
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{    
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+body{
+    font-family:"Noto Sans TC",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.Container{
+    width: 1296px;
+    margin: 0  auto;
+    padding: 0 12px;
+    background-color: var(--white);    
+}
+.Cards-list{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    margin: 0 auto ;
+    margin-top: 10px;
+    gap:80px 10px;
+    list-style: none;
+}
+.Cards-list li{
+    max-width: 48%;
+}
+
+.Cards-list h2{
+    color: var(--very-very-dark-gray);
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+}
+
+.Cards-list p{
+    color:var(--dark-gray);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.Cards-list-Tags{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.Card-list-Tags li{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--very-light-gray);
+    color: var(--very-very-dark-gray);
+    line-height: 24px;
+    padding:4px 12px;
+    margin-right: 16px;
+    border-radius: 16px;
+}
+
+/*RWD 設置*/
+@media (max-width:992px){
+    .Cards-list{
+        flex-direction: column;
+        align-items:center;
+        margin: 10px 10px 0px 10px;
+        gap: 60px;
+    }
+    .Cards-list li{
+        max-width: 90%;
+    }
+    .Card-list-Tags li{
+        margin-right: 12px;
+    }   
+}
+@media(max-width:375px){
+    .Cards-list{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+        gap: 48px;
+    }
+    .Cards-list li{
+        padding:0px 0px 12px 12px;        
+    }
+    .Cards-list h2{
+        font-size: 20px;
+    }
+    .Card-list-Tags li{
+        margin-right: 8px;
+    }   
+}
+
+</style>
+
+<br>
+<br>
+
+<h6 id="圖片取自六角學院-©-HexSchool-2024"><a href="#圖片取自六角學院-©-HexSchool-2024" class="headerlink" title="圖片取自六角學院 © HexSchool 2024"></a>圖片取自六角學院 © HexSchool 2024</h6>]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL小節練習：家具店的菜雞銷售奇遇記</title>
+    <url>/IWishIKnewHowToQuitYou/2024/10/28/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98/</url>
+    <content><![CDATA[<p>謹以本篇記錄小美同學運用入門SQL語法，維運『築夢家居』的事績。</p>
+<p><a href="https://gamma.app/docs/SQL--23heyix4r93u5u0?mode=doc">課堂簡報連結</a><br><a href="post-sql.com">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
+<h2 id="資料載入"><a href="#資料載入" class="headerlink" title="資料載入"></a>資料載入</h2><p>首先，我們使用這段程式碼創建一個名為products的資料表，並插入一些商品數據。<br><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products (</span><br><span class="line">   name <span class="type">VARCHAR</span>(<span class="number">100</span>),         <span class="comment">-- 商品名稱</span></span><br><span class="line">   price <span class="type">INTEGER</span>,            <span class="comment">-- 原價</span></span><br><span class="line">   discount_price <span class="type">INTEGER</span>,    <span class="comment">-- 優惠價</span></span><br><span class="line">   stock <span class="type">INTEGER</span>,            <span class="comment">-- 庫存數量</span></span><br><span class="line">   category <span class="type">VARCHAR</span>(<span class="number">50</span>),      <span class="comment">-- 商品分類</span></span><br><span class="line">   status <span class="type">VARCHAR</span>(<span class="number">20</span>)         <span class="comment">-- 商品狀態</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [1]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F1.png?alt=media&token=af1d0c30-9165-45c0-950e-891d3d0c4d82" alt="create table"></p>
+<blockquote>
+<p><strong>CREATE TABLE products：</strong> 這行表示我們正在創建一個名為products的資料表。<br><strong>name VARCHAR(100)：</strong> 這欄位儲存商品名稱，最多可包含100個字元。<br><strong>price INTEGER：</strong> 這欄位儲存商品的原價，以整數形式表示。<br><strong>discount_price INTEGER：</strong> 這欄位儲存商品的優惠價，也是整數。<br><strong>stock INTEGER：</strong> 這欄位表示庫存數量，使用整數。<br><strong>category VARCHAR(50)：</strong> 這欄位表示商品的分類，最多可包含50個字元。<br><strong>status VARCHAR(20)：</strong> 這欄位表示商品的狀態，例如“active”或“inactive”，最多可包含20個字元。</p>
 </blockquote>
-<p>2024&#x2F;12&#x2F;14</p>
-<p>練習JS API<br>練習SQL leetCode<br>感謝爸媽。<br> <strong>「體能是基礎，情緒是調節器，思維是引擎，而精神則是方向盤。如果缺少其中任何一部分，我們的精力管理都會大打折扣。」</strong> -林揚程（Hank）</p>
-<hr>
-<p>孩子別 怕荊棘 赤著腳<br>Child，Don’t be afraid of the thorns，with your barefoot<br>就 能尋到 珍貴<br>You can find the essence of the world<br>你看這個 天黑 焰火有多美<br>You see，the sky is turning grey，how stunning the firework was<br>無需太多 的傷悲<br>Don’t feel panic, don’t feel sad<br>人本都在 茂盛枯萎<br>We are all slaves of nature, blossom and withered<br>但頑石和塊壘 也開花蕊<br>Yet, even stubborn rocks and barriers bloom with flowers.</p>
-<p>撥開山嶺 讓她看看我<br>Push aside the mountains，Let her sees me<br>告訴繁星 快些照亮我<br>Tell those stars to shine on me faster<br>吹散烏雲 用一抹藍色<br>Blow away the dark clouds with that blue in my heart.<br>那就算 世界滿是荒蕪我們 抬頭就能 看見月亮<br>Even if the world is full of desolation, we can lift our heads up and see the moon.</p>
-<p>在我們還是 孩子的模樣<br>When we are still in the guise of children.<br>做雖千萬人 也要盛開 的孤芳<br>As one among millions, still must blossom into a solitary and splendid flower.<br>別再憂傷煩惱<br>Don’t wander in troubles anymore.</p>
-<p>別忘<br>Don’t forget</p>
-<p>就算流淚 也要一直 奔跑<br>Even if the tears flow, keep running forward.<br>跑到連時 間都 找不到<br>Run until even time cannot be found.<br>做天邊的飛鳥<br>Be a carefree flying bird.</p>
-<p>撥開山嶺 讓她看看我<br>Push aside the mountains，Let her sees me<br>告訴繁星 快些照亮我<br>Tell those stars to shine on me faster<br>吹散烏雲 用一抹藍色<br>Blow away the dark clouds with that blue in my heart.</p>
-<p>那就算 世界滿是荒蕪我們 抬頭就能 看見月亮<br>Even if the world is full of desolation, we can lift our heads up and see the moon.</p>
-<p>在我們還是 孩子的模樣<br>When we are still in the guise of children.<br>做雖千萬人 也要盛開 的孤芳<br>As one among millions, still must blossom into a solitary and splendid flower.<br>別再憂傷煩惱<br>Don’t wander in troubles anymore.</p>
-<p>別忘<br>Don’t forget<br>就算流淚 也要一直 奔跑<br>Even if the tears flow, keep running forward.<br>跑到連時 間都 找不到<br>Run until even time cannot be found.<br>做天邊的飛鳥<br>Be a carefree flying bird.</p>
-<p>別再尋找<br>Stop searching.<br>給我一個擁抱<br>Give me a hug<br>就安靜地忘掉<br>Just quietly forget</p>
-<p>我這樣就很好<br>I’m fine the way I am</p>
-<p>#陳奕迅 #EasonChan #Arcane #這樣很好</p>
-<hr>
-<p>練SQL &amp; 寫JS 週任務。<br>11&#x2F;29 發生令人感動的事件。<br>感謝爸媽。<br>2024 NNN d(&#96;･∀･)b (1&#x2F;1)</p>
-<p>《巨人的筆記》指出我們在紀錄的時候，不是記下所有東西，而是只保留最重要的東西。有了這些摘要後的紀錄，才能從這些紀錄當中繼續壓縮出更精煉的智慧。</p>
-<hr>
-<p>練習JS &amp; 練習SQL<br>參分之柒<br>感謝父母。</p>
-<hr>
-<p>練習JS練習SQL<br>沒有 意志不夠堅定。<br>本週幫忙同仁審核二次評鑑報告，但都是在17:00收到，然後截止日期是明天。不知道有沒有比較洽當的應對方式?<br>專題拆掉了。原本想續做的唯一同學在聽完開學典禮後出於其它的考量決定轉入學習組。想到要再重頭來過頭就有點痛… XD<br>感謝爸媽。<br>每年至少跑一場馬拉松 (1&#x2F;1) </p>
-<hr>
-<p>練習JS<br>沒有 意志不夠堅定<br>勇敢拒絕加班 (?)<br>感謝爸媽<br>練習JS、復習SQL<br>Ethan: “I need you to trust me, ONE LAST TIME…”<br>Me: “Always.”</p>
-<hr>
-<p>DOM<br>50% 在DOM投入比預期多的時間，壓縮其它預排項目<br>這星期每天都睡過頭，錯過晨跑 orz<br>感謝家人。<br>補JS進度。行有餘力，則以學SQL新釋出的影片。<br>恭喜SHO轉隊第一年就奪冠。祝您能保護好身體，不要再受傷了QQ”<br>⭐⭐⭐⭐⭐恭喜T1，謝謝李哥。好感動啊，我也有星星了？？？</p>
-<hr>
-<p>學習 JS ， 被CodeWar有趣的問題吸引 。<br>一時手滑報名SQL體驗班。 當加入頻道時看見眼熟的ID，覺得開心 ^^”<br>有依照預期進度學習。<br>職場說話還是要保留些，留得青山在不怕沒柴燒(???)<br>感謝洧杰校長辦SQL體驗班。<br>要好好整理自己的家，別身在福中不知福。<br>學習 JS &amp; SQL<br>支持的隊伍突破心魔，打進決賽。希望今年能寫下圓滿結局。</p>
+<p>接著使用下列程式碼輸入資料。</p>
+<p><font color=#0000FF>  In [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> products (name, price, discount_price, stock, category, status) <span class="keyword">VALUES</span></span><br><span class="line">   (<span class="string">&#x27;北歐風雙人沙發&#x27;</span>, <span class="number">39900</span>, <span class="number">35900</span>, <span class="number">3</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;貓抓皮L型沙發&#x27;</span>, <span class="number">58900</span>, <span class="number">52900</span>, <span class="number">1</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;典雅三人座沙發&#x27;</span>, <span class="number">42800</span>, <span class="number">42800</span>, <span class="number">5</span>, <span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;工業風電視櫃&#x27;</span>, <span class="number">5900</span>, <span class="number">4900</span>, <span class="number">12</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;簡約書櫃&#x27;</span>, <span class="number">3500</span>, <span class="number">3500</span>, <span class="number">8</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;玄關鞋櫃&#x27;</span>, <span class="number">2900</span>, <span class="number">2900</span>, <span class="number">15</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;日式雙人床架&#x27;</span>, <span class="number">12000</span>, <span class="number">11200</span>, <span class="number">6</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;掀床五尺雙人床&#x27;</span>, <span class="number">19900</span>, <span class="number">18900</span>, <span class="number">2</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;兒童床架&#x27;</span>, <span class="number">8900</span>, <span class="number">8900</span>, <span class="number">0</span>, <span class="string">&#x27;床架&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;電腦辦公椅&#x27;</span>, <span class="number">4500</span>, <span class="number">3900</span>, <span class="number">20</span>, <span class="string">&#x27;椅子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;餐椅四入組&#x27;</span>, <span class="number">6000</span>, <span class="number">5200</span>, <span class="number">8</span>, <span class="string">&#x27;椅子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;北歐風餐桌&#x27;</span>, <span class="number">15800</span>, <span class="number">14800</span>, <span class="number">4</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;實木咖啡桌&#x27;</span>, <span class="number">3200</span>, <span class="number">2900</span>, <span class="number">10</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">   (<span class="string">&#x27;電競書桌&#x27;</span>, <span class="number">8900</span>, <span class="number">8900</span>, <span class="number">0</span>, <span class="string">&#x27;桌子&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [2]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F2.png?alt=media&token=e945cdf0-d7f2-468e-91a5-3245f543c8d7" alt="create table data"></p>
+<blockquote>
+<p><strong>INSERT INTO products (…) VALUES (…)：</strong>這段語句用於向products表中插入多行數據。<br>每一行代表一個商品的數據，包括名稱、原價、優惠價、庫存、分類和狀態。</p>
+</blockquote>
+<p>現在我們就可以使用以下SQL查詢，來查看資料庫中products表的所有資料。<br><font color=#0000FF>  In [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [3]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2F3.png?alt=media&token=70b9c983-c836-4e3a-957b-ccad1ff77e23" alt="product databate"></p>
+<h2 id="基礎比較運算："><a href="#基礎比較運算：" class="headerlink" title="基礎比較運算："></a>基礎比較運算：</h2><h3 id="情境-1：單品查詢"><a href="#情境-1：單品查詢" class="headerlink" title="情境 1：單品查詢"></a>情境 1：單品查詢</h3><h4 id="客人：「這張北歐風雙人沙發多少錢？」"><a href="#客人：「這張北歐風雙人沙發多少錢？」" class="headerlink" title="客人：「這張北歐風雙人沙發多少錢？」"></a>客人：「這張北歐風雙人沙發多少錢？」</h4><p><font color=#0000FF> In [4]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;北歐風雙人沙發&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [4]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq1.png?alt=media&token=0f69dea2-10ec-493b-ac18-3cef62264953" alt="where name"></p>
+<blockquote>
+<p>這段查詢的作用是從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品名稱必須是“北歐風雙人沙發”。</p>
+</blockquote>
+<h2 id="情境-2：價格比較"><a href="#情境-2：價格比較" class="headerlink" title="情境 2：價格比較"></a>情境 2：價格比較</h2><h3 id="客人：「請列出-5000-元以下的櫃子有哪些？」"><a href="#客人：「請列出-5000-元以下的櫃子有哪些？」" class="headerlink" title="客人：「請列出 5000 元以下的櫃子有哪些？」"></a>客人：「請列出 5000 元以下的櫃子有哪些？」</h3><p><font color=#0000FF> In [5]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;櫃子&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&lt;</span> <span class="number">5000</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [5]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq2.png?alt=media&token=7a8f69c1-79cc-4744-8c3e-94de0721fe0f" alt="where and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“櫃子”且原價低於5000。</p>
+</blockquote>
+<h2 id="情境-3：庫存確認"><a href="#情境-3：庫存確認" class="headerlink" title="情境 3：庫存確認"></a>情境 3：庫存確認</h2><h3 id="客人：「日式雙人床架還有貨嗎？」"><a href="#客人：「日式雙人床架還有貨嗎？」" class="headerlink" title="客人：「日式雙人床架還有貨嗎？」"></a>客人：「日式雙人床架還有貨嗎？」</h3><p><font color=#0000FF> In [6]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;日式雙人床架&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [6]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq3.png?alt=media&token=a1074bad-6f29-4b10-ab0c-672169bc51bd" alt="where"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇“日式雙人床架”的庫存數量。如圖所示，剩下6個。</p>
+</blockquote>
+<h2 id="邏輯運算-AND："><a href="#邏輯運算-AND：" class="headerlink" title="邏輯運算 AND："></a>邏輯運算 AND：</h2><h3 id="情境-4：預算內的商品"><a href="#情境-4：預算內的商品" class="headerlink" title="情境 4：預算內的商品"></a>情境 4：預算內的商品</h3><h4 id="客人：「想找-4-萬以下，而且有現貨的沙發」"><a href="#客人：「想找-4-萬以下，而且有現貨的沙發」" class="headerlink" title="客人：「想找 4 萬以下，而且有現貨的沙發」"></a>客人：「想找 4 萬以下，而且有現貨的沙發」</h4><p><font color=#0000FF> In [7]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;沙發&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&lt;</span> <span class="number">40000</span> <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [7]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq4.png?alt=media&token=ecb72dfb-4872-4197-af8c-6428663c4444" alt="where and and "></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“沙發”、原價低於40,000以及庫存數量大於0。</p>
+</blockquote>
+<h3 id="情境-5：特價且有貨"><a href="#情境-5：特價且有貨" class="headerlink" title="情境 5：特價且有貨"></a>情境 5：特價且有貨</h3><h4 id="客人：「沙發有哪些特價且現貨的品項？」"><a href="#客人：「沙發有哪些特價且現貨的品項？」" class="headerlink" title="客人：「沙發有哪些特價且現貨的品項？」"></a>客人：「沙發有哪些特價且現貨的品項？」</h4><p><font color=#0000FF> In [8]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;沙發&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&gt;</span> discount_price <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [8]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq5.png?alt=media&token=4cd4560b-a2bd-437e-90f9-c31ee94b4bc5" alt="where and and "></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“沙發”、原價大於優惠價（表示特價）以及庫存數量大於0。</p>
+</blockquote>
+<h2 id="邏輯運算-OR："><a href="#邏輯運算-OR：" class="headerlink" title="邏輯運算 OR："></a>邏輯運算 OR：</h2><h3 id="情境-6：多分類查詢"><a href="#情境-6：多分類查詢" class="headerlink" title="情境 6：多分類查詢"></a>情境 6：多分類查詢</h3><h4 id="客人：「我要找櫃子或桌子」"><a href="#客人：「我要找櫃子或桌子」" class="headerlink" title="客人：「我要找櫃子或桌子」"></a>客人：「我要找櫃子或桌子」</h4><p><font color=#0000FF> In [9]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;櫃子&#x27;</span> <span class="keyword">OR</span> category <span class="operator">=</span> <span class="string">&#x27;桌子&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [9]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq6.png?alt=media&token=844a66fa-1da7-4b52-a0a7-d15544827154" alt="where or"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，並且條件是商品分類為“櫃子”或“桌子”。這樣就能找到所有符合這些分類的商品。</p>
+</blockquote>
+<h3 id="情境-7：指定商品"><a href="#情境-7：指定商品" class="headerlink" title="情境 7：指定商品"></a>情境 7：指定商品</h3><h4 id="客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」"><a href="#客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」" class="headerlink" title="客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」"></a>客人：「北歐風雙人沙發和貓抓皮L型沙發哪個還有貨？」</h4><p><font color=#0000FF> In [10]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;北歐風雙人沙發&#x27;</span>, <span class="string">&#x27;貓抓皮L型沙發&#x27;</span>) <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [10]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq7.png?alt=media&token=27062c29-0cab-48df-ab02-3679642e3000" alt="where namee in and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱和庫存數量，條件是商品名稱是“北歐風雙人沙發”或“貓抓皮L型沙發”，並且庫存數量大於0。這樣就能從兩個商品中，選出還有庫存的商品。</p>
+</blockquote>
+<h2 id="IN-運算："><a href="#IN-運算：" class="headerlink" title="IN 運算："></a>IN 運算：</h2><h3 id="情境-8：多分類查詢"><a href="#情境-8：多分類查詢" class="headerlink" title="情境 8：多分類查詢"></a>情境 8：多分類查詢</h3><h4 id="客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」"><a href="#客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」" class="headerlink" title="客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」"></a>客人：「客廳的家具有哪些？我要看沙發、櫃子跟桌子」</h4><p><font color=#0000FF> In [11]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;櫃子&#x27;</span>, <span class="string">&#x27;桌子&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [11]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq8.png?alt=media&token=8e7c483e-c531-408f-9dcb-50d95086c21b" alt="where in"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品分類為“沙發”、“櫃子”或“桌子”。這樣就能找到所有屬於這三種類別的產品。</p>
+</blockquote>
+<h2 id="情境-9：特定商品"><a href="#情境-9：特定商品" class="headerlink" title="情境 9：特定商品"></a>情境 9：特定商品</h2><h3 id="客人：「電腦辦公椅和餐椅四入組的價格是多少？」"><a href="#客人：「電腦辦公椅和餐椅四入組的價格是多少？」" class="headerlink" title="客人：「電腦辦公椅和餐椅四入組的價格是多少？」"></a>客人：「電腦辦公椅和餐椅四入組的價格是多少？」</h3><p><font color=#0000FF> In [12]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;電腦辦公椅&#x27;</span>, <span class="string">&#x27;餐椅四入組&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [12]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq9.png?alt=media&token=4a409e6d-0a66-431e-b0df-0b7bb3a4c9a0" alt="where name in"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價和優惠價，條件是商品名稱是“電腦辦公椅”或“餐椅四入組”</p>
+</blockquote>
+<h2 id="BETWEEN："><a href="#BETWEEN：" class="headerlink" title="BETWEEN："></a>BETWEEN：</h2><h3 id="情境-10：價格區間"><a href="#情境-10：價格區間" class="headerlink" title="情境 10：價格區間"></a>情境 10：價格區間</h3><h4 id="客人：「想找-10000-到-20000-之間的商品有哪些？」"><a href="#客人：「想找-10000-到-20000-之間的商品有哪些？」" class="headerlink" title="客人：「想找 10000 到 20000 之間的商品有哪些？」"></a>客人：「想找 10000 到 20000 之間的商品有哪些？」</h4><p><font color=#0000FF>  In [13]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> price <span class="keyword">BETWEEN</span> <span class="number">10000</span> <span class="keyword">AND</span> <span class="number">20000</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [13]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq10.png?alt=media&token=8e417fca-c3f1-415f-9b60-28a61cd8b8df" alt="where between and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、原價、優惠價和庫存數量，條件是商品的價格在10,000到20,000之間。</p>
+</blockquote>
+<h3 id="情境-11：庫存區間"><a href="#情境-11：庫存區間" class="headerlink" title="情境 11：庫存區間"></a>情境 11：庫存區間</h3><h4 id="主管：「請列出庫存在-5-到-15-之間的商品」"><a href="#主管：「請列出庫存在-5-到-15-之間的商品」" class="headerlink" title="主管：「請列出庫存在 5 到 15 之間的商品」"></a>主管：「請列出庫存在 5 到 15 之間的商品」</h4><p><font color=#0000FF>  In [14]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> stock <span class="keyword">BETWEEN</span> <span class="number">5</span> <span class="keyword">AND</span> <span class="number">15</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [14]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq11.png?alt=media&token=ea97af73-0475-4491-9470-e45fe1ce0eeb" alt="where between and"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品的庫存數量在5到15之間。</p>
+</blockquote>
+<h2 id="NOT-IN："><a href="#NOT-IN：" class="headerlink" title="NOT IN："></a>NOT IN：</h2><h3 id="情境-12：排除商品"><a href="#情境-12：排除商品" class="headerlink" title="情境 12：排除商品"></a>情境 12：排除商品</h3><h4 id="主管：「列出除了沙發和床架以外的商品」"><a href="#主管：「列出除了沙發和床架以外的商品」" class="headerlink" title="主管：「列出除了沙發和床架以外的商品」"></a>主管：「列出除了沙發和床架以外的商品」</h4><p><font color=#0000FF>  In [15]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, category, price, discount_price, stock </span><br><span class="line"><span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&#x27;沙發&#x27;</span>, <span class="string">&#x27;床架&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [15]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq12.png?alt=media&token=76b87bab-1983-4fe1-9899-9bca9e822d7b" alt="where not in"></p>
+<blockquote>
+<p>這段查詢會從products表中選擇商品名稱、分類、原價、優惠價和庫存數量，條件是商品的分類不屬於“沙發”或“床架”。</p>
+</blockquote>
+<h2 id="更新和刪除："><a href="#更新和刪除：" class="headerlink" title="更新和刪除："></a>更新和刪除：</h2><h3 id="情境-13：調整價格"><a href="#情境-13：調整價格" class="headerlink" title="情境 13：調整價格"></a>情境 13：調整價格</h3><h4 id="主管：「北歐風雙人沙發要調降-2000-元」"><a href="#主管：「北歐風雙人沙發要調降-2000-元」" class="headerlink" title="主管：「北歐風雙人沙發要調降 2000 元」"></a>主管：「北歐風雙人沙發要調降 2000 元」</h4><p><font color=#0000FF>  In [16]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> price <span class="operator">=</span> price <span class="operator">-</span> <span class="number">2000</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;北歐風雙人沙發&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000>  Out [16]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13.png?alt=media&token=7190057c-28f6-44d3-b685-8c38a86e63b7" alt="update set price where name"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13-table.png?alt=media&token=0d709478-d812-4b95-ae96-4fa4abc074f5" alt="updated table"></p>
+<blockquote>
+<p>這段查詢會更新products表中“北歐風雙人沙發”的價格，將其現有價格減去2,000元。<br>更新後查詢「北歐風雙人沙發」price 應如上圖所示。</p>
+</blockquote>
+<h2 id="情境-14：更新庫存"><a href="#情境-14：更新庫存" class="headerlink" title="情境 14：更新庫存"></a>情境 14：更新庫存</h2><h3 id="主管：「電腦辦公椅進了-5-張」"><a href="#主管：「電腦辦公椅進了-5-張」" class="headerlink" title="主管：「電腦辦公椅進了 5 張」"></a>主管：「電腦辦公椅進了 5 張」</h3><p><font color=#0000FF> In [17]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> stock <span class="operator">=</span> stock <span class="operator">+</span> <span class="number">5</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;電腦辦公椅&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [17]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq13.png?alt=media&token=7190057c-28f6-44d3-b685-8c38a86e63b7" alt="update set stock where name"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq14-table.png?alt=media&token=a259eff6-6bc7-46a5-8a34-c39b946b0b92" alt="update table"></p>
+<blockquote>
+<p>這段查詢會更新products表中“電腦辦公椅”的庫存數量，將其現有庫存增加5張。<br>更新後查詢「電腦辦公椅」stock 應如上圖所示。</p>
+</blockquote>
+<h3 id="情境-15：清除資料"><a href="#情境-15：清除資料" class="headerlink" title="情境 15：清除資料"></a>情境 15：清除資料</h3><h4 id="主管：「要清掉兒童床架和電競書桌的資料」"><a href="#主管：「要清掉兒童床架和電競書桌的資料」" class="headerlink" title="主管：「要清掉兒童床架和電競書桌的資料」"></a>主管：「要清掉兒童床架和電競書桌的資料」</h4><p><font color=#0000FF>In [18]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="keyword">IN</span> (<span class="string">&#x27;兒童床架&#x27;</span>, <span class="string">&#x27;電競書桌&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [18]: </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq15.png?alt=media&token=8f71e060-3dfb-4f92-b060-f7fdfa9755b3" alt="delete"></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E4%BD%9C%E6%A5%AD%EF%BC%9A%E5%AE%B6%E5%85%B7%E5%BA%97%E7%9A%84%E8%8F%9C%E9%9B%9E%E9%8A%B7%E5%94%AE%E5%A5%87%E9%81%87%E8%A8%98%2Fq15-table.png?alt=media&token=89285b10-ebb6-43c2-a416-fc85c9e759bd" alt="delete"></p>
+<blockquote>
+<p>這段查詢會從products表中刪除商品名稱為“兒童床架”和“電競書桌”的所有資料。<br>更新後的資料庫應如上圖所示。</p>
+</blockquote>
+<h2 id="回顧：-本次練習常用語法"><a href="#回顧：-本次練習常用語法" class="headerlink" title="回顧： 本次練習常用語法"></a>回顧： 本次練習常用語法</h2><p><font color=#FF6600>SELECT</font> column_name<br><font color=#FF6600>FROM</font> table_name</p>
+<blockquote>
+<blockquote>
+<p>SELECT與FROM 敘述是從指定的資料表中選擇欄位的查詢語法，查詢結果依據其存在資料表中的順序所呈現。</p>
+</blockquote>
+</blockquote>
+<p><font color=#FF6600>WHERE</font> condition</p>
+<blockquote>
+<blockquote>
+<p>WHERE 敘述能以「條件」作為篩選觀測值的依據。</p>
+</blockquote>
+</blockquote>
+<p>如果沒有問題的話，那我們就可以前往下一章節囉。d(d＇∀＇)</p>
 ]]></content>
       <tags>
-        <tag>Essay</tag>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你一定是在設計系畢業</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/16/%E4%BD%A0%E4%B8%80%E5%AE%9A%E6%98%AF%E5%9C%A8%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%95%A2%E6%A5%AD/</url>
+    <content><![CDATA[<p>你一定是在設計系畢業</p>
+<p>才能如此從容不迫地</p>
+<p>設計相遇</p>
+<p>設計對眼</p>
+<p>設計漏拍的心跳</p>
+<p>設計呼吸的躲藏</p>
+<p>以及世界的停頓</p>
+<h6 id="詩文｜劉倩妏〈你一定是在設計系畢業〉"><a href="#詩文｜劉倩妏〈你一定是在設計系畢業〉" class="headerlink" title="詩文｜劉倩妏〈你一定是在設計系畢業〉"></a>詩文｜劉倩妏〈你一定是在設計系畢業〉</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你也和我們一樣，對吧?</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/05/%E4%BD%A0%E4%B9%9F%E5%92%8C%E6%88%91%E5%80%91%E4%B8%80%E6%A8%A3%EF%BC%8C%E5%B0%8D%E5%90%A7/</url>
+    <content><![CDATA[<img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Blog%20Materials%2F26cdf76055d195bc494b09f506fcc965.jpg?alt=media&token=f36870e6-a886-4927-85a8-a0e2cb1683de" alt="信徒">
+
+
+<h3 id="「……Will-you-walk-with-us-」"><a href="#「……Will-you-walk-with-us-」" class="headerlink" title="「……Will you walk with us?」"></a>「……Will you walk with us?」</h3><br>
+<br>
+© 2024 EldenRing All Rights Reserved.
+
+<style>
+    img{
+        filter: grayscale(100%);
+    }
+
+</style>
+]]></content>
+      <tags>
+        <tag>Quotes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>五件討厭的事</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/04/%E4%BA%94%E4%BB%B6%E8%A8%8E%E5%8E%AD%E7%9A%84%E4%BA%8B/</url>
+    <content><![CDATA[<p>討厭說謊<br>但實話總讓人傷心<br>不掉眼淚就是堅強的話<br>為何我站不起來<br>⠀<br>討厭自己那麼努力<br>差點能成為一個擅長等待的人<br>然而火燒太快<br>雨總是來不及下<br>⠀<br>討厭你那麼愛錢<br>卻一點也不願意愛我<br>我如此富裕<br>感情餘額總是赤字<br>⠀<br>討厭心酸的感覺<br>明明大家都說酸鹼可以中和<br>為什麼鹼性的眼淚<br>沒讓我復原<br>⠀<br>討厭大部分美好的話語後面<br>都會被加上「但是」<br>比如：我愛妳但是<br>而不是：但是我愛妳 </p>
+<h6 id="詩文｜靡靡-Tiny《五件討厭的事》"><a href="#詩文｜靡靡-Tiny《五件討厭的事》" class="headerlink" title="詩文｜靡靡 Tiny《五件討厭的事》"></a>詩文｜靡靡 Tiny《五件討厭的事》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
       </tags>
   </entry>
   <entry>
@@ -1123,12 +1180,12 @@ body{
 <li>自動記錄建立與更新時間，便於追蹤資料變更。</li>
 </ol>
 <h2 id="用戶資料，資料表為-USER"><a href="#用戶資料，資料表為-USER" class="headerlink" title="用戶資料，資料表為 USER"></a>用戶資料，資料表為 USER</h2><h3 id="新增六筆用戶資料，資料如下："><a href="#新增六筆用戶資料，資料如下：" class="headerlink" title="新增六筆用戶資料，資料如下："></a><u>新增</u>六筆用戶資料，資料如下：</h3><ul>
-<li>用戶名稱為 李燕容，Email 為 <a href="mailto:&#x6c;&#101;&#x65;&#50;&#x30;&#x30;&#48;&#64;&#x68;&#x65;&#120;&#x73;&#x63;&#104;&#111;&#x6f;&#108;&#116;&#x65;&#115;&#x74;&#46;&#105;&#111;">&#x6c;&#101;&#x65;&#50;&#x30;&#x30;&#48;&#64;&#x68;&#x65;&#120;&#x73;&#x63;&#104;&#111;&#x6f;&#108;&#116;&#x65;&#115;&#x74;&#46;&#105;&#111;</a>，Role 為 USER</li>
-<li>用戶名稱為 王小明，Email 為 <a href="mailto:&#x77;&#88;&#x6c;&#84;&#x71;&#x40;&#x68;&#x65;&#x78;&#x73;&#x63;&#104;&#111;&#x6f;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#105;&#x6f;">&#x77;&#88;&#x6c;&#84;&#x71;&#x40;&#x68;&#x65;&#x78;&#x73;&#x63;&#104;&#111;&#x6f;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#105;&#x6f;</a>，Role 為 USER</li>
-<li>用戶名稱為 肌肉棒子，Email 為 <a href="mailto:&#109;&#x75;&#x73;&#x63;&#x6c;&#x65;&#64;&#x68;&#101;&#120;&#x73;&#99;&#x68;&#111;&#111;&#x6c;&#116;&#x65;&#x73;&#x74;&#46;&#x69;&#111;">&#109;&#x75;&#x73;&#x63;&#x6c;&#x65;&#64;&#x68;&#101;&#120;&#x73;&#99;&#x68;&#111;&#111;&#x6c;&#116;&#x65;&#x73;&#x74;&#46;&#x69;&#111;</a>，Role 為 USER</li>
-<li>用戶名稱為 好野人，Email 為 <a href="mailto:&#x72;&#105;&#x63;&#x68;&#x6d;&#x61;&#110;&#x40;&#104;&#x65;&#120;&#x73;&#x63;&#x68;&#x6f;&#x6f;&#108;&#116;&#x65;&#115;&#116;&#x2e;&#x69;&#111;">&#x72;&#105;&#x63;&#x68;&#x6d;&#x61;&#110;&#x40;&#104;&#x65;&#120;&#x73;&#x63;&#x68;&#x6f;&#x6f;&#108;&#116;&#x65;&#115;&#116;&#x2e;&#x69;&#111;</a>，Role 為 USER</li>
-<li>用戶名稱為 Q太郎，Email 為 <a href="mailto:&#x73;&#116;&#x61;&#114;&#112;&#108;&#x61;&#116;&#x69;&#110;&#117;&#x6d;&#64;&#x68;&#101;&#120;&#x73;&#x63;&#104;&#x6f;&#111;&#x6c;&#x74;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;">&#x73;&#116;&#x61;&#114;&#112;&#108;&#x61;&#116;&#x69;&#110;&#117;&#x6d;&#64;&#x68;&#101;&#120;&#x73;&#x63;&#104;&#x6f;&#111;&#x6c;&#x74;&#101;&#x73;&#x74;&#46;&#x69;&#x6f;</a>，Role 為 USER</li>
-<li>用戶名稱為 透明人，Email 為 <a href="mailto:&#x6f;&#112;&#x61;&#99;&#x69;&#116;&#x79;&#48;&#64;&#104;&#101;&#x78;&#115;&#x63;&#104;&#x6f;&#x6f;&#x6c;&#x74;&#101;&#115;&#116;&#x2e;&#105;&#111;">&#x6f;&#112;&#x61;&#99;&#x69;&#116;&#x79;&#48;&#64;&#104;&#101;&#x78;&#115;&#x63;&#104;&#x6f;&#x6f;&#x6c;&#x74;&#101;&#115;&#116;&#x2e;&#105;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 李燕容，Email 為 <a href="mailto:&#108;&#101;&#101;&#50;&#x30;&#48;&#x30;&#64;&#x68;&#101;&#x78;&#x73;&#99;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#116;&#46;&#105;&#x6f;">&#108;&#101;&#101;&#50;&#x30;&#48;&#x30;&#64;&#x68;&#101;&#x78;&#x73;&#99;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#116;&#46;&#105;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 王小明，Email 為 <a href="mailto:&#x77;&#88;&#x6c;&#x54;&#x71;&#x40;&#x68;&#x65;&#120;&#x73;&#x63;&#104;&#x6f;&#x6f;&#108;&#x74;&#101;&#x73;&#x74;&#x2e;&#x69;&#111;">&#x77;&#88;&#x6c;&#x54;&#x71;&#x40;&#x68;&#x65;&#120;&#x73;&#x63;&#104;&#x6f;&#x6f;&#108;&#x74;&#101;&#x73;&#x74;&#x2e;&#x69;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 肌肉棒子，Email 為 <a href="mailto:&#x6d;&#x75;&#115;&#x63;&#108;&#x65;&#64;&#x68;&#101;&#x78;&#x73;&#99;&#104;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#x69;&#x6f;">&#x6d;&#x75;&#115;&#x63;&#108;&#x65;&#64;&#x68;&#101;&#x78;&#x73;&#99;&#104;&#111;&#111;&#x6c;&#x74;&#101;&#115;&#116;&#46;&#x69;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 好野人，Email 為 <a href="mailto:&#114;&#105;&#99;&#104;&#109;&#x61;&#110;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#101;&#115;&#116;&#46;&#105;&#x6f;">&#114;&#105;&#99;&#104;&#109;&#x61;&#110;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#101;&#115;&#116;&#46;&#105;&#x6f;</a>，Role 為 USER</li>
+<li>用戶名稱為 Q太郎，Email 為 <a href="mailto:&#115;&#x74;&#97;&#x72;&#x70;&#108;&#x61;&#116;&#105;&#110;&#117;&#x6d;&#x40;&#x68;&#101;&#x78;&#115;&#x63;&#x68;&#x6f;&#111;&#x6c;&#116;&#x65;&#x73;&#116;&#x2e;&#105;&#111;">&#115;&#x74;&#97;&#x72;&#x70;&#108;&#x61;&#116;&#105;&#110;&#117;&#x6d;&#x40;&#x68;&#101;&#x78;&#115;&#x63;&#x68;&#x6f;&#111;&#x6c;&#116;&#x65;&#x73;&#116;&#x2e;&#105;&#111;</a>，Role 為 USER</li>
+<li>用戶名稱為 透明人，Email 為 <a href="mailto:&#111;&#112;&#97;&#99;&#105;&#x74;&#121;&#48;&#x40;&#x68;&#101;&#x78;&#115;&#99;&#104;&#111;&#111;&#108;&#116;&#x65;&#x73;&#x74;&#x2e;&#x69;&#x6f;">&#111;&#112;&#97;&#99;&#105;&#x74;&#121;&#48;&#x40;&#x68;&#101;&#x78;&#115;&#99;&#104;&#111;&#111;&#108;&#116;&#x65;&#x73;&#x74;&#x2e;&#x69;&#x6f;</a>，Role 為 USER</li>
 </ul>
 <p>使用 INSERT INTO 語句將資料插入到 USER 資料表中：</p>
 <p><font color=#0000FF> ln [2]: </font></p>
@@ -1163,7 +1220,7 @@ body{
 <blockquote>
 <p><code>WHERE </code>條件：</p>
 <blockquote>
-<p>email 條件：只更新 email 為 <a href="mailto:&#x6c;&#101;&#x65;&#50;&#48;&#x30;&#x30;&#64;&#x68;&#x65;&#120;&#x73;&#99;&#x68;&#111;&#111;&#x6c;&#116;&#x65;&#x73;&#116;&#x2e;&#x69;&#x6f;">&#x6c;&#101;&#x65;&#50;&#48;&#x30;&#x30;&#64;&#x68;&#x65;&#120;&#x73;&#99;&#x68;&#111;&#111;&#x6c;&#116;&#x65;&#x73;&#116;&#x2e;&#x69;&#x6f;</a>、<a href="mailto:&#x6d;&#x75;&#115;&#x63;&#108;&#101;&#x40;&#x68;&#x65;&#120;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#111;">&#x6d;&#x75;&#115;&#x63;&#108;&#101;&#x40;&#x68;&#x65;&#120;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#x74;&#x65;&#x73;&#116;&#46;&#x69;&#111;</a> 和 <a href="mailto:&#x73;&#x74;&#x61;&#x72;&#x70;&#x6c;&#97;&#116;&#x69;&#110;&#x75;&#109;&#64;&#x68;&#x65;&#x78;&#x73;&#99;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#x74;&#x2e;&#x69;&#x6f;">&#x73;&#x74;&#x61;&#x72;&#x70;&#x6c;&#97;&#116;&#x69;&#110;&#x75;&#109;&#64;&#x68;&#x65;&#x78;&#x73;&#99;&#x68;&#111;&#111;&#108;&#116;&#101;&#115;&#x74;&#x2e;&#x69;&#x6f;</a> 的用戶。<br>role &#x3D; ‘USER’ 條件：僅在 role 為 ‘USER’ 的情況下進行更新，避免不必要的修改。</p>
+<p>email 條件：只更新 email 為 <a href="mailto:&#x6c;&#x65;&#101;&#x32;&#48;&#x30;&#48;&#64;&#x68;&#101;&#120;&#115;&#x63;&#x68;&#x6f;&#111;&#x6c;&#116;&#101;&#x73;&#116;&#x2e;&#105;&#x6f;">&#x6c;&#x65;&#101;&#x32;&#48;&#x30;&#48;&#64;&#x68;&#101;&#120;&#115;&#x63;&#x68;&#x6f;&#111;&#x6c;&#116;&#101;&#x73;&#116;&#x2e;&#105;&#x6f;</a>、<a href="mailto:&#109;&#117;&#115;&#99;&#108;&#x65;&#64;&#x68;&#101;&#120;&#x73;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#x65;&#x73;&#x74;&#46;&#105;&#111;">&#109;&#117;&#115;&#99;&#108;&#x65;&#64;&#x68;&#101;&#120;&#x73;&#99;&#104;&#111;&#x6f;&#108;&#x74;&#x65;&#x73;&#x74;&#46;&#105;&#111;</a> 和 <a href="mailto:&#115;&#x74;&#97;&#114;&#112;&#x6c;&#97;&#116;&#105;&#x6e;&#x75;&#x6d;&#64;&#x68;&#x65;&#120;&#x73;&#x63;&#104;&#x6f;&#x6f;&#108;&#x74;&#101;&#115;&#x74;&#46;&#105;&#x6f;">&#115;&#x74;&#97;&#114;&#112;&#x6c;&#97;&#116;&#105;&#x6e;&#x75;&#x6d;&#64;&#x68;&#x65;&#120;&#x73;&#x63;&#104;&#x6f;&#x6f;&#108;&#x74;&#101;&#115;&#x74;&#46;&#105;&#x6f;</a> 的用戶。<br>role &#x3D; ‘USER’ 條件：僅在 role 為 ‘USER’ 的情況下進行更新，避免不必要的修改。</p>
 </blockquote>
 </blockquote>
 <blockquote>
@@ -1203,9 +1260,9 @@ body{
 </blockquote>
 </blockquote>
 <blockquote>
-<p><strong><code>WHERE "email" = '<a href="mailto:&#111;&#x70;&#97;&#99;&#105;&#116;&#121;&#x30;&#x40;&#104;&#101;&#x78;&#x73;&#x63;&#x68;&#111;&#111;&#108;&#x74;&#101;&#115;&#x74;&#x2e;&#x69;&#111;">&#111;&#x70;&#97;&#99;&#105;&#116;&#121;&#x30;&#x40;&#104;&#101;&#x78;&#x73;&#x63;&#x68;&#111;&#111;&#108;&#x74;&#101;&#115;&#x74;&#x2e;&#x69;&#111;</a>'</code></strong>:</p>
+<p><strong><code>WHERE "email" = '<a href="mailto:&#111;&#x70;&#97;&#x63;&#105;&#116;&#x79;&#48;&#x40;&#x68;&#x65;&#x78;&#115;&#99;&#104;&#111;&#x6f;&#x6c;&#x74;&#101;&#115;&#x74;&#x2e;&#105;&#x6f;">&#111;&#x70;&#97;&#x63;&#105;&#116;&#x79;&#48;&#x40;&#x68;&#x65;&#x78;&#115;&#99;&#104;&#111;&#x6f;&#x6c;&#x74;&#101;&#115;&#x74;&#x2e;&#105;&#x6f;</a>'</code></strong>:</p>
 <blockquote>
-<p>使用 WHERE 條件篩選出 email 為 <a href="mailto:&#111;&#x70;&#x61;&#x63;&#105;&#x74;&#x79;&#48;&#x40;&#104;&#x65;&#x78;&#x73;&#99;&#x68;&#x6f;&#x6f;&#108;&#116;&#x65;&#115;&#116;&#x2e;&#x69;&#111;">&#111;&#x70;&#x61;&#x63;&#105;&#x74;&#x79;&#48;&#x40;&#104;&#x65;&#x78;&#x73;&#99;&#x68;&#x6f;&#x6f;&#108;&#116;&#x65;&#115;&#116;&#x2e;&#x69;&#111;</a> 的資料，確保只刪除符合條件的那一筆資料。</p>
+<p>使用 WHERE 條件篩選出 email 為 <a href="mailto:&#x6f;&#x70;&#x61;&#99;&#x69;&#x74;&#121;&#x30;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#x68;&#x6f;&#111;&#108;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#x6f;">&#x6f;&#x70;&#x61;&#99;&#x69;&#x74;&#121;&#x30;&#x40;&#x68;&#x65;&#120;&#x73;&#99;&#x68;&#x6f;&#111;&#108;&#x74;&#101;&#x73;&#116;&#x2e;&#x69;&#x6f;</a> 的資料，確保只刪除符合條件的那一筆資料。</p>
 </blockquote>
 </blockquote>
 <p><strong><font color=#FF0000> 注意事項 </font></strong></p>
@@ -1285,6 +1342,226 @@ body{
 <li>在選取資料表時， 也請留意要加上雙引號，例如 <code>SELECT * FROM "USER"</code></li>
 <li><code>timestamp</code>也是一種資料格式(Data Type)，主要是「時間格式」，範例為 2024-11-24T17:42:04.452Z</li>
 </ol>
+<p>SEE YOU TOMORROW (σ′▽‵)′▽‵)σ</p>
+]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>六角切版直播班每日任務挑戰</title>
+    <url>/IWishIKnewHowToQuitYou/2024/07/19/%E5%85%AD%E8%A7%92%E5%88%87%E7%89%88%E7%9B%B4%E6%92%AD%E7%8F%AD%E6%AF%8F%E6%97%A5%E4%BB%BB%E5%8B%99%E6%8C%91%E6%88%B0/</url>
+    <content><![CDATA[<p>西洋有一句話：「You are what you eat」，套用在習慣上，你的習慣會決定你變成什麼樣的人。每個行動都是微小的投票，投給你想要的未來。</p>
+<p>你想要變成什麼樣的人，<br>是由你的微小行動決定的；<br>你的每個微小行動，<br>是由習慣決定的。</p>
+<p>所以，重點是：你想要變成什麼樣的人？<br>那就培養怎麼樣的習慣，投下足夠多的票，變成你想要的人。 《原子習慣》</p>
+<p>🏅每日任務挑戰列表</p>
+<p>Day1：<a href="">HTML 語意標籤運用</a><br>Day2：移除圖片空隙<br>Day3：CSS 選擇器運用（擬態選擇器、類別選擇器）<br>Day4：推擠方向<br>Day5：margin、padding 混合運用</p>
+<p>Day6：box-model<br>Day7：box-sizing<br>Day8：觀念選擇題<br>Day9：練習 Emmet 語法<br>Day10：margin: 0 auto、text-align 混合運用</p>
+<p>Day11：文字設定（font-size、line-height）<br>Day12：整合相同樣式<br>Day13：文字設定（font-family、font-weight、font-style）<br>Day14：垂直水平置中<br>Day15：flex 多屬性練習</p>
+<p>Day16：flex 完成九宮格排版<br>Day17：background-image<br>Day18：container 容器應用<br>Day19：線上 icon 載入<br>Day20：CSS 權重覆蓋</p>
+<p>Day21：RWD 觀念選擇題<br>Day22：RWD 版型、RWD 排版間距<br>Day23：表單設計<br>Day24：jQuery toggleClass<br>Day25：下拉選單</p>
+<p>Day26：錨點練習<br>Day27：SCSS 結構、SCSS 用法<br>Day28：SCSS 排序<br>Day29：mixin<br>Day30：練習使用元件</p>
+<p>Day31：表單練習與 spacing 的運用<br>Day32：元件與通用類別 I<br>Day33：元件與通用類別 II<br>Day34：<a href="https://codepen.io/psyduck5566/pen/vYqrjgd">Modal 與 collapse 元件實用</a><br>Day35：<a href="https://codepen.io/psyduck5566/pen/QWXBQxK">網格練習</a></p>
+<p>Day36：Bootstrap position 與背景圖片遮罩設定<br>Day37：Swiper 輪播套件介紹<br>Day38：Swiper 客製化樣式<br>Day39：<a href="https://codepen.io/psyduck5566/pen/ZEdqGOb">Bootstrap Navs and tabs</a><br>Day40：<a href="https://codepen.io/psyduck5566/pen/PoryZKJ">Background linear gradient</a></p>
+<p>Day41：Bootstrap input group<br>Day42：練習 keyframes<br>Day43：練習 transform<br>Day44：練習 object-fit<br>Day45：<a href="https://codepen.io/psyduck5566/pen/WNqYaLB">aos + animate</a></p>
+<p>Day46：Bootstrap Dropdown<br>Day47：Swiper RWD<br>Day48：Bootstrap Accordion<br>Day49：Modal 實作運用<br>Day50：Bootstrap Collapse</p>
+]]></content>
+      <tags>
+        <tag>Practice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>六角流週覆盤</title>
+    <url>/IWishIKnewHowToQuitYou/2024/10/27/%E5%85%AD%E8%A7%92%E6%B5%81%E9%80%B1%E8%A6%86%E7%9B%A4/</url>
+    <content><![CDATA[<h2 id="Question"><a href="#Question" class="headerlink" title="Question:"></a>Question:</h2><blockquote>
+<p><font color=#c0c0c0> 1. 本週做了什麼&#x2F;學了什麼內容? </font><br><font color=#c0c0c0> 2. 本週的進度有沒有符合預期規劃? 沒有的話，可以記錄原因，例如： </font><br><font color=#c0c0c0>	- 發生什麼事件 &#x2F; 因為什麼情緒 導致無法完成本週計劃？ </font><br><font color=#c0c0c0>	- 未來發生類似的事情，希望如何調整來幫助自己？ </font><br><font color=#c0c0c0> 3. 本週有沒有遇到什麼困難&#x2F;問題? 問題是如何解決的? </font><br><font color=#c0c0c0> 4. 本週感謝時間：(選填) </font><br><font color=#c0c0c0>	- 本週自己&#x2F;團隊有哪裡做的很棒? </font><br><font color=#c0c0c0>    - 本週有什麼讓你覺得很感恩? </font><br><font color=#c0c0c0> 5. 下週計畫要做哪些項目? </font><br><font color=#c0c0c0> 6. 有沒有想跟大家分享的事情（生活近況、學習狀況、假日在幹嘛、心靈上的調整 都可以唷） </font></p>
+</blockquote>
+<p>2024&#x2F;12&#x2F;31</p>
+<p>我…<br>今年有哪些事情很好？<br>今年有哪些事情不太好？<br>從中學到了什麼？<br>若在新的一年活得像個贏家，那麼看起來是什麼樣子？<br>新年目標是什麼？</p>
+<p><strong>「我認為這對所有藝術家都是真理，無論是音樂家還是作家，最好的作品總是源於自己的靈魂，因為你認為它是最好的，而不是試圖取悅他人。」</strong> - Morgan Housel</p>
+<hr>
+<p>練習JS API<br>練習SQL leetCode<br>感謝爸媽。<br> <strong>「體能是基礎，情緒是調節器，思維是引擎，而精神則是方向盤。如果缺少其中任何一部分，我們的精力管理都會大打折扣。」</strong> -林揚程（Hank）</p>
+<hr>
+<p>孩子別 怕荊棘 赤著腳<br>Child，Don’t be afraid of the thorns，with your barefoot<br>就 能尋到 珍貴<br>You can find the essence of the world<br>你看這個 天黑 焰火有多美<br>You see，the sky is turning grey，how stunning the firework was<br>無需太多 的傷悲<br>Don’t feel panic, don’t feel sad<br>人本都在 茂盛枯萎<br>We are all slaves of nature, blossom and withered<br>但頑石和塊壘 也開花蕊<br>Yet, even stubborn rocks and barriers bloom with flowers.</p>
+<p>撥開山嶺 讓她看看我<br>Push aside the mountains，Let her sees me<br>告訴繁星 快些照亮我<br>Tell those stars to shine on me faster<br>吹散烏雲 用一抹藍色<br>Blow away the dark clouds with that blue in my heart.<br>那就算 世界滿是荒蕪我們 抬頭就能 看見月亮<br>Even if the world is full of desolation, we can lift our heads up and see the moon.</p>
+<p>在我們還是 孩子的模樣<br>When we are still in the guise of children.<br>做雖千萬人 也要盛開 的孤芳<br>As one among millions, still must blossom into a solitary and splendid flower.<br>別再憂傷煩惱<br>Don’t wander in troubles anymore.</p>
+<p>別忘<br>Don’t forget</p>
+<p>就算流淚 也要一直 奔跑<br>Even if the tears flow, keep running forward.<br>跑到連時 間都 找不到<br>Run until even time cannot be found.<br>做天邊的飛鳥<br>Be a carefree flying bird.</p>
+<p>撥開山嶺 讓她看看我<br>Push aside the mountains，Let her sees me<br>告訴繁星 快些照亮我<br>Tell those stars to shine on me faster<br>吹散烏雲 用一抹藍色<br>Blow away the dark clouds with that blue in my heart.</p>
+<p>那就算 世界滿是荒蕪我們 抬頭就能 看見月亮<br>Even if the world is full of desolation, we can lift our heads up and see the moon.</p>
+<p>在我們還是 孩子的模樣<br>When we are still in the guise of children.<br>做雖千萬人 也要盛開 的孤芳<br>As one among millions, still must blossom into a solitary and splendid flower.<br>別再憂傷煩惱<br>Don’t wander in troubles anymore.</p>
+<p>別忘<br>Don’t forget<br>就算流淚 也要一直 奔跑<br>Even if the tears flow, keep running forward.<br>跑到連時 間都 找不到<br>Run until even time cannot be found.<br>做天邊的飛鳥<br>Be a carefree flying bird.</p>
+<p>別再尋找<br>Stop searching.<br>給我一個擁抱<br>Give me a hug<br>就安靜地忘掉<br>Just quietly forget</p>
+<p>我這樣就很好<br>I’m fine the way I am</p>
+<p>#陳奕迅 #EasonChan #Arcane #這樣很好</p>
+<hr>
+<p>練SQL &amp; 寫JS 週任務。<br>11&#x2F;29 發生令人感動的事件。<br>感謝爸媽。<br>2024 NNN d(&#96;･∀･)b (1&#x2F;1)</p>
+<p>《巨人的筆記》指出我們在紀錄的時候，不是記下所有東西，而是只保留最重要的東西。有了這些摘要後的紀錄，才能從這些紀錄當中繼續壓縮出更精煉的智慧。</p>
+<hr>
+<p>練習JS &amp; 練習SQL<br>參分之柒<br>感謝父母。</p>
+<hr>
+<p>練習JS練習SQL<br>沒有 意志不夠堅定。<br>本週幫忙同仁審核二次評鑑報告，但都是在17:00收到，然後截止日期是明天。不知道有沒有比較洽當的應對方式?<br>專題拆掉了。原本想續做的唯一同學在聽完開學典禮後出於其它的考量決定轉入學習組。想到要再重頭來過頭就有點痛… XD<br>感謝爸媽。<br>每年至少跑一場馬拉松 (1&#x2F;1) </p>
+<hr>
+<p>練習JS<br>沒有 意志不夠堅定<br>勇敢拒絕加班 (?)<br>感謝爸媽<br>練習JS、復習SQL<br>Ethan: “I need you to trust me, ONE LAST TIME…”<br>Me: “Always.”</p>
+<hr>
+<p>DOM<br>50% 在DOM投入比預期多的時間，壓縮其它預排項目<br>這星期每天都睡過頭，錯過晨跑 orz<br>感謝家人。<br>補JS進度。行有餘力，則以學SQL新釋出的影片。<br>恭喜SHO轉隊第一年就奪冠。祝您能保護好身體，不要再受傷了QQ”<br>⭐⭐⭐⭐⭐恭喜T1，謝謝李哥。好感動啊，我也有星星了？？？</p>
+<hr>
+<p>學習 JS ， 被CodeWar有趣的問題吸引 。<br>一時手滑報名SQL體驗班。 當加入頻道時看見眼熟的ID，覺得開心 ^^”<br>有依照預期進度學習。<br>職場說話還是要保留些，留得青山在不怕沒柴燒(???)<br>感謝洧杰校長辦SQL體驗班。<br>要好好整理自己的家，別身在福中不知福。<br>學習 JS &amp; SQL<br>支持的隊伍突破心魔，打進決賽。希望今年能寫下圓滿結局。</p>
+]]></content>
+      <tags>
+        <tag>Essay</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>夏天充滿了小說，而秋天是詩</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/08/%E5%A4%8F%E5%A4%A9%E5%85%85%E6%BB%BF%E4%BA%86%E5%B0%8F%E8%AA%AA%EF%BC%8C%E8%80%8C%E7%A7%8B%E5%A4%A9%E6%98%AF%E8%A9%A9/</url>
+    <content><![CDATA[<p>整個夏天我們不斷地熱醒</p>
+<p>一個夢攪和著下一個夢</p>
+<p>破曉時聞到一股鹽巴味</p>
+<p>卻已分不清是肉體或者</p>
+<p>那片夢中的海</p>
+<p>　</p>
+<p>別讓那片海洋說話   她必須</p>
+<p>沈默 必須釋放我們所需</p>
+<p>所有高溫的語言</p>
+<p>在逐漸沸騰的大氣裡</p>
+<p>我們披著光關掉一盞接一盞的燈</p>
+<p>「清醒不是絕對必要的」</p>
+<p>我們微笑地對彼此說</p>
+<p>　</p>
+<p>於是每個夜潮水送來一個又一個故事</p>
+<p>我們聽著並自己書寫</p>
+<p>於是夏天充滿了小說</p>
+<p>而最後未完成的   留到秋天</p>
+<p>成為詩</p>
+<h6 id="詩文｜王姿雯《夏天充滿了小說，而秋天是詩》"><a href="#詩文｜王姿雯《夏天充滿了小說，而秋天是詩》" class="headerlink" title="詩文｜王姿雯《夏天充滿了小說，而秋天是詩》"></a>詩文｜王姿雯《夏天充滿了小說，而秋天是詩》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>妳說，後端資料庫體驗營到底有什麼? 參</title>
+    <url>/IWishIKnewHowToQuitYou/2024/11/27/%E5%A6%B3%E8%AA%AA%EF%BC%8C%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC-%E5%8F%83/</url>
+    <content><![CDATA[<h3 id="教練身份講解"><a href="#教練身份講解" class="headerlink" title="教練身份講解"></a>教練身份講解</h3><p>在一個網頁平台上，會有多種角色，而在我們的任務二中的角色(role)會有：</p>
+<p>一般客戶：USER<br>教練：COACH<br>在我們的<a href="https://miro.com/app/board/uXjVLbiDml0=/">線稿圖</a>中，也有繪製如果他是教練角色時，他可以填寫自己的相關教練資料，其中欄位包含：</p>
+<p>大頭照<br>教練姓名<br>教練資歷<br>教練簡介<br>專長(可複選)<br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2Fdownload.png?alt=media&token=57824e50-be4f-4faa-8a92-5b194aa5fe7a" alt="picture"></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> EXTENSION IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> &quot;uuid-ossp&quot;;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;USER&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;email&quot; <span class="type">varchar</span>(<span class="number">320</span>) <span class="keyword">UNIQUE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;role&quot; <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;COACH&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> uuid_generate_v4(),</span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),</span><br><span class="line">  &quot;experience_years&quot; <span class="type">integer</span>,</span><br><span class="line">  &quot;description&quot; text,</span><br><span class="line">  &quot;profile_image_url&quot; <span class="type">varchar</span>(<span class="number">2048</span>),</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  <span class="keyword">UNIQUE</span>(&quot;user_id&quot;)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PACKAGE&quot; (</span><br><span class="line">  &quot;id&quot; serial <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;credit_amount&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),</span><br><span class="line">  &quot;credit_package_id&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;CREDIT_PACKAGE&quot;(id),</span><br><span class="line">  &quot;purchased_credits&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price_paid&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;purchase_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;USER&quot; (&quot;name&quot;, &quot;email&quot;, &quot;role&quot;)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">  (<span class="string">&#x27;李燕容&#x27;</span>, <span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;王小明&#x27;</span>, <span class="string">&#x27;wXlTq@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;肌肉棒子&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;好野人&#x27;</span>, <span class="string">&#x27;richman@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;Q太郎&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;透明人&#x27;</span>, <span class="string">&#x27;opacity0@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="分析資料表結構與關聯"><a href="#分析資料表結構與關聯" class="headerlink" title="分析資料表結構與關聯"></a>分析資料表結構與關聯</h3><p>根據提供的資料表結構，以下是每個資料表的功能與關聯性分析：</p>
+<p><strong>1. USER 資料表</strong></p>
+<ul>
+<li>功能：儲存使用者的基本資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，唯一標識每個使用者。</li>
+<li>name：使用者名稱。</li>
+<li>email：使用者電子郵件，必須唯一。</li>
+<li>role：使用者角色，可選值有 “USER” 和 “COACH”。</li>
+<li>created_at &#x2F; updated_at：記錄資料建立與更新的時間。</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. COACH 資料表</strong></p>
+<ul>
+<li>功能：儲存教練的詳細資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，唯一標識每位教練。</li>
+<li>user_id：外鍵，參考 USER 表的 id，表示該教練是某位使用者。</li>
+<li>experience_years：教練的經驗年數。</li>
+<li>description：教練的個人描述。</li>
+<li>profile_image_url：教練的個人頭像連結。</li>
+<li>created_at &#x2F; updated_at：記錄資料建立與更新的時間。</li>
+</ul>
+</li>
+<li>關聯性：<ul>
+<li>每位教練對應到 USER 表中的一位使用者（1 對 1 關係）。</li>
+<li>user_id 欄位設置了唯一性約束（UNIQUE），確保一位使用者只能成為一位教練。</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. CREDIT_PACKAGE 資料表</strong></p>
+<ul>
+<li>功能：儲存可購買的點數包資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，自動遞增。</li>
+<li>name：點數包名稱（例如：”入門點數包”）。</li>
+<li>credit_amount：點數包內包含的點數數量。</li>
+<li>price：點數包的售價。</li>
+<li>created_at：記錄資料建立時間。</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. CREDIT_PURCHASE 資料表</strong></p>
+<ul>
+<li>功能：記錄使用者購買點數包的交易資訊。</li>
+<li>欄位說明：<ul>
+<li>id：主鍵，唯一標識每筆交易。</li>
+<li>user_id：外鍵，參考 USER 表的 id，表示購買者。</li>
+<li>credit_package_id：外鍵，參考 CREDIT_PACKAGE 表的 id，表示購買的點數包。</li>
+<li>purchased_credits：實際購買的點數數量。</li>
+<li>price_paid：購買時支付的金額。</li>
+<li>created_at &#x2F; purchase_at：記錄交易的建立與購買時間。</li>
+</ul>
+</li>
+<li>關聯性：<ul>
+<li>每筆交易對應到一位使用者（多對一關係）。</li>
+<li>每筆交易對應到一個點數包（多對一關係）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="資料表間的關係"><a href="#資料表間的關係" class="headerlink" title="資料表間的關係"></a>資料表間的關係</h3><p>1.USER 與 COACH：</p>
+<ul>
+<li>一對一（One-to-One）：一位使用者可以是教練（COACH 表），但不是所有使用者都是教練。</li>
+<li>COACH 表的 user_id 是 USER 表的外鍵，且設置了唯一性約束。</li>
+</ul>
+<p>2.USER 與 CREDIT_PURCHASE：</p>
+<ul>
+<li>一對多（One-to-Many）：一位使用者可以有多筆點數包購買記錄。</li>
+</ul>
+<p>3.CREDIT_PACKAGE 與 CREDIT_PURCHASE：</p>
+<ul>
+<li>一對多（One-to-Many）：一個點數包可以被多位使用者購買。</li>
+</ul>
+<h3 id="教練資料-，資料表為-COACH"><a href="#教練資料-，資料表為-COACH" class="headerlink" title="教練資料 ，資料表為 COACH"></a>教練資料 ，資料表為 COACH</h3><p><strong>新增：</strong>在 COACH 資料表新增三筆資料，資料需求如下：<br>將用戶 李燕容 新增為教練，並且年資設定為2年（提示：使用 李燕容 的email ，取得 李燕容 的 id ）<br>將用戶肌肉棒子新增為教練，並且年資設定為2年（提示：使用 肌肉棒子 的email ，取得 肌肉棒子 的 id ）<br>將用戶Q太郎新增為教練，並且年資設定為2年（提示：使用 Q太郎 的email ，取得 Q太郎 的 id ）</p>
+<p>根據需求，需透過 USER 資料表中的 email 欄位，取得以下 3 位使用者的 id：</p>
+<p><font color=#0000FF> ln [1]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, email <span class="keyword">FROM</span> &quot;USER&quot;</span><br><span class="line"><span class="keyword">WHERE</span> email <span class="keyword">IN</span> (<span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><font color=#FF0000> Out [1]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F1(4).png?alt=media&token=fce1450e-23c8-449e-8f64-f50487a52adb" alt="1"></p>
+<p>使用查詢出的 id，將這 3 位使用者新增為教練，並設定年資為 2 年。</p>
+<p><font color=#0000FF> ln [2]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;COACH&quot; (&quot;user_id&quot;, &quot;experience_years&quot;, &quot;description&quot;, &quot;profile_image_url&quot;)</span><br><span class="line"><span class="keyword">VALUES</span> </span><br><span class="line">  (<span class="string">&#x27;6f1f764a-26ba-451c-8c3b-3ebd508584f5&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;熱愛健身與教學的教練&#x27;</span>, <span class="keyword">NULL</span>),</span><br><span class="line">  (<span class="string">&#x27;b8843ac6-9480-4de3-a1d5-7105e66a0acf&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;專注於力量訓練的教練&#x27;</span>, <span class="keyword">NULL</span>),</span><br><span class="line">  (<span class="string">&#x27;6e5c289a-70ed-49fb-b2bd-313f3558d5b3&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;24小時耐力訓練的專家&#x27;</span>, <span class="keyword">NULL</span>);</span><br></pre></td></tr></table></figure>
+<p><font color=#FF0000> Out [2]:  </font></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F2.png?alt=media&token=106d15b5-2b2a-4ade-b6cd-cca95bf7e6fc" alt="2"></p>
+<p>執行以下查詢，確認是否成功新增這三位教練：</p>
+<p><font color=#0000FF> ln [3]: </font></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> c.id <span class="keyword">AS</span> coach_id, u.name <span class="keyword">AS</span> user_name, c.experience_years, c.description</span><br><span class="line"><span class="keyword">FROM</span> &quot;COACH&quot; c</span><br><span class="line"><span class="keyword">JOIN</span> &quot;USER&quot; u <span class="keyword">ON</span> c.user_id <span class="operator">=</span> u.id;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F1(4).png?alt=media&token=fce1450e-23c8-449e-8f64-f50487a52adb" alt="3"></p>
+<h2 id="何謂一對多、一對一"><a href="#何謂一對多、一對一" class="headerlink" title="何謂一對多、一對一"></a>何謂一對多、一對一</h2><h3 id="解釋一對多關係"><a href="#解釋一對多關係" class="headerlink" title="解釋一對多關係"></a>解釋一對多關係</h3><p>口訣：「多的要設定外來鍵」<br>流程：從欄位角度去規劃<br>1.以「使用者」角度：一個「使用者」會有多筆購買紀錄<br>2.以「購買紀錄」角度：一筆「購買紀錄」只會屬於 一個 使用者<br>➡️ 所以在「購買紀錄」表格（多的那方）設定外來鍵</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 一對多（使用者 -&gt; 購買紀錄） </span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (     </span><br><span class="line">    &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),  <span class="comment">-- 多的那方加外來鍵    </span></span><br><span class="line">); </span><br></pre></td></tr></table></figure>
+<h3 id="解釋一對一關係"><a href="#解釋一對一關係" class="headerlink" title="解釋一對一關係"></a>解釋一對一關係</h3><p>口訣：「外來鍵加唯一值」<br>流程：從欄位角度去規劃<br>1.以「使用者」角度：一個「使用者」最多只能是 一個 教練<br>2.以「教練」角度：一個「教練」只能對應到 一個 使用者<br>在雙方資料表都只能對應一個資訊時，則會是一對一的資料關係<br>➡️ 所以在「教練」表格設定外來鍵，並加上 UNIQUE 限制</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 一對一（使用者 &lt;-&gt; 教練） </span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;COACH&quot; (     </span><br><span class="line">    &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id) </span><br><span class="line">    <span class="comment">-- ...</span></span><br><span class="line">    <span class="keyword">UNIQUE</span>(&quot;user_id&quot;)  <span class="comment">-- 外來鍵加唯一值 </span></span><br><span class="line">);`</span><br></pre></td></tr></table></figure>
+
+<p><strong>UNIQUE 意思：</strong>表示此 user_id 在 COACH 資料表上不能重複，因為一個「教練」只能對應到 一個「使用者」。</p>
+<h1 id="1-分析流程：從欄位角度去規劃"><a href="#1-分析流程：從欄位角度去規劃" class="headerlink" title="1. 分析流程：從欄位角度去規劃"></a>1. 分析流程：從欄位角度去規劃</h1><ul>
+<li><p>以「用戶」角度：一位「用戶」有多篇「部落格文章」</p>
+</li>
+<li><p>以「部落格文章」角度：一篇「部落格文章」有一位「用戶」</p>
+</li>
+<li><p>以「訓練家」角度：一位「訓練家」有多隻「Pokémon 」</p>
+</li>
+<li><p>以「Pokémon 」角度：一隻「Pokémon 」有一位「訓練家」</p>
+</li>
+<li><p>以「書籍」角度：一本「書籍」有一位「作者」</p>
+</li>
+<li><p>以「作者」角度：一位「作者」有多本創作「書籍」</p>
+</li>
+</ul>
+<h1 id="2-依照上述描述，他是一對一關係、還是一對多？"><a href="#2-依照上述描述，他是一對一關係、還是一對多？" class="headerlink" title="2. 依照上述描述，他是一對一關係、還是一對多？"></a>2. 依照上述描述，他是一對一關係、還是一對多？</h1><ul>
+<li>用戶與部落格文章的資料表：一對多的關係</li>
+<li>訓練家與Pokémon 的資料表：一對多的關係</li>
+<li>作者與書籍的資料表：一對多的關係</li>
+</ul>
 <p>SEE YOU TOMORROW (σ′▽‵)′▽‵)σ</p>
 ]]></content>
       <tags>
@@ -1394,9 +1671,9 @@ body{
 </blockquote>
 <p><strong>子查詢：</strong></p>
 <blockquote>
-<p>(SELECT id FROM “USER” WHERE email &#x3D; ‘<a href="mailto:&#119;&#x58;&#x6c;&#84;&#x71;&#64;&#104;&#101;&#x78;&#x73;&#99;&#x68;&#x6f;&#x6f;&#108;&#x74;&#101;&#x73;&#x74;&#x2e;&#x69;&#x6f;">&#119;&#x58;&#x6c;&#84;&#x71;&#64;&#104;&#101;&#x78;&#x73;&#99;&#x68;&#x6f;&#x6f;&#108;&#x74;&#101;&#x73;&#x74;&#x2e;&#x69;&#x6f;</a>‘)：</p>
+<p>(SELECT id FROM “USER” WHERE email &#x3D; ‘<a href="mailto:&#x77;&#88;&#108;&#84;&#x71;&#x40;&#104;&#x65;&#120;&#115;&#x63;&#x68;&#x6f;&#111;&#x6c;&#116;&#x65;&#115;&#116;&#x2e;&#105;&#111;">&#x77;&#88;&#108;&#84;&#x71;&#x40;&#104;&#x65;&#120;&#115;&#x63;&#x68;&#x6f;&#111;&#x6c;&#116;&#x65;&#115;&#116;&#x2e;&#105;&#111;</a>‘)：</p>
 <blockquote>
-<p>從 USER 資料表中查詢 email 為 <a href="mailto:&#x77;&#88;&#x6c;&#x54;&#x71;&#x40;&#x68;&#101;&#120;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#116;&#101;&#115;&#x74;&#46;&#x69;&#x6f;">&#x77;&#88;&#x6c;&#x54;&#x71;&#x40;&#x68;&#101;&#120;&#115;&#99;&#104;&#x6f;&#x6f;&#108;&#116;&#101;&#115;&#x74;&#46;&#x69;&#x6f;</a> 的用戶 ID。</p>
+<p>從 USER 資料表中查詢 email 為 <a href="mailto:&#119;&#88;&#x6c;&#84;&#113;&#x40;&#x68;&#101;&#120;&#115;&#x63;&#104;&#x6f;&#111;&#x6c;&#x74;&#x65;&#x73;&#116;&#46;&#105;&#x6f;">&#119;&#88;&#x6c;&#84;&#113;&#x40;&#x68;&#101;&#120;&#115;&#x63;&#104;&#x6f;&#111;&#x6c;&#x74;&#x65;&#x73;&#116;&#46;&#105;&#x6f;</a> 的用戶 ID。</p>
 </blockquote>
 </blockquote>
 <blockquote>
@@ -1677,106 +1954,19 @@ body{
       </tags>
   </entry>
   <entry>
-    <title>SQL小節練習：晴天咖啡廳</title>
-    <url>/IWishIKnewHowToQuitYou/2024/11/21/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3/</url>
-    <content><![CDATA[<h2 id="資料載入"><a href="#資料載入" class="headerlink" title="資料載入"></a>資料載入</h2><p><a href="post-sql.com">線上資料庫操作網站 PG-SQL:Temporary Postgres Database.</a></p>
-<p>將資料倒入 pg-sql</p>
-<p><font color=#0000FF> ln [1]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> products (</span><br><span class="line">    name <span class="type">VARCHAR</span>(<span class="number">100</span>),         <span class="comment">-- 商品名稱</span></span><br><span class="line">    price <span class="type">INTEGER</span>,            <span class="comment">-- 原價</span></span><br><span class="line">    discount_price <span class="type">INTEGER</span>,    <span class="comment">-- 優惠價</span></span><br><span class="line">    stock <span class="type">INTEGER</span>,            <span class="comment">-- 庫存數量</span></span><br><span class="line">    category <span class="type">VARCHAR</span>(<span class="number">50</span>),      <span class="comment">-- 商品分類</span></span><br><span class="line">    status <span class="type">VARCHAR</span>(<span class="number">20</span>)         <span class="comment">-- 商品狀態</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> products (name, price, discount_price, stock, category, status) <span class="keyword">VALUES</span></span><br><span class="line">    (<span class="string">&#x27;精品手沖咖啡&#x27;</span>, <span class="number">180</span>, <span class="number">160</span>, <span class="number">50</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;美式咖啡&#x27;</span>, <span class="number">120</span>, <span class="number">120</span>, <span class="number">100</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;摩卡咖啡&#x27;</span>, <span class="number">150</span>, <span class="number">150</span>, <span class="number">80</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;特調拿鐵&#x27;</span>, <span class="number">160</span>, <span class="number">140</span>, <span class="number">60</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;伯爵紅茶&#x27;</span>, <span class="number">100</span>, <span class="number">100</span>, <span class="number">70</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;玫瑰花茶&#x27;</span>, <span class="number">120</span>, <span class="number">120</span>, <span class="number">30</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;柳橙汁&#x27;</span>, <span class="number">90</span>, <span class="number">80</span>, <span class="number">40</span>, <span class="string">&#x27;果汁&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;水果茶&#x27;</span>, <span class="number">130</span>, <span class="number">110</span>, <span class="number">45</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;提拉米蘇&#x27;</span>, <span class="number">160</span>, <span class="number">160</span>, <span class="number">15</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;草莓乳酪蛋糕&#x27;</span>, <span class="number">180</span>, <span class="number">150</span>, <span class="number">8</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;巧克力布朗尼&#x27;</span>, <span class="number">150</span>, <span class="number">150</span>, <span class="number">0</span>, <span class="string">&#x27;甜點&#x27;</span>, <span class="string">&#x27;inactive&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;特選咖啡豆&#x27;</span>, <span class="number">500</span>, <span class="number">450</span>, <span class="number">20</span>, <span class="string">&#x27;咖啡豆&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;摩卡咖啡豆&#x27;</span>, <span class="number">480</span>, <span class="number">480</span>, <span class="number">15</span>, <span class="string">&#x27;咖啡豆&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;濾掛式咖啡包&#x27;</span>, <span class="number">25</span>, <span class="number">20</span>, <span class="number">200</span>, <span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;active&#x27;</span>),</span><br><span class="line">    (<span class="string">&#x27;手沖濾紙&#x27;</span>, <span class="number">180</span>, <span class="number">180</span>, <span class="number">30</span>, <span class="string">&#x27;器材&#x27;</span>, <span class="string">&#x27;active&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#0000FF>  In [2]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [2]:  </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2F1.png?alt=media&token=2c1b49c7-ed1a-4583-904f-4d4bfb813c1e" alt="coffeeShopProduct"></p>
-<blockquote>
-<p>創建了一個名為 products 的資料表，該表用來存儲商品的詳細信息。</p>
-<blockquote>
-<p><strong>name：</strong>商品名稱，類型為 VARCHAR(100)，用來存儲商品的名稱。<br><strong>price：</strong>原價，類型為 INTEGER，用來存儲商品的原始價格。<br><strong>discount_price：</strong>優惠價，類型為 INTEGER，用來存儲商品的折扣後價格。<br><strong>stock：</strong>庫存數量，類型為 INTEGER，用來存儲商品的庫存數量。<br><strong>category：</strong>商品分類，類型為 VARCHAR(50)，用來存儲商品的分類，例如「咖啡」、「茶飲」等。<br><strong>status：</strong>商品狀態，類型為 VARCHAR(20)，用來存儲商品的狀態，例如「active」（可售）或「inactive」（不可售）。</p>
-</blockquote>
-</blockquote>
-<h2 id="基礎查詢篇："><a href="#基礎查詢篇：" class="headerlink" title="基礎查詢篇："></a>基礎查詢篇：</h2><h3 id="情境-1：缺貨確認"><a href="#情境-1：缺貨確認" class="headerlink" title="情境 1：缺貨確認"></a>情境 1：缺貨確認</h3><p>顧客：「草莓乳酪蛋糕還有嗎？」<br>小杰想查：要確認草莓乳酪蛋糕的庫存</p>
-<p><font color=#0000FF>  In [3]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> stock <span class="keyword">FROM</span> products <span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;草莓乳酪蛋糕&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [3]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq1.png?alt=media&token=e3852780-01f6-43c4-b1f7-57345b7c14ee" alt="q1"></p>
-<blockquote>
-<p>返回「草莓乳酪蛋糕」的庫存數量。根據最初倒入的數據，「草莓乳酪蛋糕」的庫存數量應該是8。</p>
-</blockquote>
-<h2 id="情境-2：優惠查詢"><a href="#情境-2：優惠查詢" class="headerlink" title="情境 2：優惠查詢"></a>情境 2：優惠查詢</h2><p>顧客：「有什麼特價的咖啡嗎？」<br>小杰想查：列出所有有特價（優惠價低於原價）的咖啡類商品</p>
-<p><font color=#0000FF>  In [4]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡&#x27;</span> <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> price;</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [4]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq2.png?alt=media&token=cc0d3abf-6d9f-4015-b607-c8069060ae85" alt="q2"></p>
-<blockquote>
-<p>從 products 表中選出所有分類為「咖啡」且優惠價低於原價的商品。<br>這樣就可以找到目前正在促銷的咖啡類商品。</p>
-</blockquote>
-<h2 id="情境-3：價格區間"><a href="#情境-3：價格區間" class="headerlink" title="情境 3：價格區間"></a>情境 3：價格區間</h2><p>顧客：「有沒有100元以下的飲品？」<br>小杰想查：找出所有100元以下的飲品</p>
-<p><font color=#0000FF>  In [5]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;果汁&#x27;</span>) <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [5]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq3.png?alt=media&token=dd7ebec2-8fc0-4cdf-9c6f-a3e71544d915" alt="q3"></p>
-<blockquote>
-<p>選擇所有分類為「咖啡」、「茶飲」或「果汁」且優惠價低於100元的商品。<br>這樣就可以找到所有符合條件的飲品。</p>
-</blockquote>
-<h2 id="AND條件篇"><a href="#AND條件篇" class="headerlink" title="AND條件篇"></a>AND條件篇</h2><h3 id="情境-4：庫存與價格"><a href="#情境-4：庫存與價格" class="headerlink" title="情境 4：庫存與價格"></a>情境 4：庫存與價格</h3><p>顧客：「有沒有特價，而且還有貨的甜點？」<br>小杰想查：要同時符合有特價（優惠價&lt;原價）且還有庫存的甜點</p>
-<p><font color=#0000FF>  In [6]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;甜點&#x27;</span> <span class="keyword">AND</span> discount_price <span class="operator">&lt;</span> price <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [6]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq4.png?alt=media&token=5bab43d9-c1fa-40a7-86cf-0c880a22663a" alt="q4"></p>
-<blockquote>
-<p>從 products 表中選出所有分類為「甜點」、優惠價低於原價且庫存量大於0的商品。<br>這樣可以找出目前有特價並且還有庫存的甜點。</p>
-</blockquote>
-<h2 id="情境-5：價格與分類"><a href="#情境-5：價格與分類" class="headerlink" title="情境 5：價格與分類"></a>情境 5：價格與分類</h2><p>店長：「幫我查一下所有200元以上，而且還有庫存的咖啡類商品」<br>小杰想查：列出符合價格和分類條件的商品</p>
-<p><font color=#0000FF>  In [7]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡&#x27;</span> <span class="keyword">AND</span> price <span class="operator">&gt;</span> <span class="number">200</span> <span class="keyword">AND</span> stock <span class="operator">&gt;</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [7]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq5.png?alt=media&token=42bdbb1a-84e6-4efd-af7a-3c431356417c" alt="q5"></p>
-<blockquote>
-<p>從 products 表中選出所有分類為「咖啡」、原價超過200元且庫存量大於0的商品。</p>
-</blockquote>
-<h2 id="OR條件篇"><a href="#OR條件篇" class="headerlink" title="OR條件篇"></a>OR條件篇</h2><h3 id="情境-6：多分類查詢"><a href="#情境-6：多分類查詢" class="headerlink" title="情境 6：多分類查詢"></a>情境 6：多分類查詢</h3><p>顧客：「我想看看你們的咖啡豆和濾掛包」<br>小杰想查：列出咖啡豆類和濾掛式咖啡的商品</p>
-<p><font color=#0000FF>  In [8]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="operator">=</span> <span class="string">&#x27;咖啡豆&#x27;</span> <span class="keyword">OR</span> name <span class="operator">=</span> <span class="string">&#x27;濾掛式咖啡包&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [8]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq6.png?alt=media&token=e762f084-686d-4551-8165-45dd5e868014" alt="q6"></p>
-<blockquote>
-<p>從 products 表中選出所有分類為「咖啡豆」的商品以及名稱為「濾掛式咖啡包」的商品。</p>
-</blockquote>
-<h2 id="BETWEEN篇"><a href="#BETWEEN篇" class="headerlink" title="BETWEEN篇"></a>BETWEEN篇</h2><h3 id="情境-7：價格區間"><a href="#情境-7：價格區間" class="headerlink" title="情境 7：價格區間"></a>情境 7：價格區間</h3><p>顧客：「想找100到200元之間的飲品」<br>小杰想查：列出這個價格區間的飲品</p>
-<p><font color=#0000FF>  In [9]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products </span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;咖啡&#x27;</span>, <span class="string">&#x27;茶飲&#x27;</span>, <span class="string">&#x27;果汁&#x27;</span>) <span class="keyword">AND</span> discount_price <span class="keyword">BETWEEN</span> <span class="number">100</span> <span class="keyword">AND</span> <span class="number">200</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [9]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq7.png?alt=media&token=d6133a03-1f4b-4916-99aa-6983a7d59d72" alt="q7"></p>
-<blockquote>
-<p>從 products 表中選出所有分類為「咖啡」、「茶飲」或「果汁」，且優惠價在100到200元之間的商品。</p>
-</blockquote>
-<h2 id="更新資料篇"><a href="#更新資料篇" class="headerlink" title="更新資料篇"></a>更新資料篇</h2><h3 id="情境-8：調整價格"><a href="#情境-8：調整價格" class="headerlink" title="情境 8：調整價格"></a>情境 8：調整價格</h3><p>店長：「美式咖啡要降價10元」<br>小杰想查：如何更新美式咖啡的優惠價</p>
-<p><font color=#0000FF>  In [10]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> discount_price <span class="operator">=</span> discount_price <span class="operator">-</span> <span class="number">10</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;美式咖啡&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [10]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-result.png?alt=media&token=9a462bdb-86de-4f74-8b0f-018bb078e4f6" alt="q8"></p>
-<p><font color=#0000FF>  In [11]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, price, discount_price</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;特調拿鐵&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [11]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-.png?alt=media&token=78170701-c53f-4412-961c-f3f9677433e4" alt="q8Table"></p>
-<blockquote>
-<p>將 products 表中名稱為「美式咖啡」的商品的優惠價降低10元。</p>
-</blockquote>
-<h3 id="情境-9：更新庫存"><a href="#情境-9：更新庫存" class="headerlink" title="情境 9：更新庫存"></a>情境 9：更新庫存</h3><p>店長：「特選咖啡豆進了10包」<br>小杰想查：如何增加特選咖啡豆的庫存</p>
-<p><font color=#0000FF>  In [12]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> products </span><br><span class="line"><span class="keyword">SET</span> discount_price <span class="operator">=</span> discount_price <span class="operator">-</span> <span class="number">10</span> </span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;美式咖啡&#x27;</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [12]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq8-result.png?alt=media&token=9a462bdb-86de-4f74-8b0f-018bb078e4f6" alt="q9"></p>
-<p><font color=#0000FF>  In [13]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> name, stock</span><br><span class="line"><span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> name <span class="operator">=</span> <span class="string">&#x27;特選咖啡豆&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [13]:  </font><br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%E5%B0%8F%E7%AF%80%E7%B7%B4%E7%BF%92%EF%BC%9A%E3%80%8C%E6%99%B4%E5%A4%A9%E5%92%96%E5%95%A1%E5%BB%B3%E3%80%8D%2Fq9-.png?alt=media&token=7e39fd68-fbca-44d9-b3f7-14aa799773b5" alt="q9Table"></p>
-<blockquote>
-<p>將 products 表中名稱為「特選咖啡豆」的商品的庫存增加10包。</p>
-</blockquote>
-<p><font color=#c0c0c0> 吹著前奏望著天空 我想起花瓣試著掉落 </font></p>
-]]></content>
+    <title>我比不好還更好</title>
+    <url>/IWishIKnewHowToQuitYou/2024/05/30/%E6%88%91%E6%AF%94%E4%B8%8D%E5%A5%BD%E9%82%84%E6%9B%B4%E5%A5%BD/</url>
+    <content><![CDATA[<p>又過完一個<br>沒有別人的一年<br>很寂寞吧<br>有些痂被撕開<br>裡面流出膿血</p>
+<p>有些人會說<br>你是故意不好的<br>你的痛苦都是自找<br>或許他們是對的<br>你已經成為<br>自己的地獄</p>
+<p>隨便被問候幾句<br>就忍不住<br>全身都快碎了<br>用膠帶貼好的自己<br>有些部分因為潮溼<br>粘不牢了</p>
+<p>好了啦<br>沒關係的<br>就再重新捆過一回</p>
+<p>沒關係吧<br>這一次真的<br>真的就要<br>就會把那些怪物<br>都給擊退<br>終於可能<br>成為剛好的人類</p>
+<p>已經離很遠<br>仍然會在意的人們啊<br>知道彼此還活著<br>就不要知道更多<br>沒辦法再分享生活<br>至少要有辦法<br>分別開心<br>分別崩潰</p>
+<p>或許不是現在<br>當然也不大<br>可能在明天<br>但我們都有各自<br>擁抱自己的機會</p>
+<p>如果還給不起其它的<br>先給自己時間<br>如果再給不起<br>退後一點<br>給自己愛<br>給自已空間</p>
+<h6 id="詩文｜潘柏霖《我比不好還要好》"><a href="#詩文｜潘柏霖《我比不好還要好》" class="headerlink" title="詩文｜潘柏霖《我比不好還要好》"></a>詩文｜潘柏霖《我比不好還要好》</h6>]]></content>
       <tags>
-        <tag>Practice</tag>
+        <tag>Poetry</tag>
       </tags>
   </entry>
   <entry>
@@ -1907,135 +2097,6 @@ body{
       </tags>
   </entry>
   <entry>
-    <title>妳說，後端資料庫體驗營到底有什麼? 參</title>
-    <url>/IWishIKnewHowToQuitYou/2024/11/27/%E5%A6%B3%E8%AA%AA%EF%BC%8C%E5%BE%8C%E7%AB%AF%E8%B3%87%E6%96%99%E5%BA%AB%E9%AB%94%E9%A9%97%E7%87%9F%E5%88%B0%E5%BA%95%E6%9C%89%E4%BB%80%E9%BA%BC-%E5%8F%83/</url>
-    <content><![CDATA[<h3 id="教練身份講解"><a href="#教練身份講解" class="headerlink" title="教練身份講解"></a>教練身份講解</h3><p>在一個網頁平台上，會有多種角色，而在我們的任務二中的角色(role)會有：</p>
-<p>一般客戶：USER<br>教練：COACH<br>在我們的<a href="https://miro.com/app/board/uXjVLbiDml0=/">線稿圖</a>中，也有繪製如果他是教練角色時，他可以填寫自己的相關教練資料，其中欄位包含：</p>
-<p>大頭照<br>教練姓名<br>教練資歷<br>教練簡介<br>專長(可複選)<br><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2Fdownload.png?alt=media&token=57824e50-be4f-4faa-8a92-5b194aa5fe7a" alt="picture"></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> EXTENSION IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> &quot;uuid-ossp&quot;;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;USER&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;email&quot; <span class="type">varchar</span>(<span class="number">320</span>) <span class="keyword">UNIQUE</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;role&quot; <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;COACH&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> uuid_generate_v4(),</span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),</span><br><span class="line">  &quot;experience_years&quot; <span class="type">integer</span>,</span><br><span class="line">  &quot;description&quot; text,</span><br><span class="line">  &quot;profile_image_url&quot; <span class="type">varchar</span>(<span class="number">2048</span>),</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;updated_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  <span class="keyword">UNIQUE</span>(&quot;user_id&quot;)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PACKAGE&quot; (</span><br><span class="line">  &quot;id&quot; serial <span class="keyword">PRIMARY</span> KEY,</span><br><span class="line">  &quot;name&quot; <span class="type">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;credit_amount&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (</span><br><span class="line">  &quot;id&quot; uuid <span class="keyword">PRIMARY</span> KEY <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (gen_random_uuid()),</span><br><span class="line">  &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),</span><br><span class="line">  &quot;credit_package_id&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;CREDIT_PACKAGE&quot;(id),</span><br><span class="line">  &quot;purchased_credits&quot; <span class="type">integer</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;price_paid&quot; <span class="type">numeric</span>(<span class="number">10</span>,<span class="number">2</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  &quot;created_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>),</span><br><span class="line">  &quot;purchase_at&quot; <span class="type">timestamp</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">DEFAULT</span> (<span class="built_in">CURRENT_TIMESTAMP</span>)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;USER&quot; (&quot;name&quot;, &quot;email&quot;, &quot;role&quot;)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">  (<span class="string">&#x27;李燕容&#x27;</span>, <span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;王小明&#x27;</span>, <span class="string">&#x27;wXlTq@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;肌肉棒子&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;好野人&#x27;</span>, <span class="string">&#x27;richman@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;Q太郎&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>),</span><br><span class="line">  (<span class="string">&#x27;透明人&#x27;</span>, <span class="string">&#x27;opacity0@hexschooltest.io&#x27;</span>, <span class="string">&#x27;USER&#x27;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="分析資料表結構與關聯"><a href="#分析資料表結構與關聯" class="headerlink" title="分析資料表結構與關聯"></a>分析資料表結構與關聯</h3><p>根據提供的資料表結構，以下是每個資料表的功能與關聯性分析：</p>
-<p><strong>1. USER 資料表</strong></p>
-<ul>
-<li>功能：儲存使用者的基本資訊。</li>
-<li>欄位說明：<ul>
-<li>id：主鍵，唯一標識每個使用者。</li>
-<li>name：使用者名稱。</li>
-<li>email：使用者電子郵件，必須唯一。</li>
-<li>role：使用者角色，可選值有 “USER” 和 “COACH”。</li>
-<li>created_at &#x2F; updated_at：記錄資料建立與更新的時間。</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. COACH 資料表</strong></p>
-<ul>
-<li>功能：儲存教練的詳細資訊。</li>
-<li>欄位說明：<ul>
-<li>id：主鍵，唯一標識每位教練。</li>
-<li>user_id：外鍵，參考 USER 表的 id，表示該教練是某位使用者。</li>
-<li>experience_years：教練的經驗年數。</li>
-<li>description：教練的個人描述。</li>
-<li>profile_image_url：教練的個人頭像連結。</li>
-<li>created_at &#x2F; updated_at：記錄資料建立與更新的時間。</li>
-</ul>
-</li>
-<li>關聯性：<ul>
-<li>每位教練對應到 USER 表中的一位使用者（1 對 1 關係）。</li>
-<li>user_id 欄位設置了唯一性約束（UNIQUE），確保一位使用者只能成為一位教練。</li>
-</ul>
-</li>
-</ul>
-<p><strong>3. CREDIT_PACKAGE 資料表</strong></p>
-<ul>
-<li>功能：儲存可購買的點數包資訊。</li>
-<li>欄位說明：<ul>
-<li>id：主鍵，自動遞增。</li>
-<li>name：點數包名稱（例如：”入門點數包”）。</li>
-<li>credit_amount：點數包內包含的點數數量。</li>
-<li>price：點數包的售價。</li>
-<li>created_at：記錄資料建立時間。</li>
-</ul>
-</li>
-</ul>
-<p><strong>4. CREDIT_PURCHASE 資料表</strong></p>
-<ul>
-<li>功能：記錄使用者購買點數包的交易資訊。</li>
-<li>欄位說明：<ul>
-<li>id：主鍵，唯一標識每筆交易。</li>
-<li>user_id：外鍵，參考 USER 表的 id，表示購買者。</li>
-<li>credit_package_id：外鍵，參考 CREDIT_PACKAGE 表的 id，表示購買的點數包。</li>
-<li>purchased_credits：實際購買的點數數量。</li>
-<li>price_paid：購買時支付的金額。</li>
-<li>created_at &#x2F; purchase_at：記錄交易的建立與購買時間。</li>
-</ul>
-</li>
-<li>關聯性：<ul>
-<li>每筆交易對應到一位使用者（多對一關係）。</li>
-<li>每筆交易對應到一個點數包（多對一關係）。</li>
-</ul>
-</li>
-</ul>
-<h3 id="資料表間的關係"><a href="#資料表間的關係" class="headerlink" title="資料表間的關係"></a>資料表間的關係</h3><p>1.USER 與 COACH：</p>
-<ul>
-<li>一對一（One-to-One）：一位使用者可以是教練（COACH 表），但不是所有使用者都是教練。</li>
-<li>COACH 表的 user_id 是 USER 表的外鍵，且設置了唯一性約束。</li>
-</ul>
-<p>2.USER 與 CREDIT_PURCHASE：</p>
-<ul>
-<li>一對多（One-to-Many）：一位使用者可以有多筆點數包購買記錄。</li>
-</ul>
-<p>3.CREDIT_PACKAGE 與 CREDIT_PURCHASE：</p>
-<ul>
-<li>一對多（One-to-Many）：一個點數包可以被多位使用者購買。</li>
-</ul>
-<h3 id="教練資料-，資料表為-COACH"><a href="#教練資料-，資料表為-COACH" class="headerlink" title="教練資料 ，資料表為 COACH"></a>教練資料 ，資料表為 COACH</h3><p><strong>新增：</strong>在 COACH 資料表新增三筆資料，資料需求如下：<br>將用戶 李燕容 新增為教練，並且年資設定為2年（提示：使用 李燕容 的email ，取得 李燕容 的 id ）<br>將用戶肌肉棒子新增為教練，並且年資設定為2年（提示：使用 肌肉棒子 的email ，取得 肌肉棒子 的 id ）<br>將用戶Q太郎新增為教練，並且年資設定為2年（提示：使用 Q太郎 的email ，取得 Q太郎 的 id ）</p>
-<p>根據需求，需透過 USER 資料表中的 email 欄位，取得以下 3 位使用者的 id：</p>
-<p><font color=#0000FF> ln [1]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id, name, email <span class="keyword">FROM</span> &quot;USER&quot;</span><br><span class="line"><span class="keyword">WHERE</span> email <span class="keyword">IN</span> (<span class="string">&#x27;lee2000@hexschooltest.io&#x27;</span>, <span class="string">&#x27;muscle@hexschooltest.io&#x27;</span>, <span class="string">&#x27;starplatinum@hexschooltest.io&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p><font color=#FF0000> Out [1]:  </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F1(4).png?alt=media&token=fce1450e-23c8-449e-8f64-f50487a52adb" alt="1"></p>
-<p>使用查詢出的 id，將這 3 位使用者新增為教練，並設定年資為 2 年。</p>
-<p><font color=#0000FF> ln [2]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> &quot;COACH&quot; (&quot;user_id&quot;, &quot;experience_years&quot;, &quot;description&quot;, &quot;profile_image_url&quot;)</span><br><span class="line"><span class="keyword">VALUES</span> </span><br><span class="line">  (<span class="string">&#x27;6f1f764a-26ba-451c-8c3b-3ebd508584f5&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;熱愛健身與教學的教練&#x27;</span>, <span class="keyword">NULL</span>),</span><br><span class="line">  (<span class="string">&#x27;b8843ac6-9480-4de3-a1d5-7105e66a0acf&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;專注於力量訓練的教練&#x27;</span>, <span class="keyword">NULL</span>),</span><br><span class="line">  (<span class="string">&#x27;6e5c289a-70ed-49fb-b2bd-313f3558d5b3&#x27;</span>, <span class="number">2</span>, <span class="string">&#x27;24小時耐力訓練的專家&#x27;</span>, <span class="keyword">NULL</span>);</span><br></pre></td></tr></table></figure>
-<p><font color=#FF0000> Out [2]:  </font></p>
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F2.png?alt=media&token=106d15b5-2b2a-4ade-b6cd-cca95bf7e6fc" alt="2"></p>
-<p>執行以下查詢，確認是否成功新增這三位教練：</p>
-<p><font color=#0000FF> ln [3]: </font></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> c.id <span class="keyword">AS</span> coach_id, u.name <span class="keyword">AS</span> user_name, c.experience_years, c.description</span><br><span class="line"><span class="keyword">FROM</span> &quot;COACH&quot; c</span><br><span class="line"><span class="keyword">JOIN</span> &quot;USER&quot; u <span class="keyword">ON</span> c.user_id <span class="operator">=</span> u.id;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/SQL%20%3A%2020241127%20Practice%2F1(4).png?alt=media&token=fce1450e-23c8-449e-8f64-f50487a52adb" alt="3"></p>
-<h2 id="何謂一對多、一對一"><a href="#何謂一對多、一對一" class="headerlink" title="何謂一對多、一對一"></a>何謂一對多、一對一</h2><h3 id="解釋一對多關係"><a href="#解釋一對多關係" class="headerlink" title="解釋一對多關係"></a>解釋一對多關係</h3><p>口訣：「多的要設定外來鍵」<br>流程：從欄位角度去規劃<br>1.以「使用者」角度：一個「使用者」會有多筆購買紀錄<br>2.以「購買紀錄」角度：一筆「購買紀錄」只會屬於 一個 使用者<br>➡️ 所以在「購買紀錄」表格（多的那方）設定外來鍵</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 一對多（使用者 -&gt; 購買紀錄） </span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;CREDIT_PURCHASE&quot; (     </span><br><span class="line">    &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id),  <span class="comment">-- 多的那方加外來鍵    </span></span><br><span class="line">); </span><br></pre></td></tr></table></figure>
-<h3 id="解釋一對一關係"><a href="#解釋一對一關係" class="headerlink" title="解釋一對一關係"></a>解釋一對一關係</h3><p>口訣：「外來鍵加唯一值」<br>流程：從欄位角度去規劃<br>1.以「使用者」角度：一個「使用者」最多只能是 一個 教練<br>2.以「教練」角度：一個「教練」只能對應到 一個 使用者<br>在雙方資料表都只能對應一個資訊時，則會是一對一的資料關係<br>➡️ 所以在「教練」表格設定外來鍵，並加上 UNIQUE 限制</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 一對一（使用者 &lt;-&gt; 教練） </span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> &quot;COACH&quot; (     </span><br><span class="line">    &quot;user_id&quot; uuid <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">REFERENCES</span> &quot;USER&quot;(id) </span><br><span class="line">    <span class="comment">-- ...</span></span><br><span class="line">    <span class="keyword">UNIQUE</span>(&quot;user_id&quot;)  <span class="comment">-- 外來鍵加唯一值 </span></span><br><span class="line">);`</span><br></pre></td></tr></table></figure>
-
-<p><strong>UNIQUE 意思：</strong>表示此 user_id 在 COACH 資料表上不能重複，因為一個「教練」只能對應到 一個「使用者」。</p>
-<h1 id="1-分析流程：從欄位角度去規劃"><a href="#1-分析流程：從欄位角度去規劃" class="headerlink" title="1. 分析流程：從欄位角度去規劃"></a>1. 分析流程：從欄位角度去規劃</h1><ul>
-<li><p>以「用戶」角度：一位「用戶」有多篇「部落格文章」</p>
-</li>
-<li><p>以「部落格文章」角度：一篇「部落格文章」有一位「用戶」</p>
-</li>
-<li><p>以「訓練家」角度：一位「訓練家」有多隻「Pokémon 」</p>
-</li>
-<li><p>以「Pokémon 」角度：一隻「Pokémon 」有一位「訓練家」</p>
-</li>
-<li><p>以「書籍」角度：一本「書籍」有一位「作者」</p>
-</li>
-<li><p>以「作者」角度：一位「作者」有多本創作「書籍」</p>
-</li>
-</ul>
-<h1 id="2-依照上述描述，他是一對一關係、還是一對多？"><a href="#2-依照上述描述，他是一對一關係、還是一對多？" class="headerlink" title="2. 依照上述描述，他是一對一關係、還是一對多？"></a>2. 依照上述描述，他是一對一關係、還是一對多？</h1><ul>
-<li>用戶與部落格文章的資料表：一對多的關係</li>
-<li>訓練家與Pokémon 的資料表：一對多的關係</li>
-<li>作者與書籍的資料表：一對多的關係</li>
-</ul>
-<p>SEE YOU TOMORROW (σ′▽‵)′▽‵)σ</p>
-]]></content>
-      <tags>
-        <tag>Practice</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我愛過的都是好人</title>
     <url>/IWishIKnewHowToQuitYou/2024/07/19/%E6%88%91%E6%84%9B%E9%81%8E%E7%9A%84%E9%83%BD%E6%98%AF%E5%A5%BD%E4%BA%BA/</url>
     <content><![CDATA[<p>說好明天去看黃昏<br>擁抱的時候不要計較<br>誰先主動</p>
@@ -2045,151 +2106,6 @@ body{
 <p>我愛過的都是好人<br>他們沒有把我變成壞人</p>
 <p>我愛過的人<br>都是好好生活的人<br>遇見每一個人<br>都是新的一生</p>
 <h6 id="詩文｜蘇乙笙《我們是微塵裡的光》"><a href="#詩文｜蘇乙笙《我們是微塵裡的光》" class="headerlink" title="詩文｜蘇乙笙《我們是微塵裡的光》"></a>詩文｜蘇乙笙《我們是微塵裡的光》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>拆隊專家？ D級交易？？</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/03/%E6%8B%86%E9%9A%8A%E5%B0%88%E5%AE%B6%EF%BC%9FD%E7%B4%9A%E4%BA%A4%E6%98%93%EF%BC%9F/</url>
-    <content><![CDATA[<div class="pic">
-   <img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Blog%20Materials%2Ff28607ef-7733-46ed-83a0-9869556a81b1.jpg?alt=media&token=423a7b48-eb9c-4d6e-bc0e-500a2b540315" alt="FaceThePast-KI">
-</div>
-
-<p>當昔日狀元Kyrie Irving離開Cleveland Cavaliers後，<br>就一直備受外界質疑。<br>顛峰之年加盟Boston Celtics卻遭遇青壯奪權刷分、新人搶位排擠的鳥事…<br>轉隊來到Brooklyn Nets 與 Kevin Durant &amp; James Harden 組建三巨頭，<br>無奈被傷病及關鍵戰役對手惡意犯規擊敗。<br>場外的言論和行為，<br>更是險些摧毀他的職業生涯 ……</p>
-<p>但是這些過往種種，<br>在來到陌生的Dallas後一切都變了。</p>
-<p>Mavericks不僅給予了Irving足夠的尊重，<br>並且無論是球隊老板球隊球員乃至當家球星都堅定著支持Irving…<br>而最終Irving也用一座西區冠軍<br>回應球團信任<br>與對籃球純粹的喜愛。</p>
-<h5 id="初似墬入無底深淵，"><a href="#初似墬入無底深淵，" class="headerlink" title="初似墬入無底深淵，"></a>初似墬入無底深淵，</h5><p>未想；</p>
-<h5 id="終竟踏出萬里征途。"><a href="#終竟踏出萬里征途。" class="headerlink" title="終竟踏出萬里征途。"></a>終竟踏出萬里征途。</h5><h5 id="那些沒能打倒你的事，"><a href="#那些沒能打倒你的事，" class="headerlink" title="那些沒能打倒你的事，"></a>那些沒能打倒你的事，</h5><p>最終；</p>
-<h5 id="會變成你克服一初的無畏信念。"><a href="#會變成你克服一初的無畏信念。" class="headerlink" title="會變成你克服一初的無畏信念。"></a>會變成你克服一初的無畏信念。</h5><p>外界普遍都是說31歲的“詹皇”帶著24歲的Irving獲得生涯首冠。<br>那麼今年為何不能期待，<br>32歲的Irving將輔佐25歲的歐洲新王劍指冠軍？</p>
-<p>十年河東 十年河西<br>這回憑什麼不能是他呢？</p>
-<Style>
- .pic {
-   position: relative; /*偽元素的基準*/
-}
-.pic::after {
-   content: '';
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: calc(100% - 20px); /*減去左右的斜線框一半的值×2的算式*/
-   height: calc(100% - 20px); /*減去上下的斜線框一半的值×2的算式*/
-   border-image-source: repeating-linear-gradient(
-      45deg, /*旋轉45度*/
-      #ffffff  0px, #ffffff  2px, /*套用顏色的線條*/
-      rgba(0 0 0 / 0) 2px, rgba(0 0 0 / 0) 7px /*邊界（留白)的部分*/
-   );
-   border-image-slice: 20; /*指定border 4邊的使用範圍*/
-   border-width: 20px; /*框線的寬度*/
-   border-image-repeat: round; /*如磁磚狀重複顯示*/
-   border-style: solid; /*以實心線呈現*/
-}   
-
-</Style>]]></content>
-      <tags>
-        <tag>Essay</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我比不好還更好</title>
-    <url>/IWishIKnewHowToQuitYou/2024/05/30/%E6%88%91%E6%AF%94%E4%B8%8D%E5%A5%BD%E9%82%84%E6%9B%B4%E5%A5%BD/</url>
-    <content><![CDATA[<p>又過完一個<br>沒有別人的一年<br>很寂寞吧<br>有些痂被撕開<br>裡面流出膿血</p>
-<p>有些人會說<br>你是故意不好的<br>你的痛苦都是自找<br>或許他們是對的<br>你已經成為<br>自己的地獄</p>
-<p>隨便被問候幾句<br>就忍不住<br>全身都快碎了<br>用膠帶貼好的自己<br>有些部分因為潮溼<br>粘不牢了</p>
-<p>好了啦<br>沒關係的<br>就再重新捆過一回</p>
-<p>沒關係吧<br>這一次真的<br>真的就要<br>就會把那些怪物<br>都給擊退<br>終於可能<br>成為剛好的人類</p>
-<p>已經離很遠<br>仍然會在意的人們啊<br>知道彼此還活著<br>就不要知道更多<br>沒辦法再分享生活<br>至少要有辦法<br>分別開心<br>分別崩潰</p>
-<p>或許不是現在<br>當然也不大<br>可能在明天<br>但我們都有各自<br>擁抱自己的機會</p>
-<p>如果還給不起其它的<br>先給自己時間<br>如果再給不起<br>退後一點<br>給自己愛<br>給自已空間</p>
-<h6 id="詩文｜潘柏霖《我比不好還要好》"><a href="#詩文｜潘柏霖《我比不好還要好》" class="headerlink" title="詩文｜潘柏霖《我比不好還要好》"></a>詩文｜潘柏霖《我比不好還要好》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>水星逆行</title>
-    <url>/IWishIKnewHowToQuitYou/2024/10/28/%E6%B0%B4%E6%98%9F%E9%80%86%E8%A1%8C/</url>
-    <content><![CDATA[<p>很難過的時候<br>就把所有的燈關掉<br>看一部電影<br>在最快樂的橋段裡睡去<br>當作沒有看見<br>那個不園滿的結局</p>
-<p>花一點時間<br>關心天氣<br>當那個提醒大家的人<br>接下來幾天都不太會下雨<br>快點把悲傷拿出來<br>好好曬乾</p>
-<p>這樣悶熱的夏天<br>特別適合傷心的人<br>哭不出來的眼淚<br>都變成汗水<br>讓他流一個晚上<br>感冒會比較容易好起來</p>
-<p>趕快休息<br>明天記得起床吃早餐<br>你可以從現在開始期待<br>飲料杯的笑話<br>比你糟透的人生還爛</p>
-<h6 id="詩文｜吳旻育《大人症候群》"><a href="#詩文｜吳旻育《大人症候群》" class="headerlink" title="詩文｜吳旻育《大人症候群》"></a>詩文｜吳旻育《大人症候群》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>夏天充滿了小說，而秋天是詩</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/08/%E5%A4%8F%E5%A4%A9%E5%85%85%E6%BB%BF%E4%BA%86%E5%B0%8F%E8%AA%AA%EF%BC%8C%E8%80%8C%E7%A7%8B%E5%A4%A9%E6%98%AF%E8%A9%A9/</url>
-    <content><![CDATA[<p>整個夏天我們不斷地熱醒</p>
-<p>一個夢攪和著下一個夢</p>
-<p>破曉時聞到一股鹽巴味</p>
-<p>卻已分不清是肉體或者</p>
-<p>那片夢中的海</p>
-<p>　</p>
-<p>別讓那片海洋說話   她必須</p>
-<p>沈默 必須釋放我們所需</p>
-<p>所有高溫的語言</p>
-<p>在逐漸沸騰的大氣裡</p>
-<p>我們披著光關掉一盞接一盞的燈</p>
-<p>「清醒不是絕對必要的」</p>
-<p>我們微笑地對彼此說</p>
-<p>　</p>
-<p>於是每個夜潮水送來一個又一個故事</p>
-<p>我們聽著並自己書寫</p>
-<p>於是夏天充滿了小說</p>
-<p>而最後未完成的   留到秋天</p>
-<p>成為詩</p>
-<h6 id="詩文｜王姿雯《夏天充滿了小說，而秋天是詩》"><a href="#詩文｜王姿雯《夏天充滿了小說，而秋天是詩》" class="headerlink" title="詩文｜王姿雯《夏天充滿了小說，而秋天是詩》"></a>詩文｜王姿雯《夏天充滿了小說，而秋天是詩》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>這就是卡桑蒂</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/07/%E9%80%99%E5%B0%B1%E6%98%AF%E5%8D%A1%E6%A1%91%E8%92%82/</url>
-    <content><![CDATA[<p>許秀（韓語：허수，2000年7月22日—，遊戲ID：ShowMaker），韓國《英雄聯盟》電子競技運動員，DWG KIA中路選手，英雄聯盟2020賽季世界大賽冠軍成員。<br>2023年因新出的角色「卡桑帝」於遊戲中表現過強，在某日直播被對手卡桑帝擊敗時情不自禁高速詠唱:</p>
-<p>「你說得對，但是這就是卡桑帝，🤔HP 4700，護甲 329，魔抗 201的英雄。有不可阻擋🤚，有護盾👌，還能過牆✌️。有控制🤙，甚至冷卻時間只有1秒✊，只要15點藍👍。轉換姿態時甚至可以刷新W的cd👈，還有✌️真實傷害。然後，護甲和魔抗提升後還能獲得技能加速👐，縮短Q的cd🙌，還縮短釋放時間😨，然後還有攻擊力😰。W就👊🏿😭👊🏿啊啊啊啊啊啊🖐️😭🤚」</p>
-<p>此段肺腑之言道出自登場以來，無論卡桑帝怎麼被版本削弱，該角色始終能在職業賽場上占有一席之地。</p>
-<p>嗯…真不虧是由擁有二百年設計資歷的團隊所設計的角色。</p>
-]]></content>
-      <tags>
-        <tag>Meme</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>雖然世界已經不夠晴朗</title>
-    <url>/IWishIKnewHowToQuitYou/2024/11/30/%E9%9B%96%E7%84%B6%E4%B8%96%E7%95%8C%E5%B7%B2%E7%B6%93%E4%B8%8D%E5%A4%A0%E6%99%B4%E6%9C%97/</url>
-    <content><![CDATA[<p>累的時候你總是<br>讓我繼續撐過去的心事<br>今晚沒有月光<br>但彼此知道微笑一樣<br>記得要早點睡<br>才能準時在夢裡相會<br>　　<br>依然是那麼溫暖<br>從來不曾感到孤單<br>於是我緊握著你的掌紋<br>往約定的目標前進<br>我們的勇敢只會更加堅實<br>如一首值得雋永的詩<br>　　<br>雖然世界已經不夠晴朗<br>也不用特地悲傷<br>因為無論到哪裡<br>都有最強大的珍惜<br>讓我們整裝待發<br>對一切不再感到害怕</p>
-<h6 id="詩文｜楚影《雖然世界已經不夠晴朗》"><a href="#詩文｜楚影《雖然世界已經不夠晴朗》" class="headerlink" title="詩文｜楚影《雖然世界已經不夠晴朗》"></a>詩文｜楚影《雖然世界已經不夠晴朗》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>詩人節</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/10/%E8%A9%A9%E4%BA%BA%E7%AF%80/</url>
-    <content><![CDATA[<p>沒有詩寫過多</p>
-<p>只有粽慾過度</p>
-<p>蛋都立好了</p>
-<p>棉被還捨不得收</p>
-<h6 id="詩文｜李豪《詩人節》"><a href="#詩文｜李豪《詩人節》" class="headerlink" title="詩文｜李豪《詩人節》"></a>詩文｜李豪《詩人節》</h6>]]></content>
-      <tags>
-        <tag>Poetry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你一定是在設計系畢業</title>
-    <url>/IWishIKnewHowToQuitYou/2024/06/16/%E4%BD%A0%E4%B8%80%E5%AE%9A%E6%98%AF%E5%9C%A8%E8%A8%AD%E8%A8%88%E7%B3%BB%E7%95%A2%E6%A5%AD/</url>
-    <content><![CDATA[<p>你一定是在設計系畢業</p>
-<p>才能如此從容不迫地</p>
-<p>設計相遇</p>
-<p>設計對眼</p>
-<p>設計漏拍的心跳</p>
-<p>設計呼吸的躲藏</p>
-<p>以及世界的停頓</p>
-<h6 id="詩文｜劉倩妏〈你一定是在設計系畢業〉"><a href="#詩文｜劉倩妏〈你一定是在設計系畢業〉" class="headerlink" title="詩文｜劉倩妏〈你一定是在設計系畢業〉"></a>詩文｜劉倩妏〈你一定是在設計系畢業〉</h6>]]></content>
       <tags>
         <tag>Poetry</tag>
       </tags>
@@ -2389,6 +2305,93 @@ body{
 ]]></content>
       <tags>
         <tag>Quotes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>詩人節</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/10/%E8%A9%A9%E4%BA%BA%E7%AF%80/</url>
+    <content><![CDATA[<p>沒有詩寫過多</p>
+<p>只有粽慾過度</p>
+<p>蛋都立好了</p>
+<p>棉被還捨不得收</p>
+<h6 id="詩文｜李豪《詩人節》"><a href="#詩文｜李豪《詩人節》" class="headerlink" title="詩文｜李豪《詩人節》"></a>詩文｜李豪《詩人節》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拆隊專家？ D級交易？？</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/03/%E6%8B%86%E9%9A%8A%E5%B0%88%E5%AE%B6%EF%BC%9FD%E7%B4%9A%E4%BA%A4%E6%98%93%EF%BC%9F/</url>
+    <content><![CDATA[<div class="pic">
+   <img src="https://firebasestorage.googleapis.com/v0/b/pictureforu-3b8e9.appspot.com/o/Blog%20Materials%2Ff28607ef-7733-46ed-83a0-9869556a81b1.jpg?alt=media&token=423a7b48-eb9c-4d6e-bc0e-500a2b540315" alt="FaceThePast-KI">
+</div>
+
+<p>當昔日狀元Kyrie Irving離開Cleveland Cavaliers後，<br>就一直備受外界質疑。<br>顛峰之年加盟Boston Celtics卻遭遇青壯奪權刷分、新人搶位排擠的鳥事…<br>轉隊來到Brooklyn Nets 與 Kevin Durant &amp; James Harden 組建三巨頭，<br>無奈被傷病及關鍵戰役對手惡意犯規擊敗。<br>場外的言論和行為，<br>更是險些摧毀他的職業生涯 ……</p>
+<p>但是這些過往種種，<br>在來到陌生的Dallas後一切都變了。</p>
+<p>Mavericks不僅給予了Irving足夠的尊重，<br>並且無論是球隊老板球隊球員乃至當家球星都堅定著支持Irving…<br>而最終Irving也用一座西區冠軍<br>回應球團信任<br>與對籃球純粹的喜愛。</p>
+<h5 id="初似墬入無底深淵，"><a href="#初似墬入無底深淵，" class="headerlink" title="初似墬入無底深淵，"></a>初似墬入無底深淵，</h5><p>未想；</p>
+<h5 id="終竟踏出萬里征途。"><a href="#終竟踏出萬里征途。" class="headerlink" title="終竟踏出萬里征途。"></a>終竟踏出萬里征途。</h5><h5 id="那些沒能打倒你的事，"><a href="#那些沒能打倒你的事，" class="headerlink" title="那些沒能打倒你的事，"></a>那些沒能打倒你的事，</h5><p>最終；</p>
+<h5 id="會變成你克服一初的無畏信念。"><a href="#會變成你克服一初的無畏信念。" class="headerlink" title="會變成你克服一初的無畏信念。"></a>會變成你克服一初的無畏信念。</h5><p>外界普遍都是說31歲的“詹皇”帶著24歲的Irving獲得生涯首冠。<br>那麼今年為何不能期待，<br>32歲的Irving將輔佐25歲的歐洲新王劍指冠軍？</p>
+<p>十年河東 十年河西<br>這回憑什麼不能是他呢？</p>
+<Style>
+ .pic {
+   position: relative; /*偽元素的基準*/
+}
+.pic::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: calc(100% - 20px); /*減去左右的斜線框一半的值×2的算式*/
+   height: calc(100% - 20px); /*減去上下的斜線框一半的值×2的算式*/
+   border-image-source: repeating-linear-gradient(
+      45deg, /*旋轉45度*/
+      #ffffff  0px, #ffffff  2px, /*套用顏色的線條*/
+      rgba(0 0 0 / 0) 2px, rgba(0 0 0 / 0) 7px /*邊界（留白)的部分*/
+   );
+   border-image-slice: 20; /*指定border 4邊的使用範圍*/
+   border-width: 20px; /*框線的寬度*/
+   border-image-repeat: round; /*如磁磚狀重複顯示*/
+   border-style: solid; /*以實心線呈現*/
+}   
+
+</Style>]]></content>
+      <tags>
+        <tag>Essay</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>水星逆行</title>
+    <url>/IWishIKnewHowToQuitYou/2024/10/28/%E6%B0%B4%E6%98%9F%E9%80%86%E8%A1%8C/</url>
+    <content><![CDATA[<p>很難過的時候<br>就把所有的燈關掉<br>看一部電影<br>在最快樂的橋段裡睡去<br>當作沒有看見<br>那個不園滿的結局</p>
+<p>花一點時間<br>關心天氣<br>當那個提醒大家的人<br>接下來幾天都不太會下雨<br>快點把悲傷拿出來<br>好好曬乾</p>
+<p>這樣悶熱的夏天<br>特別適合傷心的人<br>哭不出來的眼淚<br>都變成汗水<br>讓他流一個晚上<br>感冒會比較容易好起來</p>
+<p>趕快休息<br>明天記得起床吃早餐<br>你可以從現在開始期待<br>飲料杯的笑話<br>比你糟透的人生還爛</p>
+<h6 id="詩文｜吳旻育《大人症候群》"><a href="#詩文｜吳旻育《大人症候群》" class="headerlink" title="詩文｜吳旻育《大人症候群》"></a>詩文｜吳旻育《大人症候群》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>這就是卡桑蒂</title>
+    <url>/IWishIKnewHowToQuitYou/2024/06/07/%E9%80%99%E5%B0%B1%E6%98%AF%E5%8D%A1%E6%A1%91%E8%92%82/</url>
+    <content><![CDATA[<p>許秀（韓語：허수，2000年7月22日—，遊戲ID：ShowMaker），韓國《英雄聯盟》電子競技運動員，DWG KIA中路選手，英雄聯盟2020賽季世界大賽冠軍成員。<br>2023年因新出的角色「卡桑帝」於遊戲中表現過強，在某日直播被對手卡桑帝擊敗時情不自禁高速詠唱:</p>
+<p>「你說得對，但是這就是卡桑帝，🤔HP 4700，護甲 329，魔抗 201的英雄。有不可阻擋🤚，有護盾👌，還能過牆✌️。有控制🤙，甚至冷卻時間只有1秒✊，只要15點藍👍。轉換姿態時甚至可以刷新W的cd👈，還有✌️真實傷害。然後，護甲和魔抗提升後還能獲得技能加速👐，縮短Q的cd🙌，還縮短釋放時間😨，然後還有攻擊力😰。W就👊🏿😭👊🏿啊啊啊啊啊啊🖐️😭🤚」</p>
+<p>此段肺腑之言道出自登場以來，無論卡桑帝怎麼被版本削弱，該角色始終能在職業賽場上占有一席之地。</p>
+<p>嗯…真不虧是由擁有二百年設計資歷的團隊所設計的角色。</p>
+]]></content>
+      <tags>
+        <tag>Meme</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>雖然世界已經不夠晴朗</title>
+    <url>/IWishIKnewHowToQuitYou/2024/11/30/%E9%9B%96%E7%84%B6%E4%B8%96%E7%95%8C%E5%B7%B2%E7%B6%93%E4%B8%8D%E5%A4%A0%E6%99%B4%E6%9C%97/</url>
+    <content><![CDATA[<p>累的時候你總是<br>讓我繼續撐過去的心事<br>今晚沒有月光<br>但彼此知道微笑一樣<br>記得要早點睡<br>才能準時在夢裡相會<br>　　<br>依然是那麼溫暖<br>從來不曾感到孤單<br>於是我緊握著你的掌紋<br>往約定的目標前進<br>我們的勇敢只會更加堅實<br>如一首值得雋永的詩<br>　　<br>雖然世界已經不夠晴朗<br>也不用特地悲傷<br>因為無論到哪裡<br>都有最強大的珍惜<br>讓我們整裝待發<br>對一切不再感到害怕</p>
+<h6 id="詩文｜楚影《雖然世界已經不夠晴朗》"><a href="#詩文｜楚影《雖然世界已經不夠晴朗》" class="headerlink" title="詩文｜楚影《雖然世界已經不夠晴朗》"></a>詩文｜楚影《雖然世界已經不夠晴朗》</h6>]]></content>
+      <tags>
+        <tag>Poetry</tag>
       </tags>
   </entry>
 </search>
